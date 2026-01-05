@@ -1,42 +1,27 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import React from 'react';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import Link from '@docusaurus/Link';
 
-import Heading from '@theme/Heading';
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+export default function Home(){
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/posdevice/main">
-            Docusaurus Tutorial - 5min ⏱️
+    <Layout title="XDEV Docs" description="XDEVELOPMENT Documentation">
+      <main style={{ padding: '64px 16px', maxWidth: 960, margin: '0 auto' }}>
+        <h1 style={{ fontSize: 44, margin: 0 }}>XDEV Docs</h1>
+        <p style={{ fontSize: 18, opacity: 0.8, marginTop: 12 }}>
+          XDEVELOPMENT product documentation.
+        </p>
+
+        <div style={{ display: 'flex', gap: 12, marginTop: 24, flexWrap: 'wrap' }}>
+          <Link className="button button--primary button--lg" to="/docs/posdevice/main">
+            POSDEVICE Docs
+          </Link>
+          <Link className="button button--secondary button--lg" to="/docs/faq">
+            FAQ
+          </Link>
+          <Link className="button button--secondary button--lg" to="/docs/coming-soon">
+            Coming Soon
           </Link>
         </div>
-      </div>
-    </header>
-  );
-}
-
-export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
       </main>
     </Layout>
   );
