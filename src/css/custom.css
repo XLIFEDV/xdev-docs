@@ -12,12 +12,7 @@
 }
 
 /* Koyu tema (sağ üst güneş/ay butonu için) */
-[data-theme='dark'] {
-  --ifm-background-color: #0b1220;
-  --ifm-font-color-base: #e5e7eb;
 
-  --ifm-color-primary: #22c55e;
-}
 .navbar {
   background: #ffffff;           /* üst bar rengi */
   border-bottom: 1px solid #e5e7eb;
@@ -42,4 +37,45 @@
 
 [data-theme='dark'] .footer {
   background: #0b1220;
+}
+
+/* === Kill the navy/blue tint (Dark) === */
+[data-theme='dark'] {
+  /* Genel arkaplan */
+  --ifm-background-color: #0f0f10;            /* ana arka plan */
+  --ifm-background-surface-color: #151517;    /* kart/box yüzeyi */
+
+  /* Yazı */
+  --ifm-font-color-base: #e7e7ea;
+  --ifm-font-color-secondary: #b9b9c0;
+
+  /* Border / divider */
+  --ifm-color-emphasis-200: #242428;
+  --ifm-color-emphasis-300: #2d2d33;
+}
+
+/* Navbar (üst bar) */
+[data-theme='dark'] .navbar {
+  background: #0f0f10 !important;
+  border-bottom: 1px solid #242428 !important;
+}
+
+/* Docs sidebar (sol menü paneli) */
+[data-theme='dark'] .theme-doc-sidebar-container {
+  background: #0f0f10 !important;
+  border-right: 1px solid #242428 !important;
+}
+
+/* Footer (alt bar) */
+[data-theme='dark'] .footer {
+  background: #0f0f10 !important;
+  border-top: 1px solid #242428 !important;
+}
+
+/* Breadcrumb / content area uyumu için */
+[data-theme='dark'] .main-wrapper {
+  background: #0f0f10;
+}
+[data-theme='dark'] body {
+  background: #0f0f10 !important;
 }

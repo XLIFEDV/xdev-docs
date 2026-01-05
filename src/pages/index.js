@@ -1,10 +1,10 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { useDocusaurusContext } from '@docusaurus/context';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 export default function Home() {
-  const logoUrl = useBaseUrl('/img/hero-logo.png'); // logo adını gerekirse değiştir
+  const logoUrl = useBaseUrl('/img/xdev.png'); // logo adını gerekirse değiştir
   const { i18n } = useDocusaurusContext();
   const { currentLocale } = i18n;
 
@@ -24,23 +24,15 @@ export default function Home() {
         }}
       >
         <div style={{ textAlign: 'center', maxWidth: 820 }}>
-          {/* Logo */}
           <img
             src={logoUrl}
             alt="XDEVELOPMENT"
             style={{
               width: 'min(520px, 90vw)',
               height: 'auto',
-              marginBottom: 24,
+              marginBottom: 12,
             }}
           />
-
-          {/* Title */}
-          <h1 style={{ fontSize: 40, margin: '0 0 12px 0' }}>
-            XDEV Docs
-          </h1>
-
-          {/* Locale-based description */}
           <p style={{ fontSize: 16, opacity: 0.85, lineHeight: 1.6, margin: 0 }}>
             {description}
           </p>
