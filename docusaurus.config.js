@@ -101,7 +101,7 @@ const config = {
       {
         title: 'Products',
         items: [
-          { label: 'POSDEVICE', to: '/docs/intro' },
+          { label: 'POSDEVICE', to: '/docs/posdevice/main' },
           { label: 'Banking (soon)', to: '/docs/coming-soon' },
           { label: 'Garage (soon)', to: '/docs/coming-soon' },
         ],
