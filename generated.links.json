@@ -1,0 +1,12 @@
+{
+  "products": [
+    {
+      "label": "BANKING",
+      "to": "/banking/main"
+    },
+    {
+      "label": "POSDEVICE",
+      "to": "/posdevice/main"
+    }
+  ]
+}

@@ -1,5 +1,8 @@
 
 /** @type {import('@docusaurus/types').Config} */
+const generated = require('./generated.links.json');
+
+
 const config = {
   title: 'XDEV Docs',
   tagline: 'XDEVELOPMENT Documentions',
@@ -18,11 +21,7 @@ const config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en','tr'],
-    localeConfigs:{
-      en:{label:'English'},
-      tr:{label:'Türkçe'}
-    }
+    locales: ['en'],
   },
 
   presets: [
@@ -65,13 +64,10 @@ const config = {
         type: 'dropdown',
         label: 'Products',
         position: 'left',
-        items: [
-          {
-            label: 'POSDEVICE',
-            to: '/posdevice/main'
-          },
-        ],
+        items: generated.products,
       },
+
+
 
       { to: '/faq', label: 'FAQ', position: 'left' },
 
@@ -97,10 +93,9 @@ const config = {
     links: [
       {
         title: 'Products',
-        items: [
-          { label: 'POSDEVICE', to: '/posdevice/main' }
-        ],
+        items: generated.products,
       },
+
       {
         title: 'More',
         items: [
