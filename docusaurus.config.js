@@ -59,22 +59,22 @@ const config = {
         items: [
           {
             label: 'POSDEVICE',
-            to: '/docs/posdevice/main'
+            to: '/posdevice/main'
           },
 
           {
             label: 'Banking (soon)',
-            to: '/docs/coming-soon'
+            to: '/coming-soon'
           },
           {
             label: 'Garage (soon)',
-            to: '/docs/coming-soon'
+            to: '/coming-soon'
           },
         ],
       },
 
       // Optional: Changelog / FAQ quick links
-      { to: '/docs/faq', label: 'FAQ', position: 'left' },
+      { to: '/faq', label: 'FAQ', position: 'left' },
 
       // Right side links
       {
@@ -101,9 +101,9 @@ const config = {
       {
         title: 'Products',
         items: [
-          { label: 'POSDEVICE', to: '/docs/posdevice/main' },
-          { label: 'Banking (soon)', to: '/docs/coming-soon' },
-          { label: 'Garage (soon)', to: '/docs/coming-soon' },
+          { label: 'POSDEVICE', to: '/posdevice/main' },
+          { label: 'Banking (soon)', to: '/coming-soon' },
+          { label: 'Garage (soon)', to: '/coming-soon' },
         ],
       },
       {
