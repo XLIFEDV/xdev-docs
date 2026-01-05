@@ -42,11 +42,16 @@ const config = {
   ],
 
   themeConfig: {
+    colorMode: {
+    defaultMode: 'dark',
+    disableSwitch: true,
+    respectPrefersColorScheme: false,
+  },
   navbar: {
     title: 'XDEVELOPMENT',
     logo: {
       alt: 'XDEVELOPMENT',
-      src: 'img/logo.svg'
+      src: 'img/logo.png'
     },
     items: [
       // {
