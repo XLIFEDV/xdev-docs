@@ -80,10 +80,6 @@ const config = {
         href: 'https://xdev.tebex.io',
         label: 'Tebex',
         position: 'right',
-      },
-      {
-        type:'localeDropdown',
-        position:'right'
       }
     ]
   },
