@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'XDEV Docs',
+  tagline: 'XDEVELOPMENT Documentions',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -20,7 +20,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://xdev-docs.pages.dev',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -74,85 +74,107 @@ const config = {
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
-      colorMode: {
-        respectPrefersColorScheme: true,
+  themeConfig: {
+  navbar: {
+    title: 'XDEVELOPMENT',
+    logo: {
+      alt: 'XDEVELOPMENT',
+      src: 'img/logo.svg',
+    },
+    items: [
+      // Main Docs entry (home of docs)
+      {
+        type: 'docSidebar',
+        sidebarId: 'tutorialSidebar',
+        position: 'left',
+        label: 'Docs',
       },
-      navbar: {
-        title: 'My Site',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
-        },
+
+      // Products dropdown (grow-friendly)
+      {
+        type: 'dropdown',
+        label: 'Products',
+        position: 'left',
         items: [
+          // POSDEVICE docs
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
+            label: 'POSDEVICE',
+            to: '/docs/intro', // değiştir: POSDEVICE giriş sayfan hangisiyse
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+
+          // future products (placeholders)
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
+            label: 'Banking (soon)',
+            to: '/docs/coming-soon', // istersen sonra oluştururuz
           },
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
+            label: 'Garage (soon)',
+            to: '/docs/coming-soon',
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
+
+      // Optional: Changelog / FAQ quick links
+      { to: '/docs/faq', label: 'FAQ', position: 'left' },
+
+      // Right side links
+      {
+        href: 'https://discord.gg/xdevelopment',
+        label: 'Discord',
+        position: 'right',
       },
-    }),
+      {
+        href: 'https://xdev.tebex.io', // <- kendi Tebex linkinle değiştir
+        label: 'Tebex',
+        position: 'right',
+      },
+      {
+        href: 'https://github.com/XLIFEDV', // <- varsa org/user
+        label: 'GitHub',
+        position: 'right',
+      },
+    ],
+  },
+
+  footer: {
+    style: 'dark',
+    links: [
+      {
+        title: 'Products',
+        items: [
+          { label: 'POSDEVICE', to: '/docs/intro' },
+          { label: 'Banking (soon)', to: '/docs/coming-soon' },
+          { label: 'Garage (soon)', to: '/docs/coming-soon' },
+        ],
+      },
+      {
+        title: 'Documentation',
+        items: [
+          { label: 'Getting Started', to: '/docs/intro' },
+          { label: 'Installation', to: '/docs/installation' },
+          { label: 'Configuration', to: '/docs/config/general' },
+          { label: 'FAQ', to: '/docs/faq' },
+        ],
+      },
+      {
+        title: 'Community',
+        items: [
+          { label: 'Discord Support', href: 'https://discord.gg/xdevelopmentv' },
+          { label: 'Report an Issue', href: 'https://github.com/XLIFEDV' }, // istersen repo issue linki yap
+        ],
+      },
+      {
+        title: 'More',
+        items: [
+          { label: 'Tebex Store', href: 'https://xdev.tebex.io' },
+          { label: 'XDEVELOPMENT', href: 'https://discord.gg/xdevelopment' }, // domain yoksa burayı discord yapabiliriz
+        ],
+      },
+    ],
+    copyright:
+      `Copyright © ${new Date().getFullYear()} XDEVELOPMENT. All rights reserved.`,
+  },
+}
 };
 
 export default config;
