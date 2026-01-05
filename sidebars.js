@@ -6,40 +6,105 @@ const sidebars = {
   "tutorialSidebar": [
     {
       "type": "category",
-      "label": "banking",
-      "collapsed": false,
+      "label": "CARS",
+      "collapsed": true,
       "items": [
         {
-          "type": "category",
-          "label": "important",
-          "collapsed": false,
-          "items": [
-            {
-              "type": "doc",
-              "id": "banking/important/info"
-            }
-          ]
-        },
-        {
           "type": "doc",
-          "id": "banking/main"
+          "id": "CARS/overview"
         }
       ]
     },
     {
       "type": "category",
-      "label": "posdevice",
-      "collapsed": false,
+      "label": "SCRIPTS",
+      "collapsed": true,
       "items": [
         {
-          "type": "doc",
-          "id": "posdevice/main"
+          "type": "category",
+          "label": "POS DEVICE",
+          "collapsed": true,
+          "items": [
+            {
+              "type": "category",
+              "label": "Configuration",
+              "collapsed": true,
+              "items": [
+                {
+                  "type": "category",
+                  "label": "UI",
+                  "collapsed": true,
+                  "items": [
+                    {
+                      "type": "doc",
+                      "id": "SCRIPTS/POS DEVICE/Configuration/UI/overview"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "SCRIPTS/POS DEVICE/Configuration/UI/general-ui"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "SCRIPTS/POS DEVICE/Configuration/UI/layout"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "SCRIPTS/POS DEVICE/Configuration/UI/credit-card-ui"
+                    }
+                  ]
+                },
+                {
+                  "type": "doc",
+                  "id": "SCRIPTS/POS DEVICE/Configuration/overview"
+                },
+                {
+                  "type": "doc",
+                  "id": "SCRIPTS/POS DEVICE/Configuration/system-settings"
+                },
+                {
+                  "type": "doc",
+                  "id": "SCRIPTS/POS DEVICE/Configuration/debug-settings"
+                },
+                {
+                  "type": "doc",
+                  "id": "SCRIPTS/POS DEVICE/Configuration/history-system"
+                },
+                {
+                  "type": "doc",
+                  "id": "SCRIPTS/POS DEVICE/Configuration/override-settings"
+                },
+                {
+                  "type": "doc",
+                  "id": "SCRIPTS/POS DEVICE/Configuration/event-triggers"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Usage",
+              "collapsed": true,
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "SCRIPTS/POS DEVICE/Usage/qb-target"
+                },
+                {
+                  "type": "doc",
+                  "id": "SCRIPTS/POS DEVICE/Usage/events-and-exports"
+                }
+              ]
+            },
+            {
+              "type": "doc",
+              "id": "SCRIPTS/POS DEVICE/installation"
+            }
+          ]
         }
       ]
     },
     {
       "type": "doc",
-      "id": "faq"
+      "id": "overview"
     }
   ]
 };

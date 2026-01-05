@@ -21,7 +21,15 @@ const config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en','tr'],
+    localeConfigs:{
+      en:{
+        label:'English'
+      },
+      tr:{
+        label:'Türkçe'
+      }
+    }
   },
 
   presets: [
@@ -41,7 +49,7 @@ const config = {
   ],
 
   themeConfig: {
-    colorMode: {
+  colorMode: {
     defaultMode: 'dark',
     disableSwitch: true,
     respectPrefersColorScheme: false,
@@ -53,32 +61,22 @@ const config = {
       src: 'img/logo.png'
     },
     items: [
-      // {
-      //   type: 'docSidebar',
-      //   sidebarId: 'tutorialSidebar',
-      //   position: 'left',
-      //   label: 'Docs',
-      // },
-
+      { to: '/overview', label: 'Documentions', position: 'left' },
       {
         type: 'dropdown',
-        label: 'Products',
+        label: 'Cars',
         position: 'left',
-        items: generated.products,
-      },
-
-
-
-      { to: '/faq', label: 'FAQ', position: 'left' },
-
-      {
-        href: 'https://discord.gg/xdevelopment',
-        label: 'Discord',
-        position: 'right',
+        items: generated.cars,
       },
       {
-        href: 'https://xdev.tebex.io',
-        label: 'Tebex',
+        type: 'dropdown',
+        label: 'Scripts',
+        position: 'left',
+        items: generated.scripts,
+      },
+      { to: '/faq', label: 'FAQ', position: 'right' },
+      {
+        type: 'localeDropdown',
         position: 'right',
       }
     ]
@@ -88,12 +86,22 @@ const config = {
     style: 'dark',
     links: [
       {
-        title: 'Products',
-        items: generated.products,
+        title: 'Cars',
+        items: generated.cars,
       },
-
+      {
+        title: 'Scripts',
+        items: generated.scripts,
+      },
       {
         title: 'More',
+        items: [
+          { to: '/overview', label: 'Documentions'},
+          { to: '/faq', label: 'FAQ'}
+        ]
+      },
+      {
+        title: 'Contact',
         items: [
           { label: 'Tebex Store', href: 'https://xdev.tebex.io' },
           { label: 'Discord Support', href: 'https://discord.gg/xdevelopment'}

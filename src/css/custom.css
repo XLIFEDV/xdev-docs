@@ -79,3 +79,14 @@
 [data-theme='dark'] body {
   background: #0f0f10 !important;
 }
+/* Headings spacing like clean docs */
+[data-theme='dark'] .markdown h2 {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+[data-theme='dark'] .markdown h2:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}

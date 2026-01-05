@@ -4,8 +4,9 @@ import path from "path";
 
 const DOCS_DIR = path.resolve("docs");
 const OUT_SIDEBARS = path.resolve("sidebars.js");
-const OUT_NAV_FOOT = path.resolve("generated.links.json");
+const OUT_LINKS = path.resolve("generated.links.json");
 
+const ROOT_GROUPS = ["cars", "scripts"]; // docs/cars, docs/scripts
 const isMarkdown = (p) => p.endsWith(".md") || p.endsWith(".mdx");
 
 async function exists(p) {
@@ -23,13 +24,13 @@ async function walk(dir) {
   return files;
 }
 
-// docs/posdevice/main.md -> posdevice/main
+// docs/<...>.md -> <...> (doc id)
 function toDocId(absPath) {
   const rel = path.relative(DOCS_DIR, absPath).replace(/\\/g, "/");
   return rel.replace(/\.(md|mdx)$/, "");
 }
 
-// folder label formatting: posdevice -> POSDEVICE, bank-system -> BANK SYSTEM
+// "posdevice" -> "POSDEVICE", "bank-system" -> "BANK SYSTEM"
 function folderLabel(name) {
   return name.replace(/[-_]/g, " ").toUpperCase();
 }
@@ -44,9 +45,8 @@ function parseSidebarPosition(mdContent) {
 }
 
 async function buildSidebarTree(docFiles) {
-  // Build nested categories based on folder structure
   const rootItems = [];
-  const catMap = new Map(); // key folder path -> category object
+  const catMap = new Map(); // folder path -> category object
 
   function getOrCreateCategory(folderPathParts) {
     let currentPath = "";
@@ -58,8 +58,8 @@ async function buildSidebarTree(docFiles) {
       if (!catMap.has(currentPath)) {
         const cat = {
           type: "category",
-          label: part,        // istersen burada prettify yaparız
-          collapsed: false,
+          label: part,
+          collapsed: true, // ✅ default closed
           items: [],
         };
         catMap.set(currentPath, cat);
@@ -76,8 +76,8 @@ async function buildSidebarTree(docFiles) {
   for (const fileAbs of docFiles) {
     const docId = toDocId(fileAbs);
     const parts = docId.split("/");
-    const fileName = parts.pop();         // main
-    const folderParts = parts;            // ["posdevice"]
+    const fileName = parts.pop();
+    const folderParts = parts;
 
     const parentItems = getOrCreateCategory(folderParts);
 
@@ -94,13 +94,24 @@ async function buildSidebarTree(docFiles) {
     });
   }
 
+  // prettify category labels (top level = CARS / SCRIPTS)
+  function prettify(items, prefix = []) {
+    for (const it of items) {
+      if (it.type === "category") {
+        const full = [...prefix, it.label];
+        if (full.length === 1) it.label = folderLabel(it.label);
+        else it.label = it.label.replace(/[-_]/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+        prettify(it.items, full);
+      }
+    }
+  }
+
   function sortItems(items) {
     for (const it of items) {
       if (it.type === "category") sortItems(it.items);
     }
 
     items.sort((a, b) => {
-      // categories first
       if (a.type === "category" && b.type !== "category") return -1;
       if (a.type !== "category" && b.type === "category") return 1;
 
@@ -113,52 +124,52 @@ async function buildSidebarTree(docFiles) {
       return an.localeCompare(bn);
     });
 
-    for (const it of items) {
-      if (it.__pos != null) delete it.__pos;
-    }
+    for (const it of items) if (it.__pos != null) delete it.__pos;
   }
 
+  prettify(rootItems);
   sortItems(rootItems);
   return rootItems;
 }
 
-async function generateNavbarAndFooter() {
-  const entries = await fs.readdir(DOCS_DIR, { withFileTypes: true });
+// ✅ group footer/navbar links = product folders under docs/<group>/
+// rule: each product -> pick best landing doc automatically (overview > main > index > first found)
+async function buildGroupLinks(groupName) {
+  const groupDir = path.join(DOCS_DIR, groupName);
+  if (!(await exists(groupDir))) return [];
 
-  // Products = top-level folders under docs/
-  const products = entries
-    .filter(e => e.isDirectory())
-    .map(e => e.name)
-    // ignore folders starting with "_" (optional convention)
-    .filter(name => !name.startsWith("_"))
-    .sort((a, b) => a.localeCompare(b));
+  const all = await walk(groupDir);
 
-  const productLinks = [];
-  for (const p of products) {
-    // require docs/<product>/main.md or main.mdx
-    const mainMd = path.join(DOCS_DIR, p, "main.md");
-    const mainMdx = path.join(DOCS_DIR, p, "main.mdx");
-    const hasMain = (await exists(mainMd)) || (await exists(mainMdx));
+  // product = first folder under group
+  const bestByProduct = new Map();
 
-    if (!hasMain) {
-      console.warn(`[gen-docs] Warning: docs/${p}/main.md(x) not found. Skipping navbar/footer link for "${p}".`);
-      continue;
-    }
+  for (const abs of all) {
+    const docId = toDocId(abs);           // scripts/posdevice/config/...
+    const rel = docId.slice(groupName.length + 1); // remove "scripts/"
+    const parts = rel.split("/");
+    const product = parts[0];
+    const page = parts[parts.length - 1];
 
-    // routeBasePath: '/' olduğun için "/docs/..." yok.
-    productLinks.push({
-      label: folderLabel(p),
-      to: `/${p}/main`,
-    });
+    const score =
+      page === "overview" ? 0 :
+      page === "main" ? 1 :
+      page === "index" ? 2 :
+      10;
+
+    const prev = bestByProduct.get(product);
+    if (!prev || score < prev.score) bestByProduct.set(product, { docId, score });
   }
 
-  return { products: productLinks };
+  return [...bestByProduct.entries()]
+    .sort((a, b) => a[0].localeCompare(b[0]))
+    .map(([product, v]) => ({
+      label: folderLabel(product),
+      to: `/${v.docId}`, // routeBasePath '/'
+    }));
 }
 
 function writeSidebars(sidebarItems) {
-  const sidebarsObj = {
-    tutorialSidebar: sidebarItems,
-  };
+  const sidebarsObj = { tutorialSidebar: sidebarItems };
 
   const out = `// AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
 // Generated by scripts/gen-docs.mjs
@@ -177,14 +188,20 @@ async function main() {
     process.exit(1);
   }
 
-  const docFiles = await walk(DOCS_DIR);
-  const sidebarItems = await buildSidebarTree(docFiles);
+  // sidebars = all docs
+  const allDocs = await walk(DOCS_DIR);
+  const sidebarItems = await buildSidebarTree(allDocs);
   await writeSidebars(sidebarItems);
 
-  const links = await generateNavbarAndFooter();
-  await fs.writeFile(OUT_NAV_FOOT, JSON.stringify(links, null, 2), "utf8");
+  // links for navbar/footer
+  const cars = await buildGroupLinks("cars");
+  const scripts = await buildGroupLinks("scripts");
 
-  console.log(`[gen-docs] sidebars.js + generated.links.json written. Docs found: ${docFiles.length}`);
+  const generated = { cars, scripts };
+  await fs.writeFile(OUT_LINKS, JSON.stringify(generated, null, 2), "utf8");
+
+  console.log(`[gen-docs] sidebars.js + generated.links.json written. Docs found: ${allDocs.length}`);
+  console.log(`[gen-docs] cars: ${cars.length}, scripts: ${scripts.length}`);
 }
 
 main().catch((e) => {

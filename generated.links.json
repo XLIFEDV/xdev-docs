@@ -1,12 +1,14 @@
 {
-  "products": [
+  "cars": [
     {
-      "label": "BANKING",
-      "to": "/banking/main"
-    },
+      "label": "OVERVIEW",
+      "to": "/cars/overview"
+    }
+  ],
+  "scripts": [
     {
-      "label": "POSDEVICE",
-      "to": "/posdevice/main"
+      "label": "POS DEVICE",
+      "to": "/scripts/POS DEVICE/Configuration/overview"
     }
   ]
 }

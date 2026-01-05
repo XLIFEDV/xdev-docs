@@ -5,9 +5,18 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 export default function Home() {
   const logoUrl = useBaseUrl('/img/xdev.png'); // logo adını gerekirse değiştir
+  const { i18n } = useDocusaurusContext();
+  const isTR = i18n.currentLocale === 'tr';
+
+  const content = {
+    title: 'XDEV Docs',
+    description: isTR
+      ? 'XDEVELOPMENT ürünleri için hazırlanmış resmi dokümantasyon.'
+      : 'Official documentation for XDEVELOPMENT products.',
+  };
 
   return (
-    <Layout title="XDEV Docs" description={'Official documentation for XDEVELOPMENT products. Setup steps, usage details, and troubleshooting guides.'}>
+    <Layout title={content.title} description={content.description}>
       <main
         style={{
           minHeight: '70vh',
@@ -21,13 +30,13 @@ export default function Home() {
             src={logoUrl}
             alt="XDEVELOPMENT"
             style={{
-              width: 'min(520px, 90vw)',
+              width: 'min(600px, 90vw)',
               height: 'auto',
-              marginBottom: 12,
+              marginBottom: -100,
             }}
           />
-          <p style={{ fontSize: 16, opacity: 0.85, lineHeight: 1.6, margin: 0 }}>
-            {'Official documentation for XDEVELOPMENT products. Setup steps, usage details, and troubleshooting guides.'}
+          <p style={{ fontSize: 24, fontWeight:500, opacity: 0.85, lineHeight: 0, margin: 0, color: '#AE3C46'}}>
+            {content.description}
           </p>
         </div>
       </main>
