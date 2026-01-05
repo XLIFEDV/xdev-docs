@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "XDEVELOPMENT",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "XDEVELOPMENT",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Products": {
+    "message": "Products",
+    "description": "Navbar item with label Products"
+  },
+  "item.label.FAQ": {
+    "message": "FAQ",
+    "description": "Navbar item with label FAQ"
+  },
+  "item.label.Discord": {
+    "message": "Discord",
+    "description": "Navbar item with label Discord"
+  },
+  "item.label.Tebex": {
+    "message": "Tebex",
+    "description": "Navbar item with label Tebex"
+  },
+  "item.label.POSDEVICE": {
+    "message": "POSDEVICE",
+    "description": "Navbar item with label POSDEVICE"
+  }
+}

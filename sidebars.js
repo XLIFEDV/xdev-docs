@@ -5,7 +5,7 @@ const sidebars = {
   tutorialSidebar: [
     {
       type: 'category',
-      label: 'Products',
+      label: 'POSDEVICE',
       items: [
         'posdevice/main',
       ],

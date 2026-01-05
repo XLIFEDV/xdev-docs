@@ -12,14 +12,11 @@ export default function Home(){
         </p>
 
         <div style={{ display: 'flex', gap: 12, marginTop: 24, flexWrap: 'wrap' }}>
-          <Link className="button button--primary button--lg" to="/posdevice/main">
-            POSDEVICE Docs
+          <Link className="button button--primary button--lg" to="/">
+            Documentions
           </Link>
           <Link className="button button--secondary button--lg" to="/faq">
             FAQ
-          </Link>
-          <Link className="button button--secondary button--lg" to="/coming-soon">
-            Coming Soon
           </Link>
         </div>
       </main>

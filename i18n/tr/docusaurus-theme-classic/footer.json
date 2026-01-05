@@ -1,0 +1,26 @@
+{
+  "link.title.Products": {
+    "message": "Products",
+    "description": "The title of the footer links column with title=Products in the footer"
+  },
+  "link.title.More": {
+    "message": "More",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.POSDEVICE": {
+    "message": "POSDEVICE",
+    "description": "The label of footer link with label=POSDEVICE linking to /posdevice/main"
+  },
+  "link.item.label.Tebex Store": {
+    "message": "Tebex Store",
+    "description": "The label of footer link with label=Tebex Store linking to https://xdev.tebex.io"
+  },
+  "link.item.label.Discord Support": {
+    "message": "Discord Support",
+    "description": "The label of footer link with label=Discord Support linking to https://discord.gg/xdevelopment"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 XDEVELOPMENT. All rights reserved.",
+    "description": "The footer copyright"
+  }
+}

@@ -11,14 +11,18 @@ const config = {
 
   url: 'https://xdev-docs.pages.dev',
   baseUrl: '/',
-  organizationName: 'XLIFEDV',
+  organizationName: 'XDEVELOPMENT',
   projectName: 'xdev-docs',
 
   onBrokenLinks: 'throw',
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en','tr'],
+    localeConfigs:{
+      en:{label:'English'},
+      tr:{label:'Türkçe'}
+    }
   },
 
   presets: [
@@ -27,12 +31,12 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/',
+          routeBasePath: '/'
         },
         blog: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
+          customCss: require.resolve('./src/css/custom.css')
+        }
       },
     ],
   ],
@@ -42,15 +46,15 @@ const config = {
     title: 'XDEVELOPMENT',
     logo: {
       alt: 'XDEVELOPMENT',
-      src: 'img/logo.svg',
+      src: 'img/logo.svg'
     },
     items: [
-      {
-        type: 'docSidebar',
-        sidebarId: 'tutorialSidebar',
-        position: 'left',
-        label: 'Docs',
-      },
+      // {
+      //   type: 'docSidebar',
+      //   sidebarId: 'tutorialSidebar',
+      //   position: 'left',
+      //   label: 'Docs',
+      // },
 
       {
         type: 'dropdown',
@@ -61,38 +65,26 @@ const config = {
             label: 'POSDEVICE',
             to: '/posdevice/main'
           },
-
-          {
-            label: 'Banking (soon)',
-            to: '/coming-soon'
-          },
-          {
-            label: 'Garage (soon)',
-            to: '/coming-soon'
-          },
         ],
       },
 
-      // Optional: Changelog / FAQ quick links
       { to: '/faq', label: 'FAQ', position: 'left' },
 
-      // Right side links
       {
         href: 'https://discord.gg/xdevelopment',
         label: 'Discord',
         position: 'right',
       },
       {
-        href: 'https://xdev.tebex.io', // <- kendi Tebex linkinle değiştir
+        href: 'https://xdev.tebex.io',
         label: 'Tebex',
         position: 'right',
       },
       {
-        href: 'https://github.com/XLIFEDV', // <- varsa org/user
-        label: 'GitHub',
-        position: 'right',
-      },
-    ],
+        type:'localeDropdown',
+        position:'right'
+      }
+    ]
   },
 
   footer: {
@@ -101,23 +93,14 @@ const config = {
       {
         title: 'Products',
         items: [
-          { label: 'POSDEVICE', to: '/posdevice/main' },
-          { label: 'Banking (soon)', to: '/coming-soon' },
-          { label: 'Garage (soon)', to: '/coming-soon' },
-        ],
-      },
-      {
-        title: 'Community',
-        items: [
-          { label: 'Discord Support', href: 'https://discord.gg/xdevelopmentv' },
-          { label: 'Report an Issue', href: 'https://github.com/XLIFEDV' }, // istersen repo issue linki yap
+          { label: 'POSDEVICE', to: '/posdevice/main' }
         ],
       },
       {
         title: 'More',
         items: [
           { label: 'Tebex Store', href: 'https://xdev.tebex.io' },
-          { label: 'XDEVELOPMENT', href: 'https://discord.gg/xdevelopment' }, // domain yoksa burayı discord yapabiliriz
+          { label: 'Discord Support', href: 'https://discord.gg/xdevelopment'}
         ],
       },
     ],
