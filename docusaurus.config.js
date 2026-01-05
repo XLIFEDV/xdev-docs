@@ -27,8 +27,9 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'XLIFEDV',
+  projectName: 'xdev-docs',
+
 
   onBrokenLinks: 'throw',
 
@@ -37,7 +38,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en','tr'],
+    locales: ['en'],
   },
 
   presets: [
