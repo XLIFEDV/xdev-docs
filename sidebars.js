@@ -7,7 +7,7 @@ const sidebars = {
       type: 'category',
       label: 'Products',
       items: [
-        'posdevice/intro',
+        'posdevice/main',
       ],
     },
     'faq',
