@@ -107,15 +107,6 @@ const config = {
         ],
       },
       {
-        title: 'Documentation',
-        items: [
-          { label: 'Getting Started', to: '/docs/intro' },
-          { label: 'Installation', to: '/docs/installation' },
-          { label: 'Configuration', to: '/docs/config/general' },
-          { label: 'FAQ', to: '/docs/faq' },
-        ],
-      },
-      {
         title: 'Community',
         items: [
           { label: 'Discord Support', href: 'https://discord.gg/xdevelopmentv' },
