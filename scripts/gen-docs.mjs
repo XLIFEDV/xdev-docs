@@ -179,7 +179,8 @@ async function buildGroupLinks(groupName) {
   return [...bestByProduct.entries()]
     .sort((a, b) => a[0].localeCompare(b[0]))
     .map(([product, v]) => ({
-      label: folderLabel(product),
+      labelKey: `nav.${groupName}.${product}`,  // örn: nav.cars.overview, nav.scripts.posdevice
+      label: folderLabel(product),             // fallback (EN gibi)
       to: `/${v.docId}`, // routeBasePath: '/'
     }));
 }
