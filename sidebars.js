@@ -108,7 +108,7 @@ const sidebars = {
     },
     {
       "type": "doc",
-      "id": "overview"
+      "id": "index"
     }
   ]
 };

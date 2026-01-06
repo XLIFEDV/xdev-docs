@@ -31,8 +31,8 @@ const config = {
       'classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
+          sidebarPath: require.resolve('./sidebars.js'),
         },
         blog: false,
         theme: {
@@ -50,14 +50,13 @@ const config = {
     },
 
     navbar: {
-      title: 'XDEVELOPMENT',
-      logo: { alt: 'XDEVELOPMENT', src: 'img/logo.png' },
+      title: '',
+      logo: {
+        alt: "XDEVELOPMENT",
+        src: "img/xdev.png", // sende neyse
+        href: "/",           // docs ana sayfana gitsin
+      },
       items: [
-        { to: '/overview', label: 'DOCUMENTIONS', position: 'left' },
-
-        { type: 'dropdown', label: 'VEHICLES', items: generated.vehicles },
-        { type: 'dropdown', label: 'SCRIPTS', items: generated.scripts },
-
         { to: '/faq', label: 'FAQ', position: 'right' },
         { type: 'localeDropdown', position: 'right' },
       ],
@@ -71,7 +70,7 @@ const config = {
         {
           title: 'More',
           items: [
-            { to: '/overview', label: 'DOCUMENTIONS' },
+            { to: '/', label: 'DOCUMENTIONS' },
             { to: '/faq', label: 'FAQ' },
           ],
         },
