@@ -19,7 +19,7 @@ Aşağıdaki event türleri burada yer almalıdır:
 
 - Bkz: **Kullanım → Eventler & Exportlar**  
   Eğer kullanım belgelerini ayrı bir bölümde tutuyorsanız buraya linkleyin:
-  - [Eventler & Exportlar](../usage/events-and-exports)
+  - [Eventler & Exportlar](../Usage/events-and-exports)
 
 :::tip
 Bu sayfayı “hangi event’ler var ve neden var” konusuna odaklı tutun.  
