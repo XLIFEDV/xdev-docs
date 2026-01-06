@@ -1,8 +1,7 @@
 
 /** @type {import('@docusaurus/types').Config} */
-const generated = require('./generated.links.json');
-const { translate } = require('@docusaurus/theme-common');
-const t = (id, fallback) => translate({ id, message: fallback });
+const locale = process.env.DOCUSAURUS_CURRENT_LOCALE || 'en';
+const generated = require(`./generated.links.${locale}.json`);
 
 const localizeItems = (items) =>
   items.map((x) => ({
@@ -69,18 +68,18 @@ const config = {
       src: 'img/logo.png'
     },
     items: [
-      { to: '/overview', label: t('nav.docs', 'Documentions'), position: 'left' },
+      { to: '/overview', label: 'Documentions', position: 'left' },
       {
         type: 'dropdown',
-        label: t('config.cars', 'Cars'),
-        items: localizeItems(generated.cars),
+        label: 'Cars',
+        items: generated.cars,
       },
       {
         type: 'dropdown',
-        label: t('config.scripts', 'Scripts'),
+        label: 'Scripts',
         items: localizeItems(generated.scripts),
       },
-      { to: '/faq', label: t('config.faq', 'FAQ'), position: 'right' },
+      { to: '/faq', label: 'FAQ', position: 'right' },
       {
         type: 'localeDropdown',
         position: 'right',
@@ -92,29 +91,29 @@ const config = {
     style: 'dark',
     links: [
       {
-        title: t('config.cars', 'Cars'),
-        items: localizeItems(generated.cars),
+        title: 'Cars',
+        items: generated.cars,
       },
       {
-        title: t('config.scripts', 'Scripts'),
-        items: localizeItems(generated.scripts),
+        title: 'Scripts',
+        items: generated.scripts,
       },
       {
-        title: t('config.more', 'More'),
+        title: 'More',
         items: [
-          { to: '/overview', label: t('config.docs', 'Documentions')},
-          { to: '/faq', label: t('config.faq', 'FAQ')}
+          { to: '/overview', label: 'Documentions'},
+          { to: '/faq', label: 'FAQ'}
         ]
       },
       {
-        title: t('config.contact', 'Contact'),
+        title: 'Contact',
         items: [
-          { label: t('config.tebex', 'Tebex Store'), href: 'https://xdev.tebex.io' },
-          { label: t('config.discord', 'Discord Support'), href: 'https://discord.gg/xdevelopment'}
+          { label: 'Tebex Store', href: 'https://xdev.tebex.io' },
+          { label: 'Discord Support', href: 'https://discord.gg/xdevelopment'}
         ],
       },
     ],
-    copyright:`Copyright © ${new Date().getFullYear()} `+t('config.copyright', `XDEVELOPMENT. All rights reserved.`),
+    copyright:`Copyright © ${new Date().getFullYear()} XDEVELOPMENT. All rights reserved.`,
   },
 }
 };

@@ -1,14 +1,18 @@
+import React from 'react';
 import Layout from '@theme/Layout';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-const { translate } = require('@docusaurus/theme-common');
-const t = (id, fallback) => translate({ id, message: fallback });
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 export default function Home() {
   const logoUrl = useBaseUrl('/img/xdev.png'); // logo adını gerekirse değiştir
+  const { i18n } = useDocusaurusContext();
+  const isTR = i18n.currentLocale === 'tr';
 
   const content = {
     title: 'XDEV Docs',
-    description: t('index.description', 'Official documentation for XDEVELOPMENT products.')
+    description: isTR
+      ? 'XDEVELOPMENT ürünleri için hazırlanmış resmi dokümantasyon.'
+      : 'Official documentation for XDEVELOPMENT products.',
   };
 
   return (
