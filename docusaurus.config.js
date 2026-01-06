@@ -72,7 +72,7 @@ const config = {
       {
         type: 'dropdown',
         label: 'Cars',
-        items: generated.cars,
+        items: localizeItems(generated.cars),
       },
       {
         type: 'dropdown',
@@ -92,11 +92,11 @@ const config = {
     links: [
       {
         title: 'Cars',
-        items: generated.cars,
+        items: localizeItems(generated.cars),
       },
       {
         title: 'Scripts',
-        items: generated.scripts,
+        items: localizeItems(generated.scripts),
       },
       {
         title: 'More',
