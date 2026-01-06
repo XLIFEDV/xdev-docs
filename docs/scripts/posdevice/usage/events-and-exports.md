@@ -4,8 +4,6 @@ description: POSDEVICE event and export reference
 sidebar_position: 2
 ---
 
-# Events & Exports
-
 This document describes all available **events and exports** provided by the POSDEVICE system.
 
 ---

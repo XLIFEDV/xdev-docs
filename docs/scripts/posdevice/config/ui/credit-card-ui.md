@@ -14,9 +14,10 @@ If you provide multiple values in a table, the system will choose one **randomly
 
 ```lua
 Config.UI.CreditCards = {
-  "blue",
-  "purple",
-  "dark"
+  "credit_card",
+  "credit_card2",
+  "credit_card3",
+  "credit_card4"
 }
 ````
 
@@ -32,13 +33,13 @@ If you want a consistent card design, you have two options:
 ### Option A — Keep a single value in a table
 
 ```lua
-Config.UI.CreditCards = { "blue" }
+Config.UI.CreditCards = { "credit_card" }
 ```
 
 ### Option B — Assign a single value directly
 
 ```lua
-Config.UI.CreditCards = "blue"
+Config.UI.CreditCards = "credit_card"
 ```
 
 **Notes**

@@ -8,6 +8,4 @@ UI Settings contains all user-interface related configuration options.
 
 ## UI pages
 
-- [General UI](./general-ui)
-- [POS Device Layout](./layout)
 - [Credit Card UI System](./credit-card-ui)

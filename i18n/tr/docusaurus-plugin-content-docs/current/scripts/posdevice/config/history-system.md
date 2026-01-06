@@ -4,7 +4,7 @@ sidebar_position: 4
 description: İşlem geçmişinin nasıl kaydedildiği, erişildiği ve görüntülendiği.
 ---
 
-History System, işlem geçmişinin nasıl yönetildiğini ve nasıl erişildiğini tanımlar.
+İşlem geçmişinin nasıl yönetildiğini ve nasıl erişildiğini tanımlar.
 
 ## Bir geçmiş (history) sisteminde tipik konular
 
@@ -24,7 +24,7 @@ Bu dokümantasyonu genişletirken aşağıdaki konular mutlaka ele alınmalıdı
 
 ## Önerilen “geçmiş verisi” yapısı (örnek)
 
-UI tarafının beklediği veri yapısı net bir şekilde belgelenmelidir.  
+Arayüz tarafının beklediği veri yapısı net bir şekilde belgelenmelidir.  
 Örnek bir veri formatı aşağıdaki gibidir:
 
 ```lua

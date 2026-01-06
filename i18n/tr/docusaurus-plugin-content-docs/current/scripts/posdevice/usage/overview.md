@@ -1,10 +1,8 @@
 ---
-title: Usage Overview
+title: POSDEVICE Kullanımı
 description: POSDEVICE sisteminin pratikte nasıl kullanıldığı
 sidebar_position: 1
 ---
-
-# POSDEVICE Kullanımı
 
 Bu doküman, POS Device sisteminin gerçek kullanım senaryolarında nasıl davrandığını açıklar.
 
@@ -66,4 +64,4 @@ Sistem aşağıdaki kuralları katı şekilde uygular:
 - Bir oyuncu aynı anda hem operatör hem müşteri olamaz
 - Yinelenen (duplicate) oturumlar engellenir
 - Bağlantı kopması durumunda oturumlar otomatik olarak kapatılır
-- Geçersiz UI durumları server-side olarak engellenir
+- Geçersiz arayüz durumları server-side olarak engellenir

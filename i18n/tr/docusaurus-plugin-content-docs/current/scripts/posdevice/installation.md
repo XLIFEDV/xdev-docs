@@ -4,8 +4,6 @@ description: POSDEVICE scriptinin kurulumu ve yapılandırılması
 sidebar_position: 1
 ---
 
-## Kurulum
-
 Bu sayfa, **POSDEVICE** scriptinin sunucunuza doğru şekilde nasıl kurulacağını açıklar.
 
 Yapılandırma veya çalışma zamanı (runtime) sorunları yaşamamak için her adımı dikkatlice takip ettiğinizden emin olun.
@@ -17,7 +15,7 @@ Yapılandırma veya çalışma zamanı (runtime) sorunları yaşamamak için her
 POSDEVICE kurulumu yapmadan önce sunucunuzun aşağıdaki gereksinimleri karşıladığından emin olun:
 
 - Çalışır durumda bir FiveM sunucusu
-- Desteklenen bir framework (kurulumunuza bağlı olarak QB / ESX)
+- Desteklenen bir framework (kurulumunuza bağlı olarak QB)
 - `qb-target` veya uyumlu bir hedefleme sistemi (opsiyonel ancak önerilir)
 - Server ve client dosyalarına erişim yetkisi
 
@@ -103,8 +101,8 @@ Kurulumun başarılı olduğunu doğrulamak için:
 
 Kurulumdan sonra aşağıdaki bölümlerle devam edebilirsiniz:
 
-* Yapılandırma
-* Kullanım
-* Entegrasyonlar (`qb-target`, özel sistemler)
+* [Yapılandırma](./config/overview)
+* [Kullanım](./usage/overview)
+* [Entegrasyonlar](./usage/qb-target) (`qb-target`, özel sistemler)
 
 Bu konular ayrı sayfalarda detaylı olarak dokümante edilmiştir.

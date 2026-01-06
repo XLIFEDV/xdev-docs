@@ -4,8 +4,6 @@ description: How to install and set up the POSDEVICE script
 sidebar_position: 1
 ---
 
-## Installation
-
 This page explains how to install the **POSDEVICE** script correctly on your server.
 
 Make sure to follow each step carefully to avoid configuration or runtime issues.
@@ -17,7 +15,7 @@ Make sure to follow each step carefully to avoid configuration or runtime issues
 Before installing POSDEVICE, ensure your server meets the following requirements:
 
 - A working FiveM server
-- A supported framework (QB / ESX if required by your setup)
+- A supported framework (QB if required by your setup)
 - `qb-target` or a compatible targeting system (optional but recommended)
 - Access to server and client files
 

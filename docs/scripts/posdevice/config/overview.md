@@ -10,12 +10,18 @@ The configuration is split into multiple pages to keep each topic focused and ea
 
 ## What you’ll find here
 
-- **System Settings**: Core behavior and general toggles
-- **Debug Settings**: Debug mode and startup logging
-- **History System**: Transaction history logic and access rules
-- **Override Settings**: Advanced client/server overrides
-- **Event Triggers**: Client/server hooks and integration points
-- **UI Settings**: UI behavior and appearance configuration
+- **System Settings**
+  - Core behavior and general toggles
+- **Debug Settings**
+  - Debug mode and startup logging
+- **History System**
+  - Transaction history logic and access rules
+- **Override Settings** / *FOR DEVELOPERS*
+  - Advanced client/server overrides
+- **Event Triggers**
+  - Client/server hooks and integration points
+- **UI Settings**
+  - UI behavior and appearance configuration
 
 ## Quick links
 

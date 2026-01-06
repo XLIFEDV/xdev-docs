@@ -4,8 +4,6 @@ description: How POSDEVICE is used in practice
 sidebar_position: 1
 ---
 
-# POSDEVICE Usage
-
 This document explains how the POS Device system behaves during real usage scenarios.
 
 ---

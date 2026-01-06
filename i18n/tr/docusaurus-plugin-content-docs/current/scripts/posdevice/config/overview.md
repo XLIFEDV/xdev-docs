@@ -1,21 +1,27 @@
 ---
-title: Configuration Overview
+title: Yapılandırma bölümü
 sidebar_position: 1
 description: XDEV POS Device içindeki tüm yapılandırma alanlarının genel görünümü.
 ---
 
-Bu bölüm, **XDEV POS Device** içerisinde bulunan tüm yapılandırma seçeneklerini dokümante eder.
+Bu bölüm, **POSDEVICE** içerisinde bulunan tüm yapılandırma seçeneklerini dokümante eder.
 
 Yapılandırmalar, her konunun odaklı ve sürdürülebilir olması için birden fazla sayfaya ayrılmıştır.
 
 ## Bu bölümde neler bulacaksınız
 
-- **System Settings**: Temel sistem davranışı ve genel anahtarlar  
-- **Debug Settings**: Debug modu ve başlangıç (startup) loglama ayarları  
-- **History System**: İşlem geçmişi mantığı ve erişim kuralları  
-- **Override Settings**: Gelişmiş istemci/sunucu override ayarları  
-- **Event Triggers**: Client/server tetikleyicileri ve entegrasyon noktaları  
-- **UI Settings**: Arayüz davranışı ve görünüm yapılandırmaları  
+- **System Settings** / *Sistem ayarları*
+  - Temel sistem davranışı ve genel anahtarlar  
+- **Debug Settings** / *Hata ayıklama ayarları*
+  - Debug modu ve başlangıç (startup) loglama ayarları  
+- **History System** / *Geçmiş sistemi*
+  - İşlem geçmişi mantığı ve erişim kuralları  
+- **Override Settings** / *Üzerine yazma ayarları [GELİŞTİRİCİLER İÇİN]*
+  - Gelişmiş istemci/sunucu override ayarları  
+- **Event Triggers** / *Tetikleyici ayarları*
+  - Client/server tetikleyicileri ve entegrasyon noktaları  
+- **UI Settings** / *Arayüz ayarları*
+  - Arayüz davranışı ve görünüm yapılandırmaları  
 
 ## Hızlı bağlantılar
 

@@ -4,8 +4,6 @@ description: POSDEVICE’in qb-target ile entegrasyonu
 sidebar_position: 1
 ---
 
-# qb-target Entegrasyonu
-
 Bu belge, **POSDEVICE** scriptinin `qb-target` ile nasıl entegre edileceğini açıklar.  
 Bu entegrasyon sayesinde oyuncular POS Device kullanarak birbirleriyle etkileşime girebilir.
 

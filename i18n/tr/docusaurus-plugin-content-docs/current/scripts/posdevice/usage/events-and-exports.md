@@ -4,8 +4,6 @@ description: POSDEVICE event ve export referansı
 sidebar_position: 2
 ---
 
-# Eventler & Exportlar
-
 Bu belge, **POSDEVICE** sistemi tarafından sağlanan tüm **event** ve **export**’ları açıklar.
 
 ---

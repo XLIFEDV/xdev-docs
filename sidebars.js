@@ -30,14 +30,6 @@ const sidebars = {
                     },
                     {
                       "type": "doc",
-                      "id": "scripts/posdevice/config/ui/general-ui"
-                    },
-                    {
-                      "type": "doc",
-                      "id": "scripts/posdevice/config/ui/layout"
-                    },
-                    {
-                      "type": "doc",
                       "id": "scripts/posdevice/config/ui/credit-card-ui"
                     }
                   ]

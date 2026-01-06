@@ -1,10 +1,10 @@
 ---
-title: Override Settings
+title: Üzerine yazma ayarları
 sidebar_position: 5
 description: İstemci (client) ve sunucu (server) tarafındaki kontroller için gelişmiş override ayarları.
 ---
 
-Override Settings, normal doğrulama (validation) kurallarını **bypass eden** veya **yeniden düzenleyen** gelişmiş anahtarlardır.
+Normal doğrulama (validation) kurallarını **bypass eden** veya **yeniden düzenleyen** gelişmiş anahtarlardır.
 
 ## Override ayarları neden vardır?
 

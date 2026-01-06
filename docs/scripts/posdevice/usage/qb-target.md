@@ -4,8 +4,6 @@ description: Integrating POSDEVICE with qb-target
 sidebar_position: 1
 ---
 
-# qb-target Integration
-
 This document explains how to integrate **POSDEVICE** with `qb-target` so players can interact with each other using the POS Device.
 
 ---
