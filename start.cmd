@@ -1,15 +1,13 @@
 @echo off
-setlocal EnableExtensions EnableDelayedExpansion
 chcp 65001 >nul
-title XDEV Docs Geliştirici Yardımcısı
+title XDEV Docs Gelistirici Yardimcisi
 color 0A
 
 REM -------------------------------------------------
-REM Pencere asla kapanmasin diye kendini /K ile ac
-REM (Çift tıkla açınca bile kapanmaz)
+REM Cift tikla acinca kapanmasin diye /K ile yeniden ac
 REM -------------------------------------------------
 if /I not "%~1"=="__RUN" (
-  cmd /v:on /k ""%~f0" __RUN"
+  cmd /k ""%~f0" __RUN"
   exit /b
 )
 
@@ -67,7 +65,7 @@ echo.
 call npm run build
 if errorlevel 1 (
   echo.
-  echo [HATA] Build basarisiz oldu!
+  echo [HATA] Build basarisiz oldu. Menuye donuluyor.
   pause
   goto menu
 )
@@ -88,7 +86,7 @@ echo.
 call npm run build
 if errorlevel 1 (
   echo.
-  echo [HATA] Build basarisiz! Push iptal edildi.
+  echo [HATA] Build basarisiz. Push iptal edildi.
   pause
   goto menu
 )
@@ -97,7 +95,8 @@ echo.
 echo [OK] Build basarili. Commit asamasina geciliyor.
 echo.
 
-set /p mesaj=Commit mesaji gir:
+set "mesaj="
+set /p "mesaj=Commit mesaji gir: "
 if "%mesaj%"=="" (
   echo.
   echo [HATA] Commit mesaji bos olamaz.
