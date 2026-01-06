@@ -1,23 +1,20 @@
 {
-  "version.label": {
-    "message": "İleri"
-  },
   "sidebar.tutorialSidebar.category.scripts": {
-    "message": "EKLENTİLER"
+    "message": "SCRIPTS"
   },
   "sidebar.tutorialSidebar.category.posdevice": {
-    "message": "POS CİHAZI"
+    "message": "POS DEVICE"
   },
   "sidebar.tutorialSidebar.category.config": {
-    "message": "YAPILANDIRMA"
+    "message": "CONFIGURATION"
   },
   "sidebar.tutorialSidebar.category.ui": {
-    "message": "ARAYÜZ"
+    "message": "UI"
   },
   "sidebar.tutorialSidebar.category.usage": {
-    "message": "KULLANIM"
+    "message": "USAGE"
   },
   "sidebar.tutorialSidebar.category.vehicles": {
-    "message": "ARAÇLAR"
+    "message": "VEHICLES"
   }
 }

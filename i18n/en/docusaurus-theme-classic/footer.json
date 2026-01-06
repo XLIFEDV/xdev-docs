@@ -1,0 +1,11 @@
+{
+  "link.title.vehicles": {
+    "message": "VEHICLES"
+  },
+  "link.title.scripts": {
+    "message": "SCRIPTS"
+  },
+  "link.item.label.posdevice": {
+    "message": "POS DEVICE"
+  }
+}

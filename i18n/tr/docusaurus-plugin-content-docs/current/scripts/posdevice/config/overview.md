@@ -24,4 +24,4 @@ Yapılandırmalar, her konunun odaklı ve sürdürülebilir olması için birden
 - [History System](./history-system)
 - [Override Settings](./override-settings)
 - [Event Triggers](./event-triggers)
-- [UI Settings](./UI/overview)
+- [UI Settings](./ui/overview)

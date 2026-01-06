@@ -1,42 +1,32 @@
 {
-  "link.title.VEHICLES": {
-    "message": "ARAÇLAR",
-    "description": "The title of the footer links column with title=VEHICLES in the footer"
+  "link.title.vehicles": {
+    "message": "ARAÇLAR"
   },
-  "link.title.SCRIPTS": {
-    "message": "EKLENTİLER",
-    "description": "The title of the footer links column with title=SCRIPTS in the footer"
+  "link.title.scripts": {
+    "message": "EKLENTİLER"
   },
   "link.title.MORE": {
-    "message": "DAHA FAZLA",
-    "description": "The title of the footer links column with title=MORE in the footer"
+    "message": "DAHA FAZLA"
   },
   "link.title.CONTACT": {
-    "message": "İLETİŞİM",
-    "description": "The title of the footer links column with title=CONTACT in the footer"
+    "message": "İLETİŞİM"
   },
-  "link.item.label.POS DEVICE": {
-    "message": "POS CİHAZI",
-    "description": "The label of footer link with label=POS DEVICE linking to /SCRIPTS/POS DEVICE/CONFIGURATION/overview"
+  "link.item.label.posdevice": {
+    "message": "POS CİHAZI"
   },
   "link.item.label.DOCUMENTATIONS": {
-    "message": "DÖKÜMANTASYONLAR",
-    "description": "The label of footer link with label=DOCUMENTATIONS linking to /"
+    "message": "DÖKÜMANTASYONLAR"
   },
   "link.item.label.FAQ": {
-    "message": "SSS",
-    "description": "The label of footer link with label=FAQ linking to /faq"
+    "message": "SSS"
   },
   "link.item.label.Tebex Store": {
-    "message": "Tebex Mağazası",
-    "description": "The label of footer link with label=Tebex Store linking to https://xdev.tebex.io"
+    "message": "Tebex Mağazası"
   },
   "link.item.label.Discord Support": {
-    "message": "Discord Destek",
-    "description": "The label of footer link with label=Discord Support linking to https://discord.gg/xdevelopment"
+    "message": "Discord Destek"
   },
   "copyright": {
-    "message": "Copyright © 2026 XDEVELOPMENT. Bütün hakları saklıdır",
-    "description": "The footer copyright"
+    "message": "Copyright © 2026 XDEVELOPMENT. Bütün hakları saklıdır"
   }
 }

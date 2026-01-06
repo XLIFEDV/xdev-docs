@@ -56,7 +56,6 @@ const config = {
         href: "/",           // docs ana sayfana gitsin
       },
       items: [
-        { to: '/faq', label: 'FAQ', position: 'right' },
         { type: 'localeDropdown', position: 'right' },
       ],
     },

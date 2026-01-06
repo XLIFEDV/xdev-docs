@@ -17,4 +17,4 @@ This page documents the event triggers and integration hooks used by XDEV POS De
 
 - See: **Usage → Events & Exports**  
   If you keep usage in a separate section, link it:
-  - [Events & Exports](../USAGE/events-and-exports)
+  - [Events & Exports](../usage/events-and-exports)

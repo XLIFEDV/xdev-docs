@@ -19,4 +19,4 @@ Aşağıdaki event türleri burada yer almalıdır:
 
 - Bkz: **Kullanım → Eventler & Exportlar**  
   Eğer kullanım belgelerini ayrı bir bölümde tutuyorsanız buraya linkleyin:
-  - [Eventler & Exportlar](../USAGE/events-and-exports)
+  - [Eventler & Exportlar](../usage/events-and-exports)
