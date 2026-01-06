@@ -21,7 +21,3 @@ When you add UI options, always include:
 - **What changes when you tweak it**
 - **Screenshot/gif** (later)
 - **Example config**
-
-:::tip
-If you later add image support in docs, place images in `/static/img/...` and reference them in markdown.
-:::

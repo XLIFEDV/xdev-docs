@@ -53,10 +53,10 @@ const config = {
       title: 'XDEVELOPMENT',
       logo: { alt: 'XDEVELOPMENT', src: 'img/logo.png' },
       items: [
-        { to: '/overview', label: 'Documentions', position: 'left' },
+        { to: '/overview', label: 'DOCUMENTIONS', position: 'left' },
 
-        { type: 'dropdown', label: 'Cars', items: generated.cars },
-        { type: 'dropdown', label: 'Scripts', items: generated.scripts },
+        { type: 'dropdown', label: 'VEHICLES', items: generated.vehicles },
+        { type: 'dropdown', label: 'SCRIPTS', items: generated.scripts },
 
         { to: '/faq', label: 'FAQ', position: 'right' },
         { type: 'localeDropdown', position: 'right' },
@@ -66,12 +66,12 @@ const config = {
     footer: {
       style: 'dark',
       links: [
-        { title: 'Cars', items: generated.cars },
-        { title: 'Scripts', items: generated.scripts },
+        { title: 'VEHICLES', items: generated.vehicles },
+        { title: 'SCRIPTS', items: generated.scripts },
         {
           title: 'More',
           items: [
-            { to: '/overview', label: 'Documentions' },
+            { to: '/overview', label: 'DOCUMENTIONS' },
             { to: '/faq', label: 'FAQ' },
           ],
         },

@@ -23,7 +23,3 @@ UI ile ilgili yeni bir ayar eklerken aşağıdaki bilgileri mutlaka ekleyin:
 - **Ayar değiştirildiğinde neyin değiştiği**
 - **Ekran görüntüsü / gif** (ileride)
 - **Örnek yapılandırma**
-
-:::tip
-İleride dokümantasyona görsel desteği eklerseniz, görselleri `/static/img/...` altına koyup markdown içerisinde referans verebilirsiniz.
-:::
