@@ -4,6 +4,15 @@ chcp 65001 >nul
 title XDEV Docs Geliştirici Yardımcısı
 color 0A
 
+REM -------------------------------------------------
+REM Pencere asla kapanmasin diye kendini /K ile ac
+REM (Çift tıkla açınca bile kapanmaz)
+REM -------------------------------------------------
+if /I not "%~1"=="__RUN" (
+  cmd /v:on /k ""%~f0" __RUN"
+  exit /b
+)
+
 :menu
 cls
 echo ======================================
@@ -105,6 +114,8 @@ if errorlevel 1 (
   goto menu
 )
 
+echo.
+echo [INFO] Push atiliyor...
 call git push
 if errorlevel 1 (
   echo.
@@ -142,4 +153,4 @@ goto menu
 
 :cikis
 echo Cikiliyor...
-exit /b
+exit
