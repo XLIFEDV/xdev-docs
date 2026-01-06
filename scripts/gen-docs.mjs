@@ -4,8 +4,7 @@ import path from "path";
 
 const DOCS_DIR = path.resolve("docs");
 const OUT_SIDEBARS = path.resolve("sidebars.js");
-const OUT_LINKS_EN = path.resolve("generated.links.en.json");
-const OUT_LINKS_TR = path.resolve("generated.links.tr.json");
+const OUT_LINKS = path.resolve("generated.links.json");
 
 const ROOT_GROUPS = ["cars", "scripts"]; // docs/cars, docs/scripts
 const isMarkdown = (p) => p.endsWith(".md") || p.endsWith(".mdx");
@@ -180,8 +179,7 @@ async function buildGroupLinks(groupName) {
   return [...bestByProduct.entries()]
     .sort((a, b) => a[0].localeCompare(b[0]))
     .map(([product, v]) => ({
-      label: folderLabel(product),             // fallback (EN gibi)
-      labelKey: `nav.product.${groupName}.${product}`,  // örn: nav.cars.overview, nav.scripts.posdevice
+      label: folderLabel(product),
       to: `/${v.docId}`, // routeBasePath: '/'
     }));
 }
@@ -216,8 +214,7 @@ async function main() {
   const scripts = await buildGroupLinks("scripts");
 
   const generated = { cars, scripts };
-  await fs.writeFile(OUT_LINKS_EN, JSON.stringify(generated, null, 2), "utf8");
-  await fs.writeFile(OUT_LINKS_TR, JSON.stringify(generated, null, 2), "utf8");
+  await fs.writeFile(OUT_LINKS, JSON.stringify(generated, null, 2), "utf8");
 
   console.log(`[gen-docs] sidebars.js + generated.links.json written. Docs found: ${allDocs.length}`);
   console.log(`[gen-docs] cars: ${cars.length}, scripts: ${scripts.length}`);

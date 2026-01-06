@@ -86,6 +86,10 @@ const sidebars = {
               "items": [
                 {
                   "type": "doc",
+                  "id": "SCRIPTS/POS DEVICE/Usage/overview"
+                },
+                {
+                  "type": "doc",
                   "id": "SCRIPTS/POS DEVICE/Usage/qb-target"
                 },
                 {
