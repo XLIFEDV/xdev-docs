@@ -9,6 +9,16 @@ const OUT_LINKS = path.resolve("generated.links.json");
 const ROOT_GROUPS = ["cars", "scripts"]; // docs/cars, docs/scripts
 const isMarkdown = (p) => p.endsWith(".md") || p.endsWith(".mdx");
 
+async function findDirCaseInsensitive(parentDir, wantedName) {
+  const entries = await fs.readdir(parentDir, { withFileTypes: true });
+  const found = entries.find(
+    (e) => e.isDirectory() && e.name.toLowerCase() === wantedName.toLowerCase()
+  );
+  return found ? path.join(parentDir, found.name) : null;
+}
+
+// docs/<...>.md -> <...> (doc id)  (ZATEN VAR SENDEN)
+
 async function exists(p) {
   try { await fs.access(p); return true; } catch { return false; }
 }
@@ -135,25 +145,31 @@ async function buildSidebarTree(docFiles) {
 // ✅ group footer/navbar links = product folders under docs/<group>/
 // rule: each product -> pick best landing doc automatically (overview > main > index > first found)
 async function buildGroupLinks(groupName) {
-  const groupDir = path.join(DOCS_DIR, groupName);
-  if (!(await exists(groupDir))) return [];
+  const groupDir = await findDirCaseInsensitive(DOCS_DIR, groupName);
+  if (!groupDir) return [];
 
   const all = await walk(groupDir);
 
-  // product = first folder under group
+  // product = first folder under the group folder
+  // (scripts/posdevice/... -> product: posdevice)
   const bestByProduct = new Map();
 
   for (const abs of all) {
-    const docId = toDocId(abs);           // scripts/posdevice/config/...
-    const rel = docId.slice(groupName.length + 1); // remove "scripts/"
-    const parts = rel.split("/");
-    const product = parts[0];
+    const docId = toDocId(abs); // örn: "SCRIPTS/posdevice/config/overview"
+    const parts = docId.split("/");
+
+    // group = first segment (case-insensitive)
+    if (!parts[0] || parts[0].toLowerCase() !== groupName.toLowerCase()) continue;
+
+    const product = parts[1];
     const page = parts[parts.length - 1];
+    if (!product) continue;
 
     const score =
       page === "overview" ? 0 :
       page === "main" ? 1 :
       page === "index" ? 2 :
+      page === "readme" ? 3 :
       10;
 
     const prev = bestByProduct.get(product);
@@ -164,7 +180,7 @@ async function buildGroupLinks(groupName) {
     .sort((a, b) => a[0].localeCompare(b[0]))
     .map(([product, v]) => ({
       label: folderLabel(product),
-      to: `/${v.docId}`, // routeBasePath '/'
+      to: `/${v.docId}`, // routeBasePath: '/'
     }));
 }
 
