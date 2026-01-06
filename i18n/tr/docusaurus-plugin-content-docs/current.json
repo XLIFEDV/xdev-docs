@@ -1,0 +1,30 @@
+{
+  "version.label": {
+    "message": "İleri",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.SCRIPTS": {
+    "message": "EKLENTİLER",
+    "description": "The label for category 'SCRIPTS' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.POS DEVICE": {
+    "message": "POS CİHAZI",
+    "description": "The label for category 'POS DEVICE' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.CONFIGURATION": {
+    "message": "YAPILANDIRMA",
+    "description": "The label for category 'CONFIGURATION' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.UI": {
+    "message": "ARAYÜZ",
+    "description": "The label for category 'UI' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.USAGE": {
+    "message": "KULLANIM",
+    "description": "The label for category 'USAGE' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.VEHICLES": {
+    "message": "ARAÇLAR",
+    "description": "The label for category 'VEHICLES' in sidebar 'tutorialSidebar'"
+  }
+}
