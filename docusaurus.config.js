@@ -1,4 +1,5 @@
 /** @type {import('@docusaurus/types').Config} */
+const locale = process.env.DOCUSAURUS_CURRENT_LOCALE || 'en';
 const generated = require(`./generated.links.json`);
 
 const config = {
@@ -75,7 +76,7 @@ const config = {
           ],
         },
         {
-          title: 'Contact',
+          title: (locale=='tr'&&'İletişim'||'Contact'),
           items: [
             { label: 'Tebex Store', href: 'https://xdev.tebex.io' },
             { label: 'Discord Support', href: 'https://discord.gg/xdevelopment' },
