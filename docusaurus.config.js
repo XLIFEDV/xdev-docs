@@ -3,6 +3,8 @@
 const locale = process.env.DOCUSAURUS_CURRENT_LOCALE || 'en';
 const generated = require(`./generated.links.${locale}.json`);
 
+const { translate } = require("@docusaurus/Translate");
+const t = (id, fallback) => translate({ id, message: fallback });
 const localizeItems = (items) =>
   items.map((x) => ({
     ...x,
