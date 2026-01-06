@@ -5,6 +5,9 @@
   "link.title.scripts": {
     "message": "SCRIPTS"
   },
+  "link.item.label.overview": {
+    "message": "OVERVIEW"
+  },
   "link.item.label.posdevice": {
     "message": "POS DEVICE"
   }

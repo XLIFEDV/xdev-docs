@@ -1,14 +1,14 @@
 {
   "vehicles": [
     {
-      "label": "OVERVIEW",
-      "to": "/VEHICLES/overview"
+      "label": "overview",
+      "to": "/vehicles/overview"
     }
   ],
   "scripts": [
     {
-      "label": "POS DEVICE",
-      "to": "/SCRIPTS/POS DEVICE/CONFIGURATION/overview"
+      "label": "posdevice",
+      "to": "/scripts/posdevice/config/overview"
     }
   ]
 }

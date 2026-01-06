@@ -42,7 +42,7 @@ function toDocId(absPath) {
 
 // "posdevice" -> "POSDEVICE", "bank-system" -> "BANK SYSTEM"
 function folderLabel(name) {
-  return name.replace(/[-_]/g, " ").toUpperCase();
+  return name.replace(/[-_]/g, " ").toLowerCase();
 }
 
 // read frontmatter sidebar_position (optional)
@@ -110,7 +110,7 @@ async function buildSidebarTree(docFiles) {
       if (it.type === "category") {
         const full = [...prefix, it.label];
         if (full.length === 1) it.label = folderLabel(it.label);
-        else it.label = it.label.replace(/[-_]/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+        else it.label = it.label.replace(/[-_]/g, " ").replace(/\b\w/g, c => c.toLowerCase());
         prettify(it.items, full);
       }
     }

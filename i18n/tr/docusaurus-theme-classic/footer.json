@@ -5,14 +5,17 @@
   "link.title.scripts": {
     "message": "EKLENTİLER"
   },
+  "link.item.label.overview": {
+    "message": "OVERVIEW"
+  },
+  "link.item.label.posdevice": {
+    "message": "POS CİHAZI"
+  },
   "link.title.MORE": {
     "message": "DAHA FAZLA"
   },
   "link.title.CONTACT": {
     "message": "İLETİŞİM"
-  },
-  "link.item.label.posdevice": {
-    "message": "POS CİHAZI"
   },
   "link.item.label.DOCUMENTATIONS": {
     "message": "DÖKÜMANTASYONLAR"

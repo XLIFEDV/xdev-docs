@@ -6,90 +6,90 @@ const sidebars = {
   "tutorialSidebar": [
     {
       "type": "category",
-      "label": "SCRIPTS",
+      "label": "scripts",
       "collapsed": true,
       "items": [
         {
           "type": "category",
-          "label": "POS DEVICE",
+          "label": "posdevice",
           "collapsed": true,
           "items": [
             {
               "type": "category",
-              "label": "CONFIGURATION",
+              "label": "config",
               "collapsed": true,
               "items": [
                 {
                   "type": "category",
-                  "label": "UI",
+                  "label": "ui",
                   "collapsed": true,
                   "items": [
                     {
                       "type": "doc",
-                      "id": "SCRIPTS/POS DEVICE/CONFIGURATION/UI/overview"
+                      "id": "scripts/posdevice/config/ui/overview"
                     },
                     {
                       "type": "doc",
-                      "id": "SCRIPTS/POS DEVICE/CONFIGURATION/UI/general-ui"
+                      "id": "scripts/posdevice/config/ui/general-ui"
                     },
                     {
                       "type": "doc",
-                      "id": "SCRIPTS/POS DEVICE/CONFIGURATION/UI/layout"
+                      "id": "scripts/posdevice/config/ui/layout"
                     },
                     {
                       "type": "doc",
-                      "id": "SCRIPTS/POS DEVICE/CONFIGURATION/UI/credit-card-ui"
+                      "id": "scripts/posdevice/config/ui/credit-card-ui"
                     }
                   ]
                 },
                 {
                   "type": "doc",
-                  "id": "SCRIPTS/POS DEVICE/CONFIGURATION/overview"
+                  "id": "scripts/posdevice/config/overview"
                 },
                 {
                   "type": "doc",
-                  "id": "SCRIPTS/POS DEVICE/CONFIGURATION/system-settings"
+                  "id": "scripts/posdevice/config/system-settings"
                 },
                 {
                   "type": "doc",
-                  "id": "SCRIPTS/POS DEVICE/CONFIGURATION/debug-settings"
+                  "id": "scripts/posdevice/config/debug-settings"
                 },
                 {
                   "type": "doc",
-                  "id": "SCRIPTS/POS DEVICE/CONFIGURATION/history-system"
+                  "id": "scripts/posdevice/config/history-system"
                 },
                 {
                   "type": "doc",
-                  "id": "SCRIPTS/POS DEVICE/CONFIGURATION/override-settings"
+                  "id": "scripts/posdevice/config/override-settings"
                 },
                 {
                   "type": "doc",
-                  "id": "SCRIPTS/POS DEVICE/CONFIGURATION/event-triggers"
+                  "id": "scripts/posdevice/config/event-triggers"
                 }
               ]
             },
             {
               "type": "category",
-              "label": "USAGE",
+              "label": "usage",
               "collapsed": true,
               "items": [
                 {
                   "type": "doc",
-                  "id": "SCRIPTS/POS DEVICE/USAGE/overview"
+                  "id": "scripts/posdevice/usage/overview"
                 },
                 {
                   "type": "doc",
-                  "id": "SCRIPTS/POS DEVICE/USAGE/qb-target"
+                  "id": "scripts/posdevice/usage/qb-target"
                 },
                 {
                   "type": "doc",
-                  "id": "SCRIPTS/POS DEVICE/USAGE/events-and-exports"
+                  "id": "scripts/posdevice/usage/events-and-exports"
                 }
               ]
             },
             {
               "type": "doc",
-              "id": "SCRIPTS/POS DEVICE/installation"
+              "id": "scripts/posdevice/installation"
             }
           ]
         }
@@ -97,12 +97,12 @@ const sidebars = {
     },
     {
       "type": "category",
-      "label": "VEHICLES",
+      "label": "vehicles",
       "collapsed": true,
       "items": [
         {
           "type": "doc",
-          "id": "VEHICLES/overview"
+          "id": "vehicles/overview"
         }
       ]
     },
