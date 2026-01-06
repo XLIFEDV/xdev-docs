@@ -168,9 +168,9 @@ if errorlevel 1 (
 )
 
 call :info "FORCE PUSH yapiliyor (repo=local)..."
-git push --force-with-lease
+git push --force
 if errorlevel 1 (
-  call :err "Force push basarisiz. Muhtemelen remote degismis (lease reddetti)."
+  call :err "Force push basarisiz."
   call :pauseBack
 )
 
