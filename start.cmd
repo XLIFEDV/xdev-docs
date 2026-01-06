@@ -1,4 +1,5 @@
 @echo off
+setlocal EnableExtensions EnableDelayedExpansion
 chcp 65001 >nul
 title XDEV Docs Geliştirici Yardımcısı
 color 0A
@@ -13,7 +14,7 @@ echo Kullanilabilir Komutlar:
 echo.
 echo  1  - Lokal calistir (EN)
 echo  2  - Lokal calistir (TR)
-echo  3  - Push (commit mesaji sorar)
+echo  3  - Push (Once build kontrol eder)
 echo  4  - Git status
 echo  5  - Branch goster
 echo  6  - Build (npm run build)
@@ -27,61 +28,118 @@ if "%secim%"=="3" goto push
 if "%secim%"=="4" goto status
 if "%secim%"=="5" goto branch
 if "%secim%"=="6" goto build
-if "%secim%"=="0" exit
+if "%secim%"=="0" goto cikis
 goto menu
 
 :start_en
 cls
 echo [INFO] Lokal site baslatiliyor (EN)...
-npm run start
-if errorlevel 1 goto hata
-goto basarili
+echo       Durdurmak icin Ctrl+C kullan.
+echo.
+call npm run start
+echo.
+pause
+goto menu
 
 :start_tr
 cls
 echo [INFO] Lokal site baslatiliyor (TR)...
-npm run start -- --locale tr
-if errorlevel 1 goto hata
-goto basarili
+echo       Durdurmak icin Ctrl+C kullan.
+echo.
+call npm run start -- --locale tr
+echo.
+pause
+goto menu
 
 :build
 cls
 echo [INFO] Build aliniyor...
-npm run build
-if errorlevel 1 goto hata
-goto basarili
+echo.
+call npm run build
+if errorlevel 1 (
+  echo.
+  echo [HATA] Build basarisiz oldu!
+  pause
+  goto menu
+)
+echo.
+echo [OK] Build basarili.
+pause
+goto menu
 
 :push
 cls
-set /p mesaj=Commit mesaji gir: 
-if "%mesaj%"=="" goto menu
-git add .
-git commit -m "%mesaj%"
-if errorlevel 1 goto hata
-git push
-if errorlevel 1 goto hata
-goto basarili
+echo ======================================
+echo      PUSH (BUILD KONTROLLU)
+echo ======================================
+echo.
+
+echo [INFO] Once build kontrol ediliyor...
+echo.
+call npm run build
+if errorlevel 1 (
+  echo.
+  echo [HATA] Build basarisiz! Push iptal edildi.
+  pause
+  goto menu
+)
+
+echo.
+echo [OK] Build basarili. Commit asamasina geciliyor.
+echo.
+
+set /p mesaj=Commit mesaji gir:
+if "%mesaj%"=="" (
+  echo.
+  echo [HATA] Commit mesaji bos olamaz.
+  pause
+  goto menu
+)
+
+call git add .
+call git commit -m "%mesaj%"
+if errorlevel 1 (
+  echo.
+  echo [HATA] Commit atilamadi (degisiklik olmayabilir).
+  pause
+  goto menu
+)
+
+call git push
+if errorlevel 1 (
+  echo.
+  echo [HATA] Push basarisiz oldu.
+  pause
+  goto menu
+)
+
+echo.
+echo [OK] Build + Commit + Push tamamlandi.
+pause
+goto menu
 
 :status
 cls
-git status
+echo [INFO] Git status:
+echo.
+call git status
+echo.
 pause
 goto menu
 
 :branch
 cls
-git branch --show-current
+echo [INFO] Mevcut branch:
+echo.
+call git branch --show-current
+if errorlevel 1 (
+  echo (branch bilgisi alinmadi, tum branchler:)
+  call git branch
+)
+echo.
 pause
 goto menu
 
-:hata
-echo.
-echo [HATA] Komut basarisiz oldu!
-pause
-goto menu
-
-:basarili
-echo.
-echo [OK] Islem basariyla tamamlandi.
-pause
-goto menu
+:cikis
+echo Cikiliyor...
+exit /b
