@@ -1,7 +1,7 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const generated = require('./generated.links.json');
-const { translate } = require("@docusaurus/Translate");
+const { translate } = require('@docusaurus/theme-common');
 const t = (id, fallback) => translate({ id, message: fallback });
 
 const localizeItems = (items) =>

@@ -1,7 +1,6 @@
-import React from 'react';
 import Layout from '@theme/Layout';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-const { translate } = require("@docusaurus/Translate");
+const { translate } = require('@docusaurus/theme-common');
 const t = (id, fallback) => translate({ id, message: fallback });
 
 export default function Home() {
