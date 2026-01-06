@@ -24,4 +24,4 @@ The configuration is split into multiple pages to keep each topic focused and ea
 - [History System](./history-system)
 - [Override Settings](./override-settings)
 - [Event Triggers](./event-triggers)
-- [UI Settings](./UI/overview)
+- [UI Settings](./ui/overview)
