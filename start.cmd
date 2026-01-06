@@ -79,26 +79,37 @@ cls
 echo ======================================
 echo      PUSH (BUILD KONTROLLU)
 echo ======================================
-echo.
 
 echo [INFO] Once build kontrol ediliyor...
-echo.
 call npm run build
 if errorlevel 1 (
-  echo.
   echo [HATA] Build basarisiz. Push iptal edildi.
   pause
   goto menu
 )
 
-echo.
-echo [OK] Build basarili. Commit asamasina geciliyor.
-echo.
+echo [OK] Build basarili.
 
+REM Degisiklik var mi kontrol et
+for /f %%A in ('git status --porcelain') do set "HAS_CHANGES=1"
+if not defined HAS_CHANGES (
+  echo [INFO] Degisiklik yok. Commit atlanacak, sadece push yapilacak...
+  call git push
+  if errorlevel 1 (
+    echo [HATA] Push basarisiz oldu.
+    pause
+    goto menu
+  )
+  echo [OK] Push tamamlandi.
+  pause
+  goto menu
+)
+
+REM Degisiklik varsa commit iste
+set "HAS_CHANGES="
 set "mesaj="
 set /p "mesaj=Commit mesaji gir: "
 if "%mesaj%"=="" (
-  echo.
   echo [HATA] Commit mesaji bos olamaz.
   pause
   goto menu
@@ -107,23 +118,18 @@ if "%mesaj%"=="" (
 call git add .
 call git commit -m "%mesaj%"
 if errorlevel 1 (
-  echo.
-  echo [HATA] Commit atilamadi (degisiklik olmayabilir).
+  echo [HATA] Commit atilamadi.
   pause
   goto menu
 )
 
-echo.
-echo [INFO] Push atiliyor...
 call git push
 if errorlevel 1 (
-  echo.
   echo [HATA] Push basarisiz oldu.
   pause
   goto menu
 )
 
-echo.
 echo [OK] Build + Commit + Push tamamlandi.
 pause
 goto menu
