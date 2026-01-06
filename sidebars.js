@@ -171,23 +171,23 @@ const sidebars = {
       "items": [
         {
           "type": "category",
-          "label": "maroonshu pack",
+          "label": "maroonshupack",
           "collapsed": true,
           "items": [
             {
               "type": "doc",
-              "id": "vehicles/maroonshu-pack/overview"
+              "id": "vehicles/maroonshupack/overview"
             }
           ]
         },
         {
           "type": "category",
-          "label": "maroonshu pack woems",
+          "label": "maroonshupackwoems",
           "collapsed": true,
           "items": [
             {
               "type": "doc",
-              "id": "vehicles/maroonshu-pack-woems/overview"
+              "id": "vehicles/maroonshupackwoems/overview"
             }
           ]
         },

@@ -1,12 +1,12 @@
 {
   "vehicles": [
     {
-      "label": "maroonshu pack",
-      "to": "/vehicles/maroonshu-pack/overview"
+      "label": "maroonshupack",
+      "to": "/vehicles/maroonshupack/overview"
     },
     {
-      "label": "maroonshu pack woems",
-      "to": "/vehicles/maroonshu-pack-woems/overview"
+      "label": "maroonshupackwoems",
+      "to": "/vehicles/maroonshupackwoems/overview"
     },
     {
       "label": "overview",

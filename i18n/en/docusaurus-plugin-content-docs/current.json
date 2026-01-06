@@ -2,8 +2,29 @@
   "sidebar.tutorialSidebar.category.scripts": {
     "message": "SCRIPTS"
   },
+  "sidebar.tutorialSidebar.category.bank": {
+    "message": "BANKING"
+  },
+  "sidebar.tutorialSidebar.category.freecam": {
+    "message": "FREECAM"
+  },
+  "sidebar.tutorialSidebar.category.hackerjob": {
+    "message": "HACKER JOB"
+  },
+  "sidebar.tutorialSidebar.category.hackerphone": {
+    "message": "HACKER PHONE"
+  },
+  "sidebar.tutorialSidebar.category.illegalphone": {
+    "message": "ILLEGAL PHONE"
+  },
   "sidebar.tutorialSidebar.category.posdevice": {
     "message": "POS DEVICE"
+  },
+  "sidebar.tutorialSidebar.category.racing": {
+    "message": "RACING"
+  },
+  "sidebar.tutorialSidebar.category.scenario": {
+    "message": "SCENARIO"
   },
   "sidebar.tutorialSidebar.category.config": {
     "message": "CONFIGURATION"
@@ -13,6 +34,12 @@
   },
   "sidebar.tutorialSidebar.category.usage": {
     "message": "USAGE"
+  },
+  "sidebar.tutorialSidebar.category.maroonshupack": {
+    "message": "Maroon & shu Car Pack"
+  },
+  "sidebar.tutorialSidebar.category.maroonshupackwoems": {
+    "message": "Maroon & shu Car Pack (Without Emergency Vehicles)"
   },
   "sidebar.tutorialSidebar.category.vehicles": {
     "message": "VEHICLES"

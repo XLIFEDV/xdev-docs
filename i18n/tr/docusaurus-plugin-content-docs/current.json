@@ -5,8 +5,29 @@
   "sidebar.tutorialSidebar.category.scripts": {
     "message": "EKLENTİLER"
   },
+  "sidebar.tutorialSidebar.category.bank": {
+    "message": "BANKA SİSTEMİ"
+  },
+  "sidebar.tutorialSidebar.category.freecam": {
+    "message": "SERBEST KAMERA (FREECAM)"
+  },
+  "sidebar.tutorialSidebar.category.hackerjob": {
+    "message": "HACKER GÖREVLERİ (JOB)"
+  },
+  "sidebar.tutorialSidebar.category.hackerphone": {
+    "message": "HACKER TELEFON"
+  },
+  "sidebar.tutorialSidebar.category.illegalphone": {
+    "message": "İLLEGAL TELEFON"
+  },
   "sidebar.tutorialSidebar.category.posdevice": {
     "message": "POS CİHAZI"
+  },
+  "sidebar.tutorialSidebar.category.racing": {
+    "message": "YARIŞ SİSTEMİ"
+  },
+  "sidebar.tutorialSidebar.category.scenario": {
+    "message": "SENARYO SİSTEMİ"
   },
   "sidebar.tutorialSidebar.category.config": {
     "message": "YAPILANDIRMA"
@@ -17,7 +38,14 @@
   "sidebar.tutorialSidebar.category.usage": {
     "message": "KULLANIM"
   },
+  "sidebar.tutorialSidebar.category.maroonshupack": {
+    "message": "Maroon & shu Araç Paketi"
+  },
+  "sidebar.tutorialSidebar.category.maroonshupackwoems": {
+    "message": "Maroon & shu Araç Paketi (Acil Servis Araçları Hariç)"
+  },
   "sidebar.tutorialSidebar.category.vehicles": {
-    "message": "ARAÇLAR"
+    "message": "VEHICLES"
   }
 }
+
