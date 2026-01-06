@@ -1,6 +1,5 @@
 /** @type {import('@docusaurus/types').Config} */
-const locale = process.env.DOCUSAURUS_CURRENT_LOCALE || 'en';
-const generated = require(`./generated.links.${locale}.json`);
+const generated = require(`./generated.links.json`);
 
 const config = {
   title: 'XDEV Docs',

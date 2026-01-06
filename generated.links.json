@@ -2,13 +2,13 @@
   "cars": [
     {
       "label": "OVERVIEW",
-      "to": "/cars/overview"
+      "to": "/CARS/overview"
     }
   ],
   "scripts": [
     {
       "label": "POS DEVICE",
-      "to": "/scripts/POS DEVICE/Configuration/overview"
+      "to": "/SCRIPTS/POS DEVICE/Configuration/overview"
     }
   ]
 }
