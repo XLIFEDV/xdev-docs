@@ -53,14 +53,6 @@ Sadece kullanım ve teknik anlayış için gerekli bilgiler yer alır.
 
 ---
 
-### Dokümantasyon yapısını değiştirebilir miyim?
-
-Evet.  
-Dokümantasyon yapısı dosya tabanlıdır ve `docs/` klasöründen otomatik olarak oluşturulur.  
-Sayfaları özgürce ekleyebilir, silebilir veya yeniden düzenleyebilirsin.
-
----
-
 ## Scriptler & Kullanım
 
 ### POS Device’ı bazen neden açamıyorum?

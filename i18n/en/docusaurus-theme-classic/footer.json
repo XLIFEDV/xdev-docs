@@ -8,7 +8,34 @@
   "link.item.label.overview": {
     "message": "OVERVIEW"
   },
+  "link.item.label.maroonshu-pack": {
+    "message": "Maroon & shu Car Pack"
+  },
+  "link.item.label.maroonshu-pack-woems": {
+    "message": "Maroon & shu Car Pack (Without Emergency Vehicles)"
+  },
+  "link.item.label.bank": {
+    "message": "BANKING"
+  },
+  "link.item.label.freecam": {
+    "message": "FREECAM"
+  },
+  "link.item.label.hackerjob": {
+    "message": "HACKER JOB"
+  },
+  "link.item.label.hackerphone": {
+    "message": "HACKER PHONE"
+  },
+  "link.item.label.illegalphone": {
+    "message": "ILLEGAL PHONE"
+  },
   "link.item.label.posdevice": {
     "message": "POS DEVICE"
+  },
+  "link.item.label.racing": {
+    "message": "RACING SYSTEM"
+  },
+  "link.item.label.scenario": {
+    "message": "SCENARIO"
   }
 }

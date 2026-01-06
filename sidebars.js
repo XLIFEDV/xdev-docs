@@ -11,6 +11,61 @@ const sidebars = {
       "items": [
         {
           "type": "category",
+          "label": "bank",
+          "collapsed": true,
+          "items": [
+            {
+              "type": "doc",
+              "id": "scripts/bank/overview"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "freecam",
+          "collapsed": true,
+          "items": [
+            {
+              "type": "doc",
+              "id": "scripts/freecam/overview"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "hackerjob",
+          "collapsed": true,
+          "items": [
+            {
+              "type": "doc",
+              "id": "scripts/hackerjob/overview"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "hackerphone",
+          "collapsed": true,
+          "items": [
+            {
+              "type": "doc",
+              "id": "scripts/hackerphone/overview"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "illegalphone",
+          "collapsed": true,
+          "items": [
+            {
+              "type": "doc",
+              "id": "scripts/illegalphone/overview"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "posdevice",
           "collapsed": true,
           "items": [
@@ -84,6 +139,28 @@ const sidebars = {
               "id": "scripts/posdevice/installation"
             }
           ]
+        },
+        {
+          "type": "category",
+          "label": "racing",
+          "collapsed": true,
+          "items": [
+            {
+              "type": "doc",
+              "id": "scripts/racing/overview"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "scenario",
+          "collapsed": true,
+          "items": [
+            {
+              "type": "doc",
+              "id": "scripts/scenario/overview"
+            }
+          ]
         }
       ]
     },
@@ -92,6 +169,28 @@ const sidebars = {
       "label": "vehicles",
       "collapsed": true,
       "items": [
+        {
+          "type": "category",
+          "label": "maroonshu pack",
+          "collapsed": true,
+          "items": [
+            {
+              "type": "doc",
+              "id": "vehicles/maroonshu-pack/overview"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "maroonshu pack woems",
+          "collapsed": true,
+          "items": [
+            {
+              "type": "doc",
+              "id": "vehicles/maroonshu-pack-woems/overview"
+            }
+          ]
+        },
         {
           "type": "doc",
           "id": "vehicles/overview"

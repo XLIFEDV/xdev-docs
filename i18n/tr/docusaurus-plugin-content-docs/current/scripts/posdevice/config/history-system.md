@@ -1,5 +1,5 @@
 ---
-title: History System
+title: İşlem Geçmişi
 sidebar_position: 4
 description: İşlem geçmişinin nasıl kaydedildiği, erişildiği ve görüntülendiği.
 ---

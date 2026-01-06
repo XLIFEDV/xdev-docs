@@ -6,11 +6,40 @@
     "message": "EKLENTİLER"
   },
   "link.item.label.overview": {
-    "message": "OVERVIEW"
+    "message": "GENEL BAKIŞ"
+  },
+  "link.item.label.maroonshu-pack": {
+    "message": "Maroon & shu Araç Paketi"
+  },
+  "link.item.label.maroonshu-pack-woems": {
+    "message": "Maroon & shu Araç Paketi (Acil Servis Araçları Hariç)"
+  },
+  "link.item.label.bank": {
+    "message": "BANKA SİSTEMİ"
+  },
+  "link.item.label.freecam": {
+    "message": "SERBEST KAMERA (FREECAM)"
+  },
+  "link.item.label.hackerjob": {
+    "message": "HACKER GÖREVLERİ (JOB)"
+  },
+  "link.item.label.hackerphone": {
+    "message": "HACKER TELEFON"
+  },
+  "link.item.label.illegalphone": {
+    "message": "İLLEGAL TELEFON"
   },
   "link.item.label.posdevice": {
     "message": "POS CİHAZI"
   },
+  "link.item.label.racing": {
+    "message": "YARIŞ SİSTEMİ"
+  },
+  "link.item.label.scenario": {
+    "message": "SENARYO SİSTEMİ"
+  },
+
+
   "link.title.MORE": {
     "message": "DAHA FAZLA"
   },

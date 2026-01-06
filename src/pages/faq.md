@@ -53,14 +53,6 @@ Only information that is required for understanding and usage is included.
 
 ---
 
-### Can I modify the documentation structure?
-
-Yes.  
-The documentation structure is file-based and automatically generated from the `docs/` directory.  
-You can add, remove, or reorganize pages freely.
-
----
-
 ## Scripts & Usage
 
 ### Why can’t I open the POS Device sometimes?

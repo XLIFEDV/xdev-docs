@@ -1,14 +1,50 @@
 {
   "vehicles": [
     {
+      "label": "maroonshu pack",
+      "to": "/vehicles/maroonshu-pack/overview"
+    },
+    {
+      "label": "maroonshu pack woems",
+      "to": "/vehicles/maroonshu-pack-woems/overview"
+    },
+    {
       "label": "overview",
       "to": "/vehicles/overview"
     }
   ],
   "scripts": [
     {
+      "label": "bank",
+      "to": "/scripts/bank/overview"
+    },
+    {
+      "label": "freecam",
+      "to": "/scripts/freecam/overview"
+    },
+    {
+      "label": "hackerjob",
+      "to": "/scripts/hackerjob/overview"
+    },
+    {
+      "label": "hackerphone",
+      "to": "/scripts/hackerphone/overview"
+    },
+    {
+      "label": "illegalphone",
+      "to": "/scripts/illegalphone/overview"
+    },
+    {
       "label": "posdevice",
       "to": "/scripts/posdevice/config/overview"
+    },
+    {
+      "label": "racing",
+      "to": "/scripts/racing/overview"
+    },
+    {
+      "label": "scenario",
+      "to": "/scripts/scenario/overview"
     }
   ]
 }

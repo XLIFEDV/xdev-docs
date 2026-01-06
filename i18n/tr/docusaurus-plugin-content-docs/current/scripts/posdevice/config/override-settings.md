@@ -1,5 +1,5 @@
 ---
-title: Üzerine yazma ayarları
+title: Üzerine Yazma Ayarları
 sidebar_position: 5
 description: İstemci (client) ve sunucu (server) tarafındaki kontroller için gelişmiş override ayarları.
 ---
