@@ -1,6 +1,5 @@
 ---
 title: Kurulum
-description: POSDEVICE scriptinin kurulumu ve yapılandırılması
 sidebar_position: 1
 ---
 

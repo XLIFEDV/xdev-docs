@@ -1,7 +1,6 @@
 ---
 title: Override Settings
 sidebar_position: 5
-description: Advanced overrides for client-side and server-side checks.
 ---
 
 Override Settings are **advanced switches** that bypass or adjust normal validation rules.

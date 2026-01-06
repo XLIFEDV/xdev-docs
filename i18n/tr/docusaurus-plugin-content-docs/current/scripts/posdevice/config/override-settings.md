@@ -1,7 +1,6 @@
 ---
 title: Üzerine Yazma Ayarları
 sidebar_position: 5
-description: İstemci (client) ve sunucu (server) tarafındaki kontroller için gelişmiş override ayarları.
 ---
 
 Normal doğrulama (validation) kurallarını **bypass eden** veya **yeniden düzenleyen** gelişmiş anahtarlardır.

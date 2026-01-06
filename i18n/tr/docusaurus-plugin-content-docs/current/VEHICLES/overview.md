@@ -1,10 +1,7 @@
 ---
 title: Araç Paketleri Genel Bakış
-description: XDEVELOPMENT araç paketlerine genel bakış
 sidebar_position: 1
 ---
-
-## Araç Paketleri
 
 Bu bölüm, **XDEVELOPMENT** tarafından sunulan tüm **araç paketlerini** kapsar.
 

@@ -1,6 +1,5 @@
 ---
 title: Usage Overview
-description: How POSDEVICE is used in practice
 sidebar_position: 1
 ---
 

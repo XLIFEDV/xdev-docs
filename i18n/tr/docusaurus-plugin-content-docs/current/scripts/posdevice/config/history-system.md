@@ -1,7 +1,6 @@
 ---
 title: İşlem Geçmişi
 sidebar_position: 4
-description: İşlem geçmişinin nasıl kaydedildiği, erişildiği ve görüntülendiği.
 ---
 
 İşlem geçmişinin nasıl yönetildiğini ve nasıl erişildiğini tanımlar.

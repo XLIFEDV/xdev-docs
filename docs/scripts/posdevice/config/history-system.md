@@ -1,7 +1,6 @@
 ---
 title: History System
 sidebar_position: 4
-description: How transaction history is recorded, accessed and displayed.
 ---
 
 The History System defines how transaction history is handled and accessed.

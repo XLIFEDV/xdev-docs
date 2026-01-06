@@ -1,7 +1,6 @@
 ---
 title: Event Triggers
 sidebar_position: 6
-description: Client-side and server-side event hooks and trigger configuration.
 ---
 
 This page documents the event triggers and integration hooks used by XDEV POS Device.

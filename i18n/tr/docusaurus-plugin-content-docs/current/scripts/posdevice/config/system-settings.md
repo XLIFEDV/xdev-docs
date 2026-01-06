@@ -1,6 +1,5 @@
 ---
 title: Sistem Ayarları
-description: XDEV POS Device için genel sistem yapılandırma seçenekleri.
 sidebar_position: 2
 ---
 

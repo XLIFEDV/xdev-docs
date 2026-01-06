@@ -1,7 +1,6 @@
 ---
 title: Yapılandırma Bölümü
 sidebar_position: 1
-description: XDEV POS Device içindeki tüm yapılandırma alanlarının genel görünümü.
 ---
 
 Bu bölüm, **POSDEVICE** içerisinde bulunan tüm yapılandırma seçeneklerini dokümante eder.

@@ -1,10 +1,7 @@
 ---
 title: Vehicle Packs Overview
-description: Overview of XDEVELOPMENT vehicle packs
 sidebar_position: 1
 ---
-
-## Vehicle Packs
 
 This section covers all **vehicle packs** provided by **XDEVELOPMENT**.
 

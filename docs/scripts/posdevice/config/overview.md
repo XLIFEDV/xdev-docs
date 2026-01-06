@@ -1,7 +1,6 @@
 ---
 title: Configuration Overview
 sidebar_position: 1
-description: High-level overview of all configuration areas in XDEV POS Device.
 ---
 
 This section documents all configuration options available in **XDEV POS Device**.

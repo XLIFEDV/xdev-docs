@@ -1,9 +1,6 @@
 ---
 title: Under Construction
-description: This system is not active yet. Development is in progress.
 ---
-
-# Under Construction
 
 This section/system is **not active yet**.  
 Development is currently in progress and content will be added gradually.

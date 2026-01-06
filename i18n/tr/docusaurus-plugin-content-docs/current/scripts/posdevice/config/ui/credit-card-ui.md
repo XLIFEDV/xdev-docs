@@ -1,7 +1,6 @@
 ---
 title: Kredi Kartı Görünümünü Düzenle
 sidebar_position: 4
-description: Müşteri ekranında hangi kredi kartı tasarımının gösterileceğini kontrol eder.
 ---
 
 Müşteri ekranında görüntülenecek **kredi kartı tasarımını** kontrol eder.

@@ -1,6 +1,5 @@
 ---
 title: POSDEVICE Kullanımı
-description: POSDEVICE sisteminin pratikte nasıl kullanıldığı
 sidebar_position: 1
 ---
 

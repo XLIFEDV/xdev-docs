@@ -2,6 +2,9 @@
   "sidebar.tutorialSidebar.category.scripts": {
     "message": "SCRIPTS"
   },
+  "sidebar.tutorialSidebar.category.vehicles": {
+    "message": "VEHICLES"
+  },
   "sidebar.tutorialSidebar.category.bank": {
     "message": "BANKING"
   },
@@ -40,8 +43,5 @@
   },
   "sidebar.tutorialSidebar.category.maroonshupackwoems": {
     "message": "Maroon & shu Car Pack (Without Emergency Vehicles)"
-  },
-  "sidebar.tutorialSidebar.category.vehicles": {
-    "message": "VEHICLES"
   }
 }

@@ -1,6 +1,5 @@
 ---
 title: Events & Exports
-description: POSDEVICE event and export reference
 sidebar_position: 2
 ---
 

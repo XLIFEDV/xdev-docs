@@ -1,7 +1,6 @@
 ---
 title: Debug Settings
 sidebar_position: 3
-description: Debug mode and startup logging configuration.
 ---
 
 Debug Settings controls debug mode and startup logging behavior.

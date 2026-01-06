@@ -1,6 +1,5 @@
 ---
 title: Installation
-description: How to install and set up the POSDEVICE script
 sidebar_position: 1
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Event Tetikleyicileri
 sidebar_position: 6
-description: Client-side ve server-side event tetikleyicileri ile entegrasyon yapılandırması.
 ---
 
 Bu sayfa, **XDEV POS Device** tarafından kullanılan event tetikleyicilerini ve entegrasyon hook’larını dokümante eder.

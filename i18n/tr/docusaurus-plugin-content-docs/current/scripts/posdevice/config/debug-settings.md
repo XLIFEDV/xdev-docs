@@ -1,7 +1,6 @@
 ---
 title: Hata Ayıklama Ayarları
 sidebar_position: 3
-description: Debug modu ve başlangıç loglama yapılandırması.
 ---
 
 Debug modunun ve başlangıç (startup) loglama davranışının kontrol edilmesini sağlar.

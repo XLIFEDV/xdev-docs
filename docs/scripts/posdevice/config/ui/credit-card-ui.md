@@ -1,7 +1,6 @@
 ---
 title: Credit Card UI System
 sidebar_position: 4
-description: Controls which credit card design is shown on the customer screen.
 ---
 
 The Credit Card UI System controls which credit card design is displayed on the customer screen.

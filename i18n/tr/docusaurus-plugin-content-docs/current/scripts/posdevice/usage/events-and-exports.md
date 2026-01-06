@@ -1,6 +1,5 @@
 ---
 title: Eventler & Exportlar
-description: POSDEVICE event ve export referansı
 sidebar_position: 2
 ---
 

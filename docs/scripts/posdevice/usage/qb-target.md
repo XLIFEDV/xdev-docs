@@ -1,6 +1,5 @@
 ---
 title: qb-target Integration
-description: Integrating POSDEVICE with qb-target
 sidebar_position: 1
 ---
 

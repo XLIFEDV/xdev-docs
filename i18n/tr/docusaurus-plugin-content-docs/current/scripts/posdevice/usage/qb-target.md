@@ -1,6 +1,5 @@
 ---
 title: qb-target Entegrasyonu
-description: POSDEVICE’in qb-target ile entegrasyonu
 sidebar_position: 1
 ---
 

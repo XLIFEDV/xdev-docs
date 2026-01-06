@@ -1,9 +1,6 @@
 ---
 title: Yapım Aşamasında
-description: Sistem şu anda aktif değildir. Geliştirme süreci devam ediyor.
 ---
-
-# Yapım Aşamasında
 
 Bu bölüm/sistem şu anda **aktif değildir**.  
 Geliştirme süreci devam ediyor ve içerikler aşamalı olarak eklenecektir.
