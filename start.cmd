@@ -1,7 +1,6 @@
 @echo off
 chcp 65001 >nul
 title XDEV Docs Gelistirici Yardimcisi
-color 0A
 setlocal EnableExtensions
 
 REM Proje klasorune gec
