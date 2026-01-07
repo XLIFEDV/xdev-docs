@@ -1,131 +1,65 @@
-:root {
-  /* Marka rengi */
-  --ifm-color-primary: #22c55e;       /* yeşil */
-  --ifm-color-primary-dark: #16a34a;
-  --ifm-color-primary-darker: #15803d;
-  --ifm-color-primary-light: #4ade80;
-  --ifm-color-primary-lighter: #86efac;
+/* Navbar ortada logo - SAFE responsive */
 
-  /* Açık tema arkaplan/yazı */
-  --ifm-background-color: #ffffff;
-  --ifm-font-color-base: #0f172a;
-}
-
-/* Koyu tema (sağ üst güneş/ay butonu için) */
-
-.navbar {
-  background: #ffffff;           /* üst bar rengi */
-  border-bottom: 1px solid #e5e7eb;
-}
-
-/* Navbar ortada logo */
-.navbar__inner {
+.navbar__inner{
   position: relative;
 }
 
-/* Sol taraftaki brand (logo) */
-.navbar__brand {
+/* brand’i ortala */
+.navbar__brand{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  left: 50%;
+
+  /* LOGO alanı */
+  height: var(--ifm-navbar-height);
+  padding: 0;              /* gerekirse 0 8px yap */
   margin: 0;
-  height: 100%;
-  width: 20%;
-  transform: translateX(-50%);
+
+  /* taşmayı engelle */
+  overflow: hidden;
+
+  /* desktop genişliğini sınırlayalım */
+  max-width: 420px;
+  width: auto;
 }
+
+/* logo wrapper */
 .navbar__logo{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 325%;
-  margin: 0;
+
+  /* %325 yerine: navbar yüksekliğine göre ölçek */
+  height: 100%;
 }
 
-/* Sağdaki itemler (FAQ + dil) yerinde kalsın */
-.navbar__items--right {
+/* asıl kritik: img oranı bozulmasın */
+.navbar__logo img{
+  image-rendering: -webkit-optimize-contrast;
+  height: clamp(48px, 16.2vh, 121px);  /* 28/56 -> 36/78 */
+  width: auto;                      /* oran koru */
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Sağdaki itemler yerinde kalsın */
+.navbar__items--right{
   margin-left: auto;
 }
-@media (max-width: 996px) {
-  .navbar__brand {
+
+/* Mobilde absolute ortalamayı kapat */
+@media (max-width: 996px){
+  .navbar__brand{
     position: static;
     transform: none;
     margin: 0 auto;
+    max-width: 220px;
   }
-}
 
-
-[data-theme='dark'] .navbar {
-  background: #0b1220;
-  border-bottom: 1px solid #1f2937;
-}
-.theme-doc-sidebar-container {
-  background: #f8fafc;           /* sol panel */
-  border-right: 1px solid #e5e7eb;
-}
-
-[data-theme='dark'] .theme-doc-sidebar-container {
-  background: #0f172a;
-  border-right: 1px solid #1f2937;
-}
-.footer {
-  background: #111827;           /* footer */
-}
-
-[data-theme='dark'] .footer {
-  background: #0b1220;
-}
-
-/* === Kill the navy/blue tint (Dark) === */
-[data-theme='dark'] {
-  /* Genel arkaplan */
-  --ifm-background-color: #0f0f10;            /* ana arka plan */
-  --ifm-background-surface-color: #151517;    /* kart/box yüzeyi */
-
-  /* Yazı */
-  --ifm-font-color-base: #e7e7ea;
-  --ifm-font-color-secondary: #b9b9c0;
-
-  /* Border / divider */
-  --ifm-color-emphasis-200: #242428;
-  --ifm-color-emphasis-300: #2d2d33;
-}
-
-/* Navbar (üst bar) */
-[data-theme='dark'] .navbar {
-  background: #0f0f10 !important;
-  border-bottom: 1px solid #242428 !important;
-}
-
-/* Docs sidebar (sol menü paneli) */
-[data-theme='dark'] .theme-doc-sidebar-container {
-  background: #0f0f10 !important;
-  border-right: 1px solid #242428 !important;
-}
-
-/* Footer (alt bar) */
-[data-theme='dark'] .footer {
-  background: #0f0f10 !important;
-  border-top: 1px solid #242428 !important;
-}
-
-/* Breadcrumb / content area uyumu için */
-[data-theme='dark'] .main-wrapper {
-  background: #0f0f10;
-}
-[data-theme='dark'] body {
-  background: #0f0f10 !important;
-}
-/* Headings spacing like clean docs */
-[data-theme='dark'] .markdown h2 {
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(255,255,255,0.08);
-}
-
-[data-theme='dark'] .markdown h2:first-of-type {
-  border-top: none;
-  padding-top: 0;
+  .navbar__logo img{
+  height: clamp(48px, 16.2vh, 121px);  /* 28/56 -> 36/78 */
+  }
 }
