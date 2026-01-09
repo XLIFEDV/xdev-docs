@@ -53,7 +53,7 @@ const config = {
       logo: {
         alt: "XDEVELOPMENT",
         src: "img/xdev.png", // sende neyse
-        href: "/",           // docs ana sayfana gitsin
+        href: "https://xdevelopment.dev",           // docs ana sayfana gitsin
       },
       items: [
         { type: 'localeDropdown', position: 'right' },
@@ -75,8 +75,10 @@ const config = {
         {
           title: 'CONTACT',
           items: [
-            { label: 'Tebex Store', href: 'https://xdev.tebex.io' },
+            { label: 'Website', href: 'https://xdevelopment.dev' },
+            { label: 'Tebex Store', href: 'https://shop.xdevelopment.dev' },
             { label: 'Discord Support', href: 'https://discord.gg/xdevelopment' },
+            { label: 'Youtube', href: 'https://youtube.com/@xdev.development' },
           ],
         },
       ],
