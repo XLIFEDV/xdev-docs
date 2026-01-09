@@ -4,7 +4,7 @@ const generated = require(`./generated.links.json`);
 const config = {
   title: 'XDEV Docs',
   tagline: 'XDEVELOPMENT Documentions',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   future: { v4: true },
 
