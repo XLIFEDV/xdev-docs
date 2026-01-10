@@ -6,6 +6,25 @@ const sidebars = {
   "tutorialSidebar": [
     {
       "type": "category",
+      "label": "contact",
+      "collapsed": true,
+      "items": [
+        {
+          "type": "doc",
+          "id": "contact/emails"
+        },
+        {
+          "type": "doc",
+          "id": "contact/links"
+        },
+        {
+          "type": "doc",
+          "id": "contact/faq"
+        }
+      ]
+    },
+    {
+      "type": "category",
       "label": "scripts",
       "collapsed": true,
       "items": [

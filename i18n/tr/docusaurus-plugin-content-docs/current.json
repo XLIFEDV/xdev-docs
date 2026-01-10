@@ -2,6 +2,9 @@
   "version.label": {
     "message": "İleri"
   },
+  "sidebar.tutorialSidebar.category.contact": {
+    "message": "İLETİŞİM"
+  },
   "sidebar.tutorialSidebar.category.scripts": {
     "message": "EKLENTİLER"
   },

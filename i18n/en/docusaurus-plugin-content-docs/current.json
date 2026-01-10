@@ -1,4 +1,7 @@
 {
+  "sidebar.tutorialSidebar.category.contact": {
+    "message": "CONTACT"
+  },
   "sidebar.tutorialSidebar.category.scripts": {
     "message": "SCRIPTS"
   },

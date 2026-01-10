@@ -1,10 +1,8 @@
 ---
 title: FAQ
 description: Frequently Asked Questions about XDEV products
-sidebar_position: 999
+sidebar_position: 3
 ---
-
-# Frequently Asked Questions (FAQ)
 
 This page answers the most common questions about **XDEV documentation, scripts, and usage**.
 

@@ -8,7 +8,7 @@ const config = {
 
   future: { v4: true },
 
-  url: 'https://xdev-docs.pages.dev',
+  url: 'https://docs.xdevelopment.dev',
   baseUrl: '/',
 
   organizationName: 'XDEVELOPMENT',
@@ -42,6 +42,11 @@ const config = {
   ],
 
   themeConfig: {
+    image:'img/og.png',
+    metadata: [
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'theme-color', content: '#AE3C46' },
+    ],
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: true,
@@ -66,19 +71,12 @@ const config = {
         { title: 'VEHICLES', items: generated.vehicles },
         { title: 'SCRIPTS', items: generated.scripts },
         {
-          title: 'MORE',
-          items: [
-            { to: '/', label: 'DOCUMENTATIONS' },
-            { to: '/faq', label: 'FAQ' },
-          ],
-        },
-        {
           title: 'CONTACT',
           items: [
-            { label: 'Website', href: 'https://xdevelopment.dev' },
-            { label: 'Tebex Store', href: 'https://shop.xdevelopment.dev' },
-            { label: 'Discord Support', href: 'https://discord.gg/xdevelopment' },
-            { label: 'Youtube', href: 'https://youtube.com/@xdev.development' },
+            { label: 'Community & Links', to: '/contact/links' },
+            { label: 'Official Email Addresses', to: '/contact/emails' },
+            { label: 'Documentations', to: '/' },
+            { label: 'FAQ', to: '/contact/faq' },
           ],
         },
       ],

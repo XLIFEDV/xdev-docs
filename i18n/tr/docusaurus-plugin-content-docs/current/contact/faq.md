@@ -1,10 +1,8 @@
 ---
 title: SSS
 description: XDEV ürünleri hakkında sıkça sorulan sorular
-sidebar_position: 999
+sidebar_position: 3
 ---
-
-# Sıkça Sorulan Sorular (SSS)
 
 Bu sayfa **XDEV dokümantasyonu, scriptleri ve kullanımına** dair en sık sorulan soruları yanıtlar.
 

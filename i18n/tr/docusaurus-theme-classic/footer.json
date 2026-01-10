@@ -40,23 +40,20 @@
   },
 
 
-  "link.title.MORE": {
-    "message": "DAHA FAZLA"
-  },
   "link.title.CONTACT": {
     "message": "İLETİŞİM"
   },
-  "link.item.label.DOCUMENTATIONS": {
-    "message": "DÖKÜMANTASYONLAR"
+  "link.item.label.Documentations": {
+    "message": "Dökümantasyonlar"
   },
   "link.item.label.FAQ": {
     "message": "SSS"
   },
-  "link.item.label.Tebex Store": {
-    "message": "Tebex Mağazası"
+  "link.item.label.Community & Links": {
+    "message": "Topluluk & Bağlantılar"
   },
-  "link.item.label.Discord Support": {
-    "message": "Discord Destek"
+  "link.item.label.Official Email Addresses": {
+    "message": "Resmi E-Posta Adresleri"
   },
   "copyright": {
     "message": "Copyright © 2026 XDEVELOPMENT. Bütün hakları saklıdır"
