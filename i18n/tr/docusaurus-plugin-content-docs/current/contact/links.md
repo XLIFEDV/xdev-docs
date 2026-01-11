@@ -10,16 +10,16 @@ Dokümantasyona erişmek, güncellemeleri takip etmek veya topluluğa katılmak 
 ---
 
 ## 🌐 Web Sitesi
-[xdevelopment.dev](mailto:https://xdevelopment.dev)
+[xdevelopment.dev](https://xdevelopment.dev)
 
 ## 📚 Dokümantasyon
-[docs.xdevelopment.dev](mailto:https://docs.xdevelopment.dev)
+[docs.xdevelopment.dev](https://docs.xdevelopment.dev)
 
 ## 💬 Discord
-[discord.xdevelopment.dev](mailto:https://discord.xdevelopment.dev)
+[discord.xdevelopment.dev](https://discord.xdevelopment.dev)
 
 ## 🛒 Tebex Mağazası
-[shop.xdevelopment.dev](mailto:https://shop.xdevelopment.dev)
+[shop.xdevelopment.dev](https://shop.xdevelopment.dev)
 
 ## ▶ YouTube
-[youtube.xdevelopment.dev](mailto:https://youtube.xdevelopment.dev)
+[youtube.xdevelopment.dev](https://youtube.xdevelopment.dev)
