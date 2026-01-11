@@ -10,7 +10,7 @@ Daha hızlı ve doğru bir yanıt alabilmek için lütfen talebinize uygun e-pos
 ---
 
 ## 💼 Faturalandırma & Ödemeler
-**billing@xdevelopment.dev**
+**[billing@xdevelopment.dev](mailto:billing@xdevelopment.dev)**
 
 Şunlar için kullanınız:
 - Ödeme işlemleri
@@ -21,7 +21,7 @@ Daha hızlı ve doğru bir yanıt alabilmek için lütfen talebinize uygun e-pos
 ---
 
 ## 🛠 Teknik Destek
-**support@xdevelopment.dev**
+**[support@xdevelopment.dev](mailto:support@xdevelopment.dev)**
 
 Şunlar için kullanınız:
 - Script sorunları
@@ -32,7 +32,7 @@ Daha hızlı ve doğru bir yanıt alabilmek için lütfen talebinize uygun e-pos
 ---
 
 ## 📩 Genel İletişim
-**contact@xdevelopment.dev**
+**[contact@xdevelopment.dev](mailto:contact@xdevelopment.dev)**
 
 Şunlar için kullanınız:
 - İş birlikleri

@@ -10,7 +10,7 @@ Please contact the appropriate department to ensure a faster and more accurate r
 ---
 
 ## 💼 Billing & Payments
-**billing@xdevelopment.dev**
+**[billing@xdevelopment.dev](mailto:billing@xdevelopment.dev)**
 
 For:
 - Payments
@@ -21,7 +21,7 @@ For:
 ---
 
 ## 🛠 Technical Support
-**support@xdevelopment.dev**
+**[support@xdevelopment.dev](mailto:support@xdevelopment.dev)**
 
 For:
 - Script issues
@@ -32,7 +32,7 @@ For:
 ---
 
 ## 📩 General Contact
-**contact@xdevelopment.dev**
+**[contact@xdevelopment.dev](mailto:contact@xdevelopment.dev)**
 
 For:
 - Business inquiries
