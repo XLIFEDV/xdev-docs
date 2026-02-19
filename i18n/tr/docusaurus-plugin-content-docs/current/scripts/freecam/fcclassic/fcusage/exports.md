@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # Exportlar
 
-Freecam Classic, diğer scriptlerle entegrasyon için opsiyonel export fonksiyonları sunar.
+Klasik Serbest Kamera, diğer scriptlerle entegrasyon için opsiyonel export fonksiyonları sunar.
 
 Exportlar varsayılan olarak kapalıdır ve `config.lua` üzerinden aktifleştirilmelidir.
 
@@ -27,7 +27,7 @@ Sadece kullanacağınız exportları aktifleştirmeniz önerilir.
 
 ## openFreecam()
 
-Freecam’i script üzerinden aktif eder.
+Serbest Kamera’yı script üzerinden aktif eder.
 
 Örnek:
 
@@ -47,13 +47,13 @@ Engellenme sebepleri şunlar olabilir:
 * Oyuncu doğrulama başarısız
 * Araç kısıtlaması
 * Özel kontrol engeli
-* Freecam zaten aktif
+* Serbest Kamera zaten aktif
 
 ---
 
 ## closeFreecam()
 
-Freecam’i script üzerinden kapatır.
+Serbest Kamera’yı script üzerinden kapatır.
 
 Örnek:
 
@@ -67,7 +67,7 @@ Bu işlem normal oyun kamerasını güvenli şekilde geri yükler.
 
 ## getData()
 
-Mevcut Freecam durum bilgilerini döndürür.
+Mevcut Serbest Kamera durum bilgilerini döndürür.
 
 Örnek:
 
@@ -91,7 +91,7 @@ local data = exports['xdev-freecam']:getData()
 
 ### Alan Açıklamaları
 
-* `freecamActive` → Freecam’in aktif olup olmadığını belirtir.
+* `freecamActive` → Serbest Kamera’nın aktif olup olmadığını belirtir.
 * `cam` → Aktifse kamera verilerini içerir, değilse `false`.
 * `mainCoords` → Oyuncunun mevcut dünya koordinatları.
 * `configSystem` → Geçerli sistem yapılandırması.
@@ -107,4 +107,4 @@ Exportlar şu amaçlarla kullanılabilir:
 * Koşullu aktivasyon sistemleri
 * Harici durum takibi
 
-Doğrulama mantığının Freecam içerisinde kalması, exportların ise kontrollü etkileşim için kullanılması önerilir.
+Doğrulama mantığının Serbest Kamera içerisinde kalması, exportların ise kontrollü etkileşim için kullanılması önerilir.

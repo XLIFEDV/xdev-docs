@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # Kontroller
 
-Freecam Classic grafiksel bir arayüz olmadan çalışır.
+Klasik Serbest Kamera grafiksel bir arayüz olmadan çalışır.
 
 Ekran üzerinde panel veya görsel yönlendirme bulunmaz.  
 Kullanıcıların yapılandırılmış kontrol düzenini bilmesi beklenir.
@@ -14,7 +14,7 @@ Kullanıcıların yapılandırılmış kontrol düzenini bilmesi beklenir.
 
 ## Aktivasyon
 
-Freecam, sunucu yapılandırmasına bağlı olarak şu yöntemlerle aktif edilebilir:
+Serbest Kamera, sunucu yapılandırmasına bağlı olarak şu yöntemlerle aktif edilebilir:
 
 - Sohbet komutu
 - Tuş ataması
@@ -30,7 +30,7 @@ Config.System.action
 
 ## Kamera Hareketi
 
-Freecam aktifken:
+Serbest Kamera aktifken:
 
 * Normal oyun kontrolleri devre dışı bırakılır.
 * Hareket girdileri kamera kontrolüne yönlendirilir.
@@ -72,7 +72,7 @@ Zoom davranışı şu limitlere bağlıdır:
 
 ## Devre Dışı Bırakma
 
-Freecam, yapılandırılmış çıkış kontrolü kullanılarak kapatılabilir.
+Serbest Kamera, yapılandırılmış çıkış kontrolü kullanılarak kapatılabilir.
 
 Kapatıldığında:
 
@@ -83,7 +83,7 @@ Kapatıldığında:
 
 ## Önemli Notlar
 
-* Freecam Classic görsel geri bildirim sunmaz.
+* Klasik Serbest Kamera görsel geri bildirim sunmaz.
 * Kontrollerin bilinmesi kullanıcı sorumluluğundadır.
 * Gerekirse sunucu yöneticileri ayrı bir kontrol rehberi paylaşabilir.
 

@@ -5,13 +5,13 @@ sidebar_position: 2
 
 # Kurulum
 
-Bu rehber, Freecam Classic’in FiveM sunucunuza doğru şekilde nasıl kurulacağını açıklar.
+Bu rehber, Klasik Serbest Kamera’nın FiveM sunucunuza doğru şekilde nasıl kurulacağını açıklar.
 
 ---
 
 ## 1) Resource Yerleştirme
 
-Freecam klasörünü sunucunuzun resources dizinine yerleştirin.
+Serbest Kamera klasörünü sunucunuzun resources dizinine yerleştirin.
 
 Örnek:
 
@@ -35,7 +35,7 @@ ensure xdev-freecam
 
 ```
 
-Bir framework kullanıyorsanız (örneğin QBCore), Freecam’den önce başlatıldığından emin olun:
+Bir framework kullanıyorsanız (örneğin QBCore), Serbest Kamera’dan önce başlatıldığından emin olun:
 
 ```
 
@@ -120,4 +120,4 @@ Config.Events.ClientSide.system = {
 
 Kurulumu tamamladıktan sonra sunucunuzu yeniden başlatın.
 
-Freecam Classic artık yapılandırmanıza uygun şekilde kullanıma hazırdır.
+Klasik Serbest Kamera artık yapılandırmanıza uygun şekilde kullanıma hazırdır.

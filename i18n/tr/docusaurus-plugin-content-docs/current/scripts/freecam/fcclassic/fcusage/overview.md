@@ -1,76 +1,76 @@
 ---
-title: Usage Overview
+title: Kullanım Genel Bakış
 sidebar_position: 1
 ---
 
-# Usage Overview
+# Kullanım Genel Bakış
 
-This section explains how Freecam Classic is used in practice.
+Bu bölüm, Klasik Serbest Kamera’nın pratik kullanım şeklini açıklar.
 
-Freecam Classic is designed to operate without a graphical interface.  
-All interaction is performed through configured controls and system behavior defined in `config.lua`.
-
----
-
-## How Freecam Is Used
-
-Freecam can be activated through:
-
-- A chat command
-- A key binding
-- A hold-to-activate configuration
-
-Once activated:
-
-- Normal gameplay controls are temporarily restricted.
-- Camera movement, rotation, and zoom become available.
-- The camera remains positionally linked to the player.
-- Movement operates within configured limits.
-
-When disabled, the system restores normal gameplay control.
+Klasik Serbest Kamera grafiksel bir arayüz içermez.  
+Tüm etkileşimler, yapılandırılmış kontroller ve `config.lua` içerisinde tanımlanan sistem davranışı üzerinden gerçekleştirilir.
 
 ---
 
-## Intended Use Cases
+## Serbest Kamera Nasıl Kullanılır?
 
-Freecam Classic is commonly used for:
+Serbest Kamera şu yöntemlerle aktif edilebilir:
 
-- Administrative camera control
-- Moderation tasks
-- Scene inspection
-- Controlled cinematic positioning
-- Structured server environments
+- Sohbet komutu
+- Tuş ataması
+- Basılı tutma yapılandırması
 
-It is not intended to function as a fully detached spectator mode.
+Aktif edildiğinde:
 
----
+- Normal oyun kontrolleri geçici olarak kısıtlanır.
+- Kamera hareketi, dönüş ve zoom kullanılabilir hale gelir.
+- Kamera oyuncuya konumsal olarak bağlı kalır.
+- Hareket, yapılandırılmış sınırlar dahilinde çalışır.
 
-## Integration Workflow
-
-Freecam can be:
-
-- Triggered manually by users
-- Controlled via exports
-- Restricted through validation checks
-- Extended through override logic
-
-This makes it suitable for integration into:
-
-- Admin panels
-- Moderation systems
-- Custom server tools
-- Conditional activation environments
+Devre dışı bırakıldığında sistem normal oyun kontrolünü geri yükler.
 
 ---
 
-## Operational Principles
+## Kullanım Amaçları
 
-Freecam Classic follows a strict usage philosophy:
+Klasik Serbest Kamera genellikle şu amaçlarla kullanılır:
 
-- Controlled activation
-- Predictable behavior
-- Limited movement range
-- Player-bound camera logic
-- Configuration-driven system control
+- Yönetim kamerası kontrolü
+- Moderasyon işlemleri
+- Sahne inceleme
+- Kontrollü sinematik konumlandırma
+- Yapılandırılmış sunucu ortamları
 
-Understanding these principles ensures stable and intended usage.
+Tamamen bağımsız bir spectator modu olarak tasarlanmamıştır.
+
+---
+
+## Entegrasyon Akışı
+
+Serbest Kamera şu şekillerde kullanılabilir:
+
+- Kullanıcı tarafından manuel tetikleme
+- Exportlar üzerinden kontrol
+- Doğrulama kontrolleri ile sınırlandırma
+- Override sistemi ile genişletme
+
+Bu yapı, şu sistemlere entegrasyonu mümkün kılar:
+
+- Yönetim panelleri
+- Moderasyon sistemleri
+- Özel sunucu araçları
+- Koşullu aktivasyon mekanizmaları
+
+---
+
+## Operasyonel Prensipler
+
+Klasik Serbest Kamera şu kullanım prensiplerini takip eder:
+
+- Kontrollü aktivasyon
+- Öngörülebilir davranış
+- Sınırlı hareket alanı
+- Oyuncuya bağlı kamera mantığı
+- Konfigürasyon odaklı sistem yönetimi
+
+Bu prensiplerin anlaşılması, sistemin kararlı ve doğru şekilde kullanılmasını sağlar.

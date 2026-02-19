@@ -1,11 +1,11 @@
 ---
-title: Freecam Classic
+title: Klasik Serbest Kamera
 sidebar_position: 1
 ---
 
-# Freecam Classic
+# Klasik Serbest Kamera
 
-Freecam Classic, FiveM için hafif ve konfigürasyon odaklı bir kamera sistemidir.
+Klasik Serbest Kamera, FiveM için hafif ve konfigürasyon odaklı bir kamera sistemidir.
 
 Sinematik araçlar veya kullanıcı arayüzü yerine; güvenilirlik, öngörülebilirlik ve sistem entegrasyonu öncelik alınarak tasarlanmıştır.
 
@@ -15,7 +15,7 @@ Bu sürüm ekran üzerinde herhangi bir arayüz içermez ve tamamen `config.lua`
 
 ## Temel Özellikler
 
-Freecam Classic şunları sağlar:
+Klasik Serbest Kamera şunları sağlar:
 
 - Komut / tuş / basılı tutma ile aktivasyon
 - Oyuncuya bağlı kamera davranışı
@@ -45,7 +45,7 @@ Kamera, mekansal tutarlılığı korumak amacıyla oyuncuya mantıksal olarak ba
 
 ## Hedef Kitle
 
-Freecam Classic şu kullanıcılar için uygundur:
+Klasik Serbest Kamera şu kullanıcılar için uygundur:
 
 - Sunucu yöneticileri
 - Moderatörler

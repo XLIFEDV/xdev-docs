@@ -5,11 +5,11 @@ sidebar_position: 4
 
 # Sıkça Sorulan Sorular
 
-Bu bölüm, Freecam Classic ile ilgili yaygın sorunları ve kullanım sorularını kapsar.
+Bu bölüm, Klasik Serbest Kamera ile ilgili yaygın sorunları ve kullanım sorularını kapsar.
 
 ---
 
-## Freecam aktif olmuyor
+## Serbest Kamera aktif olmuyor
 
 Aşağıdakileri kontrol edin:
 
@@ -18,7 +18,7 @@ Aşağıdakileri kontrol edin:
    - `Config.System.action.key`
    - `Config.System.action.hold`
 
-2. Freecam zaten aktif mi?
+2. Serbest Kamera zaten aktif mi?
    - Aktifken tekrar açmaya çalışmak engellenir.
 
 3. Sistem kontrolleri açık mı?
@@ -51,7 +51,7 @@ Eğer `Config.System.checks.vehicle = true` ise, araç durumu kontrol edilir.
 
 ---
 
-## Freecam açılıyor ama kamera hareket etmiyor
+## Serbest Kamera açılıyor ama kamera hareket etmiyor
 
 Olası sebepler:
 
@@ -122,9 +122,9 @@ Config.Events.ClientSide.system = {
 
 ---
 
-## Classic sürümde neden UI yok?
+## Klasik Serbest Kamera sürümde neden UI yok?
 
-Freecam Classic bilinçli olarak hafif tasarlanmıştır.
+Klasik Serbest Kamera bilinçli olarak hafif tasarlanmıştır.
 
 Amaç:
 

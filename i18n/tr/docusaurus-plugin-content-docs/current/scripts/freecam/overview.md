@@ -1,15 +1,15 @@
 ---
-title: FREECAM
+title: SERBEST KAMERA
 sidebar_position: 1
 ---
 
-# FREECAM
+# SERBEST KAMERA
 
-FREECAM, FiveM sunucuları için geliştirilmiş modüler bir kamera sistemidir.
+SERBEST KAMERA, FiveM sunucuları için geliştirilmiş modüler bir kamera sistemidir.
 
 Performans, stabilite ve sistem entegrasyonu korunarak yapılandırılmış kamera kontrolü sağlamak amacıyla tasarlanmıştır.
 
-FREECAM, farklı kullanım senaryolarına ve sunucu ihtiyaçlarına uygun olarak birden fazla sürüme ayrılmıştır.
+SERBEST KAMERA, farklı kullanım senaryolarına ve sunucu ihtiyaçlarına uygun olarak birden fazla sürüme ayrılmıştır.
 
 ---
 
@@ -17,7 +17,7 @@ FREECAM, farklı kullanım senaryolarına ve sunucu ihtiyaçlarına uygun olarak
 
 ### Classic
 
-Freecam Classic hafif ve konfigürasyon odaklı bir sürümdür.
+Serbest Kamera Classic hafif ve konfigürasyon odaklı bir sürümdür.
 
 Şu özelliklere odaklanır:
 
@@ -31,22 +31,22 @@ Classic sürüm; yönetim, moderasyon ve yapılandırılmış sunucu ortamları 
 
 ---
 
-### Advanced (Yakında)
+### Gelişmiş Serbest Kamera (Yakında)
 
-Freecam Advanced sürümü şu özellikleri sunacaktır:
+Gelişmiş Serbest Kamera sürümü şu özellikleri sunacaktır:
 
 - Arayüz tabanlı kamera kontrolleri
 - Sinematik kamera araçları
 - Görsel efekt ön ayarları
 - Gelişmiş özelleştirme seçenekleri
 
-Advanced sürüm, sinematik prodüksiyon ve görsel odaklı kullanım için tasarlanmaktadır.
+Gelişmiş sürüm, sinematik prodüksiyon ve görsel odaklı kullanım için tasarlanmaktadır.
 
 ---
 
 ## Tasarım Yaklaşımı
 
-FREECAM modüler bir mimari takip eder:
+SERBEST KAMERA modüler bir mimari takip eder:
 
 - Temiz konfigürasyon yapısı
 - Opsiyonel override sistemi
@@ -62,10 +62,10 @@ Her sürüm ayrı ayrı dokümante edilerek netlik ve sürdürülebilirlik sağl
 
 Bu dokümantasyon sürümlere göre düzenlenmiştir:
 
-- FREECAM
-  - Classic
-    - Configuration
-    - Usage
-  - Advanced
+- SERBEST KAMERA
+  - [KLASİK](./fcclassic/overview)
+    - [Konfigürasyon](./fcclassic/fcconfig/overview)
+    - [Kullanım](./fcclassic/fcusage/overview)
+  - [Yapılandırma](./fcadvanced/overview)
 
 Sunucu ihtiyaçlarınıza uygun sürümü seçerek ilerleyebilirsiniz.

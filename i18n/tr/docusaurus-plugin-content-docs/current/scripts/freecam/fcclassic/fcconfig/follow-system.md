@@ -5,28 +5,28 @@ sidebar_position: 4
 
 # Takip Sistemi
 
-Freecam Classic, oyuncuya bağlı bir kamera davranışı kullanır.
+Klasik Serbest Kamera, oyuncuya bağlı bir kamera davranışı kullanır.
 
-Bu, Freecam aktif olduğu sürece kameranın oyuncu ile dinamik olarak bağlantılı kaldığı anlamına gelir.
+Bu, Serbest Kamera aktif olduğu sürece kameranın oyuncu ile dinamik olarak bağlantılı kaldığı anlamına gelir.
 
 ---
 
 ## Davranış Şekli
 
-Freecam etkinleştirildiğinde:
+Serbest Kamera etkinleştirildiğinde:
 
 - Kamera, oyuncu ile sabit bir konumsal ilişkiyi korur.
 - Oyuncu hareket ettiğinde kamera da birlikte hareket eder.
 - Kamera dünyadan kopmaz veya bağımsız şekilde uzaklaşmaz.
 - Konumsal tutarlılık her zaman korunur.
 
-Bu yapı, Freecam’in öngörülebilir ve kontrollü çalışmasını sağlar.
+Bu yapı, Serbest Kamera’nın öngörülebilir ve kontrollü çalışmasını sağlar.
 
 ---
 
 ## Bu Tasarımın Amacı
 
-Classic sürüm şu prensiplerle tasarlanmıştır:
+Klasik sürüm şu prensiplerle tasarlanmıştır:
 
 - Hafif yapı
 - Güvenilir davranış
@@ -59,4 +59,4 @@ Takip sistemi şu önceliklere dayanır:
 - Güvenlik
 - Öngörülebilir davranış
 
-Classic sürümde bu sistem varsayılan olarak her zaman aktiftir ve konfigürasyon üzerinden devre dışı bırakılamaz.
+Klasik sürümde bu sistem varsayılan olarak her zaman aktiftir ve konfigürasyon üzerinden devre dışı bırakılamaz.

@@ -5,7 +5,7 @@ sidebar_position: 5
 
 # Override Sistemi
 
-Freecam Classic, Override Sistemi adı verilen modüler bir doğrulama katmanı içerir.
+Klasik Serbest Kamera, Override Sistemi adı verilen modüler bir doğrulama katmanı içerir.
 
 Bu sistem, çekirdek script dosyalarına müdahale etmeden belirli kontrolleri değiştirme veya genişletme imkanı sağlar.
 
@@ -26,13 +26,13 @@ Script iç dosyalarını düzenlemek yerine, override yapılandırması üzerind
 
 ## Mevcut Override Kancaları
 
-Freecam Classic aşağıdaki client-side override fonksiyonlarını destekler:
+Klasik Serbest Kamera aşağıdaki client-side override fonksiyonlarını destekler:
 
 ### DeadCheck
-Oyuncunun hayatta olup olmadığına göre Freecam’in açılıp açılmayacağını belirler.
+Oyuncunun hayatta olup olmadığına göre Serbest Kamera’nın açılıp açılmayacağını belirler.
 
 ### VehicleCheck
-Oyuncu araç içindeyken Freecam kullanımını kontrol eder.
+Oyuncu araç içindeyken Serbest Kamera kullanımını kontrol eder.
 
 ### Check
 Gelişmiş senaryolar için tamamen özel doğrulama kancasıdır.
@@ -61,14 +61,14 @@ Bir override’ı `true` yaptığınızda, sistem sizin özel implementasyonunuz
 
 ## Doğrulama Akışı
 
-Freecam aktivasyonu istendiğinde:
+Serbest Kamera aktivasyonu istendiğinde:
 
 1. DeadCheck çalışır (sistem kontrolü aktifse)
 2. VehicleCheck çalışır (sistem kontrolü aktifse)
 3. Check her zaman çalışır
 4. Herhangi bir doğrulama engellerse, lokalize edilmiş sistem mesajı döndürülür
 
-Freecam zaten aktifse, tekrar aktivasyon engellenir.
+Serbest Kamera zaten aktifse, tekrar aktivasyon engellenir.
 
 ---
 
@@ -81,15 +81,3 @@ Güncelleme güvenliği için:
 * Doğrulama işlemlerini sade ve öngörülebilir tutun
 
 Bu yaklaşım, sistemin kararlı ve gelecekteki güncellemelerle uyumlu kalmasını sağlar.
-
-```
-
----
-
-Şu ana kadar yaptığımız dosyalar artık:
-
-- Advanced Overview
-- Classic Configuration
-- Follow System
-- Installation
-- Override System

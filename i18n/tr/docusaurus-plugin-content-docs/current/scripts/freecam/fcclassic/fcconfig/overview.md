@@ -5,9 +5,9 @@ sidebar_position: 1
 
 # Konfigürasyon Genel Bakış
 
-Bu bölüm, Freecam Classic tarafından kullanılan tüm konfigürasyon modüllerini açıklar.
+Bu bölüm, Klasik Serbest Kamera tarafından kullanılan tüm konfigürasyon modüllerini açıklar.
 
-Freecam Classic tamamen konfigürasyon odaklı bir yapıya sahiptir.  
+Klasik Serbest Kamera tamamen konfigürasyon odaklı bir yapıya sahiptir.  
 Tüm sistem davranışı `config.lua` dosyasında tanımlanır.
 
 Script iç dosyalarını düzenlemenize gerek yoktur.
@@ -26,13 +26,13 @@ Yapılandırma aşağıdaki mantıksal bölümlere ayrılmıştır:
 - Override kancaları
 - Event ve export ayarları
 
-Her modül, Freecam yaşam döngüsünün belirli bir bölümünü kontrol eder.
+Her modül, Serbest Kamera yaşam döngüsünün belirli bir bölümünü kontrol eder.
 
 ---
 
 ## Temel Tasarım Yaklaşımı
 
-Freecam Classic şu prensipler üzerine tasarlanmıştır:
+Klasik Serbest Kamera şu prensipler üzerine tasarlanmıştır:
 
 - Kontrollü aktivasyon
 - Öngörülebilir kamera davranışı
@@ -55,4 +55,4 @@ Bu konfigürasyon bölümünde şunları öğreneceksiniz:
 - Export ve event’lerin nasıl aktifleştirileceği
 - Override sistemi ile davranışın nasıl genişletileceği
 
-Bu sayede Freecam Classic üzerinde tam kontrol sağlarken sistem kararlılığı korunur.
+Bu sayede Klasik Serbest Kamera üzerinde tam kontrol sağlarken sistem kararlılığı korunur.

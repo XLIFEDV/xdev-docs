@@ -3,9 +3,9 @@ title: Gelişmiş Serbest Kamera Genel Bakış
 sidebar_position: 2
 ---
 
-# Freecam Advanced
+# Gelişmiş Serbest Kamera
 
-Freecam Advanced, Freecam sisteminin genişletilmiş sürümüdür.
+Gelişmiş Serbest Kamera, Serbest Kamera sisteminin genişletilmiş sürümüdür.
 
 Classic sürüm hafif ve konfigürasyon odaklı bir yapı sunarken, Advanced sürüm daha kapsamlı bir kamera deneyimi ve genişletilebilir bir yapı sunmak üzere tasarlanmıştır.
 
@@ -21,7 +21,7 @@ Advanced sürüm şu alanlarda sistemi genişletir:
 
 ## Amaç
 
-Freecam Advanced şu ihtiyaçlara sahip sunucular için tasarlanmıştır:
+Gelişmiş Serbest Kamera şu ihtiyaçlara sahip sunucular için tasarlanmıştır:
 
 - Daha yüksek yönetim kontrolü
 - Geliştirilmiş kamera kullanılabilirliği
@@ -29,13 +29,13 @@ Freecam Advanced şu ihtiyaçlara sahip sunucular için tasarlanmıştır:
 - Diğer scriptlerle daha esnek entegrasyon
 
 Temel prensip Classic ile aynıdır:
-Temiz konfigürasyon ve kontrollü aktivasyon üzerine kurulmuş, oyuncuya bağlı ve güvenilir bir Freecam sistemi.
+Temiz konfigürasyon ve kontrollü aktivasyon üzerine kurulmuş, oyuncuya bağlı ve güvenilir bir Serbest Kamera sistemi.
 
 ---
 
 ## Temel Mantık
 
-Advanced sürüm, konumsal tutarlılık için kamerayı oyuncuya bağlı tutarken, temel Freecam mantığının üzerine daha gelişmiş bir kontrol katmanı ekler.
+Gelişmiş sürüm, konumsal tutarlılık için kamerayı oyuncuya bağlı tutarken, temel Serbest Kamera mantığının üzerine daha gelişmiş bir kontrol katmanı ekler.
 
 Bu yapı şunları sağlar:
 
