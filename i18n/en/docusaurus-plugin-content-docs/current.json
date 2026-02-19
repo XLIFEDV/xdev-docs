@@ -14,6 +14,12 @@
   "sidebar.tutorialSidebar.category.freecam": {
     "message": "FREECAM"
   },
+  "sidebar.tutorialSidebar.category.fcadvanced": {
+    "message": "ADVANCED FREECAM"
+  },
+  "sidebar.tutorialSidebar.category.fcclassic": {
+    "message": "CLASSIC FREECAM"
+  },
   "sidebar.tutorialSidebar.category.hackerjob": {
     "message": "HACKER JOB"
   },
@@ -32,13 +38,19 @@
   "sidebar.tutorialSidebar.category.scenario": {
     "message": "SCENARIO"
   },
-  "sidebar.tutorialSidebar.category.config": {
-    "message": "CONFIGURATION"
-  },
-  "sidebar.tutorialSidebar.category.ui": {
+  "sidebar.tutorialSidebar.category.pdui": {
     "message": "UI"
   },
-  "sidebar.tutorialSidebar.category.usage": {
+  "sidebar.tutorialSidebar.category.pdconfig": {
+    "message": "CONFIGURATION"
+  },
+  "sidebar.tutorialSidebar.category.pdusage": {
+    "message": "USAGE"
+  },
+  "sidebar.tutorialSidebar.category.fcconfig": {
+    "message": "CONFIGURATION"
+  },
+  "sidebar.tutorialSidebar.category.fcusage": {
     "message": "USAGE"
   },
   "sidebar.tutorialSidebar.category.maroonshupack": {

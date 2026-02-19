@@ -1,14 +1,15 @@
 ---
-title: Under Construction
+title: FREECAM
+sidebar_position: 1
 ---
 
-This section/system is **not active yet**.  
-Development is currently in progress and content will be added gradually.
+# FREECAM
 
-## What to expect
+FREECAM is a modular camera system for FiveM.
 
-- Features and pages will be updated over time  
-- This page will be updated or removed once development is complete  
-- Feedback may be used to improve the system
+This documentation is split into editions:
 
-> **Note:** This page is for informational purposes only. An announcement will be made when the system becomes available.
+- **Classic**: Lightweight Freecam, configuration-driven, no user-facing UI.
+- **Deluxe**: Advanced cinematic edition (coming soon).
+
+Each edition has its own configuration and usage documentation.

@@ -100,8 +100,8 @@ Kurulumun başarılı olduğunu doğrulamak için:
 
 Kurulumdan sonra aşağıdaki bölümlerle devam edebilirsiniz:
 
-* [Yapılandırma](./config/overview)
-* [Kullanım](./usage/overview)
-* [Entegrasyonlar](./usage/qb-target) (`qb-target`, özel sistemler)
+* [Yapılandırma](./pdconfig/overview)
+* [Kullanım](./pdusage/overview)
+* [Entegrasyonlar](./pdusage/qb-target) (`qb-target`, özel sistemler)
 
 Bu konular ayrı sayfalarda detaylı olarak dokümante edilmiştir.

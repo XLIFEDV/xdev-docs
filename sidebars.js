@@ -45,6 +45,78 @@ const sidebars = {
           "collapsed": true,
           "items": [
             {
+              "type": "category",
+              "label": "fcadvanced",
+              "collapsed": true,
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "scripts/freecam/fcadvanced/overview"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "fcclassic",
+              "collapsed": true,
+              "items": [
+                {
+                  "type": "category",
+                  "label": "fcconfig",
+                  "collapsed": true,
+                  "items": [
+                    {
+                      "type": "doc",
+                      "id": "scripts/freecam/fcclassic/fcconfig/overview"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "scripts/freecam/fcclassic/fcconfig/installation"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "scripts/freecam/fcclassic/fcconfig/configuration"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "scripts/freecam/fcclassic/fcconfig/follow-system"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "scripts/freecam/fcclassic/fcconfig/override-system"
+                    }
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "fcusage",
+                  "collapsed": true,
+                  "items": [
+                    {
+                      "type": "doc",
+                      "id": "scripts/freecam/fcclassic/fcusage/overview"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "scripts/freecam/fcclassic/fcusage/controls"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "scripts/freecam/fcclassic/fcusage/exports"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "scripts/freecam/fcclassic/fcusage/faq"
+                    }
+                  ]
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/freecam/fcclassic/overview"
+                }
+              ]
+            },
+            {
               "type": "doc",
               "id": "scripts/freecam/overview"
             }
@@ -90,66 +162,66 @@ const sidebars = {
           "items": [
             {
               "type": "category",
-              "label": "config",
+              "label": "pdconfig",
               "collapsed": true,
               "items": [
                 {
                   "type": "category",
-                  "label": "ui",
+                  "label": "pdui",
                   "collapsed": true,
                   "items": [
                     {
                       "type": "doc",
-                      "id": "scripts/posdevice/config/ui/overview"
+                      "id": "scripts/posdevice/pdconfig/pdui/overview"
                     },
                     {
                       "type": "doc",
-                      "id": "scripts/posdevice/config/ui/credit-card-ui"
+                      "id": "scripts/posdevice/pdconfig/pdui/credit-card-ui"
                     }
                   ]
                 },
                 {
                   "type": "doc",
-                  "id": "scripts/posdevice/config/overview"
+                  "id": "scripts/posdevice/pdconfig/overview"
                 },
                 {
                   "type": "doc",
-                  "id": "scripts/posdevice/config/system-settings"
+                  "id": "scripts/posdevice/pdconfig/system-settings"
                 },
                 {
                   "type": "doc",
-                  "id": "scripts/posdevice/config/debug-settings"
+                  "id": "scripts/posdevice/pdconfig/debug-settings"
                 },
                 {
                   "type": "doc",
-                  "id": "scripts/posdevice/config/history-system"
+                  "id": "scripts/posdevice/pdconfig/history-system"
                 },
                 {
                   "type": "doc",
-                  "id": "scripts/posdevice/config/override-settings"
+                  "id": "scripts/posdevice/pdconfig/override-settings"
                 },
                 {
                   "type": "doc",
-                  "id": "scripts/posdevice/config/event-triggers"
+                  "id": "scripts/posdevice/pdconfig/event-triggers"
                 }
               ]
             },
             {
               "type": "category",
-              "label": "usage",
+              "label": "pdusage",
               "collapsed": true,
               "items": [
                 {
                   "type": "doc",
-                  "id": "scripts/posdevice/usage/overview"
+                  "id": "scripts/posdevice/pdusage/overview"
                 },
                 {
                   "type": "doc",
-                  "id": "scripts/posdevice/usage/qb-target"
+                  "id": "scripts/posdevice/pdusage/qb-target"
                 },
                 {
                   "type": "doc",
-                  "id": "scripts/posdevice/usage/events-and-exports"
+                  "id": "scripts/posdevice/pdusage/events-and-exports"
                 }
               ]
             },

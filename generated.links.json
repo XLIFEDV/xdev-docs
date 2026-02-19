@@ -20,7 +20,7 @@
     },
     {
       "label": "freecam",
-      "to": "/scripts/freecam/overview"
+      "to": "/scripts/freecam/fcadvanced/overview"
     },
     {
       "label": "hackerjob",
@@ -36,7 +36,7 @@
     },
     {
       "label": "posdevice",
-      "to": "/scripts/posdevice/config/overview"
+      "to": "/scripts/posdevice/pdconfig/overview"
     },
     {
       "label": "racing",

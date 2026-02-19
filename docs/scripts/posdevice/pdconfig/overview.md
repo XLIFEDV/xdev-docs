@@ -29,4 +29,4 @@ The configuration is split into multiple pages to keep each topic focused and ea
 - [History System](./history-system)
 - [Override Settings](./override-settings)
 - [Event Triggers](./event-triggers)
-- [UI Settings](./ui/overview)
+- [UI Settings](./pdui/overview)

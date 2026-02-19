@@ -1,14 +1,9 @@
 ---
-title: Yapım Aşamasında
+title: Serbest Kamera (FREECAM)
+sidebar_position: 1
 ---
 
-Bu bölüm/sistem şu anda **aktif değildir**.  
-Geliştirme süreci devam ediyor ve içerikler aşamalı olarak eklenecektir.
+# FREECAM
+```
 
-## Ne beklemelisiniz?
-
-- Özellikler ve sayfalar zamanla güncellenecek
-- İçerikler tamamlandıkça bu sayfa kaldırılacak veya güncellenecek
-- Geri bildirimleriniz geliştirme sürecine katkı sağlar
-
-> **Not:** Bu sayfa bilgilendirme amaçlıdır. Sistem hazır olduğunda duyuru yapılacaktır.
+FREECAM, FiveM için modüler bir kamera sistemidir.

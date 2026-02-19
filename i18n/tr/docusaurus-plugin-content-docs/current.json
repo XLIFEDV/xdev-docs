@@ -17,6 +17,12 @@
   "sidebar.tutorialSidebar.category.freecam": {
     "message": "SERBEST KAMERA (FREECAM)"
   },
+  "sidebar.tutorialSidebar.category.fcadvanced": {
+    "message": "GELİŞMİŞ SERBEST KAMERA"
+  },
+  "sidebar.tutorialSidebar.category.fcclassic": {
+    "message": "KLASİK SERBEST KAMERA"
+  },
   "sidebar.tutorialSidebar.category.hackerjob": {
     "message": "HACKER GÖREVLERİ (JOB)"
   },
@@ -35,13 +41,19 @@
   "sidebar.tutorialSidebar.category.scenario": {
     "message": "SENARYO SİSTEMİ"
   },
-  "sidebar.tutorialSidebar.category.config": {
-    "message": "YAPILANDIRMA"
-  },
-  "sidebar.tutorialSidebar.category.ui": {
+  "sidebar.tutorialSidebar.category.pdui": {
     "message": "ARAYÜZ"
   },
-  "sidebar.tutorialSidebar.category.usage": {
+  "sidebar.tutorialSidebar.category.pdconfig": {
+    "message": "YAPILANDIRMA"
+  },
+  "sidebar.tutorialSidebar.category.pdusage": {
+    "message": "KULLANIM"
+  },
+  "sidebar.tutorialSidebar.category.fcconfig": {
+    "message": "YAPILANDIRMA"
+  },
+  "sidebar.tutorialSidebar.category.fcusage": {
     "message": "KULLANIM"
   },
   "sidebar.tutorialSidebar.category.maroonshupack": {
