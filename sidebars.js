@@ -67,15 +67,15 @@ const sidebars = {
                   "items": [
                     {
                       "type": "doc",
+                      "id": "scripts/freecam/fcclassic/fcconfig/configuration"
+                    },
+                    {
+                      "type": "doc",
                       "id": "scripts/freecam/fcclassic/fcconfig/overview"
                     },
                     {
                       "type": "doc",
                       "id": "scripts/freecam/fcclassic/fcconfig/installation"
-                    },
-                    {
-                      "type": "doc",
-                      "id": "scripts/freecam/fcclassic/fcconfig/configuration"
                     },
                     {
                       "type": "doc",

@@ -5,9 +5,15 @@ sidebar_position: 2
 
 # Installation
 
-## 1) Resource placement
+This guide explains how to properly install and configure Freecam Classic on your FiveM server.
 
-Place the resource into your server resources folder, for example:
+---
+
+## 1) Resource Placement
+
+Place the Freecam resource inside your server's resources directory.
+
+Example:
 
 ```
 
@@ -15,9 +21,13 @@ resources/[xdev]/xdev-freecam
 
 ```
 
-## 2) server.cfg
+The folder name should match the resource name used in `server.cfg`.
 
-Add:
+---
+
+## 2) server.cfg Configuration
+
+Add the following line to your `server.cfg`:
 
 ```
 
@@ -25,7 +35,7 @@ ensure xdev-freecam
 
 ```
 
-If you use a framework, load it before Freecam:
+If you are using a framework (for example QBCore), ensure it is started before Freecam:
 
 ```
 
@@ -34,43 +44,80 @@ ensure xdev-freecam
 
 ````
 
-## 3) Locale
+This guarantees proper dependency order.
 
-Set the language in `config.lua`:
+---
+
+## 3) Locale Configuration
+
+Open `config.lua` and set your preferred language:
 
 ```lua
 Config.Locale = 'en'
 ````
 
-* `nil` / `false`: auto-detect (fallback: English)
-* `tr`, `en`, `de`, `fr`, `ru`, `es`
+Available options:
 
-## 4) Optional: Enable exports
+* `nil` / `false` → automatic detection (fallback: English)
+* `'tr'`
+* `'en'`
+* `'de'`
+* `'fr'`
+* `'ru'`
+* `'es'`
 
-Exports are disabled by default:
+---
+
+## 4) Configure System Behavior
+
+Before launching your server, review:
+
+* Activation settings (`Config.System.action`)
+* Camera limits
+* Validation checks
+* Speed multipliers
+* Reset behavior
+
+All system behavior is controlled through `config.lua`.
+
+---
+
+## 5) Optional: Enable Exports
+
+Exports are disabled by default.
+
+To enable them:
 
 ```lua
-Config.Exports.openFreecam  = false
-Config.Exports.closeFreecam = false
-Config.Exports.getData      = false
+Config.Exports.openFreecam  = true
+Config.Exports.closeFreecam = true
+Config.Exports.getData      = true
 ```
 
-Enable what you need:
+Only enable the exports you intend to use.
 
-```lua
-Config.Exports.openFreecam = true
-Config.Exports.getData     = true
-```
+---
 
-## 5) Optional: Enable events
+## 6) Optional: Enable Events
 
-Client-side events are disabled by default:
+Client-side events are disabled by default.
 
 ```lua
 Config.Events.ClientSide.system = {
-  onStart = false,
-  onClose = false
+    onStart = false,
+    onClose = false
 }
 ```
 
-Set them to `true` to use default event triggers, or set a string to use a custom event name.
+You may:
+
+* Set values to `true` to use default internal triggers
+* Set a string to use a custom event name
+
+---
+
+## 7) Final Step
+
+Restart your server after completing installation.
+
+Freecam Classic will now be ready for use according to your configuration.

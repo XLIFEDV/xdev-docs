@@ -1,31 +1,95 @@
 ---
-title: Override System
+title: Override Sistemi
 sidebar_position: 5
 ---
 
 # Override Sistemi
-```
 
-Freecam açılmadan önce doğrulama yapılır:
+Freecam Classic, Override Sistemi adı verilen modüler bir doğrulama katmanı içerir.
 
-1. Ölüm kontrolü
-2. Araç kontrolü
-3. Özel kontrol
+Bu sistem, çekirdek script dosyalarına müdahale etmeden belirli kontrolleri değiştirme veya genişletme imkanı sağlar.
 
 ---
 
-## Kontrolleri Açma/Kapama
+## Amaç
+
+Override Sistemi şu ihtiyaçlar için tasarlanmıştır:
+
+- Framework uyumluluğu
+- Özel doğrulama mantığı
+- Kontrollü aktivasyon kuralları
+- Özel bildirim (notify) yönetimi
+
+Script iç dosyalarını düzenlemek yerine, override yapılandırması üzerinden kendi mantığınızı tanımlayabilirsiniz.
+
+---
+
+## Mevcut Override Kancaları
+
+Freecam Classic aşağıdaki client-side override fonksiyonlarını destekler:
+
+### DeadCheck
+Oyuncunun hayatta olup olmadığına göre Freecam’in açılıp açılmayacağını belirler.
+
+### VehicleCheck
+Oyuncu araç içindeyken Freecam kullanımını kontrol eder.
+
+### Check
+Gelişmiş senaryolar için tamamen özel doğrulama kancasıdır.
+
+### SendNotify
+Aktivasyon engellendiğinde özel bildirim sistemi kullanmanıza imkan tanır.
+
+---
+
+## Override’ları Aktifleştirme
+
+Override ayarları `config.lua` içinde kontrol edilir:
 
 ```lua
-Config.System.checks.dead    = true/false
-Config.System.checks.vehicle = true/false
-```
+Config.Override.ClientSide.DeadCheck    = false
+Config.Override.ClientSide.VehicleCheck = false
+Config.Override.ClientSide.Check        = false
+Config.Override.ClientSide.SendNotify   = false
+````
+
+Bir override’ı `true` yaptığınızda, sistem sizin özel implementasyonunuzu kullanır.
+
+`false` olduğunda, script varsayılan iç doğrulama mantığını kullanır.
 
 ---
 
 ## Doğrulama Akışı
 
-* DeadCheck başarısız → `system.dead_check`
-* VehicleCheck başarısız → `system.vehicle_check`
-* Custom Check başarısız → `system.check`
-* Zaten aktif → `system.freecam_active`
+Freecam aktivasyonu istendiğinde:
+
+1. DeadCheck çalışır (sistem kontrolü aktifse)
+2. VehicleCheck çalışır (sistem kontrolü aktifse)
+3. Check her zaman çalışır
+4. Herhangi bir doğrulama engellerse, lokalize edilmiş sistem mesajı döndürülür
+
+Freecam zaten aktifse, tekrar aktivasyon engellenir.
+
+---
+
+## Önerilen Kullanım
+
+Güncelleme güvenliği için:
+
+* Script iç mantığını değiştirmeyin
+* Özel davranışları override sistemi üzerinden tanımlayın
+* Doğrulama işlemlerini sade ve öngörülebilir tutun
+
+Bu yaklaşım, sistemin kararlı ve gelecekteki güncellemelerle uyumlu kalmasını sağlar.
+
+```
+
+---
+
+Şu ana kadar yaptığımız dosyalar artık:
+
+- Advanced Overview
+- Classic Configuration
+- Follow System
+- Installation
+- Override System

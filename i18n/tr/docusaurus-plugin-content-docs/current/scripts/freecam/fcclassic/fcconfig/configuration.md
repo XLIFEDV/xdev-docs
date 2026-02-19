@@ -1,167 +1,83 @@
 ---
-title: System Settings
-sidebar_position: 3
+title: Konfigürasyon
+sidebar_position: 1
 ---
 
-# Sistem Ayarları
+# Freecam Classic – Konfigürasyon
 
-Bu sayfa, Freecam Classic tarafından kullanılan `config.lua` ayarlarını açıklar.
-```
+Freecam Classic tamamen `config.lua` dosyası üzerinden kontrol edilir.
 
----
+Aktivasyon mantığı, kamera limitleri, doğrulama kontrolleri ve entegrasyon ayarları dahil olmak üzere tüm sistem davranışı bu yapılandırma katmanında tanımlanır.
 
-## Locale
+Bu tasarım sayesinde sistem:
 
-```lua
-Config.Locale = 'en'
-```
-
-* `nil` / `false`: dili otomatik algılar (varsayılan: İngilizce)
-* `'tr'`, `'en'`, `'de'`, `'fr'`, `'ru'`, `'es'`
+- Hafif
+- Öngörülebilir
+- Bakımı kolay
+- Mevcut sunuculara güvenli şekilde entegre edilebilir
 
 ---
 
-## Debug Mode
+## Konfigürasyon Yapısı
 
-```lua
-Config.System.Debug = false
-```
+`config.lua` dosyası mantıksal bölümlere ayrılmıştır:
 
-* `false`: yalnızca kritik hatalar yazdırılır
-* `true`: ayrıntılı debug logları yazdırılır (doğrulama, locale tespiti vb.)
+- Dil (Locale) ayarları
+- Debug modu
+- Sistem doğrulama kontrolleri
+- Aktivasyon yapılandırması
+- Kamera davranış ayarları
+- Hareket ve dönüş hız çarpanları
+- Override kancaları (hooks)
+- Event ve export ayarları
 
----
-
-## System Checks
-
-Bu ayarlar, Freecam açılırken doğrulama yapılmasını belirler.
-
-```lua
-Config.System.checks.dead    = false
-Config.System.checks.vehicle = false
-```
-
-### Dead Check
-
-* `true`: oyuncunun hayatta olması gerekir
-* `false`: ölüm kontrolü yapılmaz
-
-### Vehicle Check
-
-* `true`: araç durumu kontrol edilir
-* `false`: araç kontrolü yapılmaz
-
-> Not: “Geçerli” durumun ne olduğu, override implementasyonunuza bağlıdır.
+Her bölüm bağımsız çalışır ancak birlikte Freecam sisteminin genel akışını oluşturur.
 
 ---
 
-## Activation (Komut / Tuş / Basılı Tutma)
+## Neler Yapılandırılabilir?
 
-```lua
-Config.System.action = {
-    command = "freecam",
-    key = "V",
-    hold = 2000
-}
-```
+Freecam Classic ile aşağıdaki alanları kontrol edebilirsiniz:
 
-### Alanlar
+### • Aktivasyon Yöntemi
+Freecam’e şu yöntemlerden biriyle erişim sağlayabilirsiniz:
+- Sohbet komutu
+- Tuş ataması
+- Basılı tutma mantığı
 
-* `command`: Sohbet komutu adı (`/freecam`)
-* `key`: Tuş ataması (örnek: `V`)
-* `hold`: Tuşun basılı tutulma süresi (milisaniye)
+### • Kamera Reset Davranışı
+Kamera değerlerinin her açılışta sıfırlanmasını veya önceki oturumdan korunmasını belirleyebilirsiniz.
 
-### Davranış Kuralları
+### • Hareket ve Dönüş Limitleri
+Aşağıdaki sınırları kontrol edebilirsiniz:
+- Maksimum kamera mesafesi
+- Minimum ve maksimum zoom (FOV)
+- Hareket hız çarpanları
+- Dönüş hız çarpanları
+- Zoom hız çarpanları
 
-* `command` `nil` ise → varsayılan `"freecam"` kullanılır
-* `key` `nil` ise → tuş ile erişim devre dışı kalır
-* `key` `nil` ama `hold` dolu ise → yine erişim sağlanmaz
-* `hold` `nil` ise → varsayılan 2000 ms kullanılır
+### • Doğrulama Akışı
+Şu kontrolleri açıp kapatabilirsiniz:
+- Ölüm kontrolü
+- Araç kontrolü
+- Özel sunucu kontrolü
 
----
-
-## Reset Behavior
-
-```lua
-Config.System.reset = false
-```
-
-* `true`: her açılışta kamera ayarları sıfırlanır
-* `false`: son kullanılan ayarlar korunur
-
-Reset açıkken yeni kamera verisi oluşturulur:
-
-```lua
-camData = {
-  coord  = Config.System.firstposition,
-  zoom   = Config.System.values.zoom.default,
-  rotate = vector3(0.0, 0.0, 0.0)
-}
-```
+### • Entegrasyon Ayarları
+Aşağıdakileri yapılandırabilirsiniz:
+- Opsiyonel export’lar
+- Opsiyonel client-side event’ler
+- Özel davranışlar için override sistemleri
 
 ---
 
-## Initial Camera Offset
+## Konfigürasyon Felsefesi
 
-```lua
-Config.System.firstposition = vec3(0.0, 1.5, 0.5)
-```
+Freecam Classic, konfigürasyon odaklı bir mimari ile tasarlanmıştır.
 
-Freecam ilk açıldığında kullanılacak başlangıç konum ofsetidir.
+Script iç mantığını değiştirmek yerine:
 
----
+- `config.lua` içerisindeki değerleri düzenlemeniz,
+- İhtiyaç duyulan modülleri açıp kapatmanız,
+- Gerekirse override kancalarını kullanmanız önerilir.
 
-## Camera Animation Duration
-
-```lua
-Config.System.cam_animation = 750 -- ms
-```
-
-Freecam açılış/kapanış geçiş süresini belirler.
-
----
-
-## Zoom (FOV)
-
-```lua
-Config.System.values.zoom.default = 90.0
-Config.System.values.zoom.min     = 10.0
-Config.System.values.zoom.max     = 120.0
-```
-
-Zoom işlemi FOV (Field of View) değiştirerek yapılır.
-
----
-
-## Distance Limit
-
-```lua
-Config.System.values.distance = 7.5
-```
-
-Kamera oyuncudan bu mesafeden daha uzağa gidemez.
-
----
-
-## Speed Multipliers
-
-### Movement
-
-```lua
-Config.System.multipliers.move.slow = 0.005
-Config.System.multipliers.move.fast = 0.1
-```
-
-### Rotation
-
-```lua
-Config.System.multipliers.rotate.slow = 0.25
-Config.System.multipliers.rotate.fast = 1.0
-```
-
-### Zoom
-
-```lua
-Config.System.multipliers.zoom.slow = 0.25
-Config.System.multipliers.zoom.fast = 1.0
-```
+Bu yaklaşım, scriptin kararlı ve güncelleme güvenli kalmasını sağlar.

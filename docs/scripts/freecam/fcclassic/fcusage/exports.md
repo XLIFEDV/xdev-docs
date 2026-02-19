@@ -5,9 +5,15 @@ sidebar_position: 3
 
 # Exports
 
-Exports are optional and disabled by default in `config.lua`.
+Freecam Classic provides optional exports for integration with other resources.
 
-Enable them:
+Exports are disabled by default and must be enabled in `config.lua`.
+
+---
+
+## Enabling Exports
+
+Inside `config.lua`:
 
 ```lua
 Config.Exports.openFreecam  = true
@@ -15,50 +21,61 @@ Config.Exports.closeFreecam = true
 Config.Exports.getData      = true
 ````
 
+Only enable the exports you plan to use.
+
 ---
 
 ## openFreecam()
 
+Activates Freecam programmatically.
+
+Example:
+
 ```lua
-exports("openFreecam", function()
-  local result = toggleFreeCam(true)
-  -- result is false on success, or a localized error message string on failure
-end)
+exports['xdev-freecam']:openFreecam()
 ```
 
-### Return behavior
+### Return Value
 
-* `false` → activation succeeded
-* `string` → activation blocked (localized message)
+The function returns:
 
-Possible messages:
+* `false` → Activation successful
+* `string` → Activation blocked (localized system message)
 
-* `system.dead_check`
-* `system.vehicle_check`
-* `system.check`
-* `system.freecam_active`
+Possible blocked states include:
+
+* Player validation failure
+* Vehicle restriction
+* Custom check restriction
+* Freecam already active
 
 ---
 
 ## closeFreecam()
 
+Disables Freecam programmatically.
+
+Example:
+
 ```lua
-exports("closeFreecam", function()
-  toggleFreeCam(false)
-end)
+exports['xdev-freecam']:closeFreecam()
 ```
 
-Closes Freecam safely.
+This safely restores normal gameplay camera control.
 
 ---
 
 ## getData()
 
+Returns current Freecam state information.
+
+Example:
+
 ```lua
 local data = exports['xdev-freecam']:getData()
 ```
 
-### Return structure (matches `functions.lua`)
+### Returned Structure
 
 ```lua
 {
@@ -72,7 +89,22 @@ local data = exports['xdev-freecam']:getData()
 }
 ```
 
-### Notes
+### Field Description
 
-* `cam` becomes `false` when Freecam is not active
-* `camData` may be `false` until Freecam is opened at least once (if reset is disabled)
+* `freecamActive` → Indicates whether Freecam is currently active.
+* `cam` → Contains camera data when active, otherwise `false`.
+* `mainCoords` → Player’s current world coordinates.
+* `configSystem` → Current system configuration.
+
+---
+
+## Integration Notes
+
+Exports allow:
+
+* Administrative control panels
+* Custom moderation tools
+* Conditional activation logic
+* External system monitoring
+
+It is recommended to keep logic validation inside Freecam and use exports only for controlled interaction.

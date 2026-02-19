@@ -5,29 +5,58 @@ sidebar_position: 4
 
 # Follow System
 
-Freecam Classic uses a **player-follow camera behavior**.
+Freecam Classic uses a player-bound camera behavior.
 
-This means the camera is designed to stay **linked to the player’s position**:
+This means the camera remains dynamically linked to the player while Freecam is active.
 
+---
+
+## How It Behaves
+
+When Freecam is enabled:
+
+- The camera maintains a stable spatial relationship with the player.
 - If the player moves, the camera moves with them.
-- The camera remains stable and consistent during movement.
-- This prevents the camera from drifting away or getting “lost” in the world.
+- The camera does not detach or drift into the world.
+- Position consistency is preserved at all times.
+
+This ensures that Freecam remains predictable and controlled.
 
 ---
 
-## Why it exists
+## Why This Design Exists
 
-Classic mode is meant to be lightweight and reliable, especially for:
+Classic edition is designed to be:
 
-- Admin usage
-- Moderation
-- Basic cinematic positioning
+- Lightweight
+- Reliable
+- Safe for administrative and moderation use
+- Easy to integrate into structured servers
 
-The follow behavior ensures you always remain spatially consistent with your character.
+A fully detached free-floating camera could create positional instability or unintended behavior.  
+The follow system prevents that by maintaining positional alignment with the player entity.
 
 ---
 
-## Notes
+## Movement Within Limits
 
-- This edition does not provide an on-screen UI to adjust follow behavior.
-- Follow behavior is part of the Classic design and is always active.
+Although the camera follows the player, it still allows controlled repositioning within configured limits.
+
+The system ensures:
+
+- Maximum distance restrictions are respected
+- Movement remains consistent
+- Camera control stays responsive
+
+---
+
+## Design Philosophy
+
+The Follow System prioritizes:
+
+- Stability
+- Control
+- Safety
+- Predictable behavior
+
+It is intentionally always active in Classic edition and cannot be disabled through configuration.

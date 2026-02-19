@@ -5,46 +5,79 @@ sidebar_position: 5
 
 # Override System
 
-Freecam Classic includes a validation layer that runs before enabling the camera.
+Freecam Classic includes a modular validation layer called the Override System.
 
-The activation flow checks:
-
-1. Dead state (optional)
-2. Vehicle state (optional)
-3. Custom validation (always runs)
+This system allows server owners and developers to replace or extend specific internal checks without modifying the core script.
 
 ---
 
-## Enabling/Disabling Checks
+## Purpose
 
-Checks are enabled via config:
+The Override System exists to provide:
+
+- Framework compatibility
+- Custom validation logic
+- Controlled activation rules
+- Custom notification handling
+
+Instead of editing internal files, you can define your own logic inside the override configuration.
+
+---
+
+## Available Override Hooks
+
+Freecam Classic supports the following client-side overrides:
+
+### DeadCheck
+Determines whether the player is allowed to activate Freecam based on life state.
+
+### VehicleCheck
+Determines whether the player can activate Freecam while inside a vehicle.
+
+### Check
+A fully custom validation hook for advanced conditions.
+
+### SendNotify
+Allows custom notification handling when activation is blocked.
+
+---
+
+## Enabling Overrides
+
+Overrides are controlled inside `config.lua`:
 
 ```lua
-Config.System.checks.dead    = true/false
-Config.System.checks.vehicle = true/false
+Config.Override.ClientSide.DeadCheck    = false
+Config.Override.ClientSide.VehicleCheck = false
+Config.Override.ClientSide.Check        = false
+Config.Override.ClientSide.SendNotify   = false
 ````
+
+Set a value to `true` to use your custom implementation.
+
+When disabled (`false`), the script uses its internal validation logic.
 
 ---
 
 ## Validation Flow
 
-When enabling Freecam, the script does:
+When Freecam activation is requested:
 
-* If dead check is enabled and DeadCheck fails → returns `system.dead_check`
-* If vehicle check is enabled and VehicleCheck blocks → returns `system.vehicle_check`
-* If custom Check fails → returns `system.check`
+1. DeadCheck runs (if enabled in system checks)
+2. VehicleCheck runs (if enabled in system checks)
+3. Check always runs
+4. If any validation blocks activation, a localized system message is returned
 
-If Freecam is already active and you try to enable again → returns `system.freecam_active`
+If Freecam is already active, activation will be prevented.
 
 ---
 
-## Override Hooks
+## Best Practice
 
-The following hooks are called via `checkOverride(...)`:
+To maintain update safety:
 
-* `Override.DeadCheck(ped)`
-* `Override.VehicleCheck(ped)`
-* `Override.Check(ped)`
-* `Override.SendNotify(message)` (used when debug is enabled and an error message exists)
+* Do not edit internal script logic
+* Implement custom behavior through overrides
+* Keep validation lightweight and predictable
 
-You can implement your own logic inside the override file.
+This ensures future compatibility and stable operation.

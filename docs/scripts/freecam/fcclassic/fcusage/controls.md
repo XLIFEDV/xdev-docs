@@ -5,59 +5,86 @@ sidebar_position: 2
 
 # Controls
 
-Freecam Classic is **UI-free**.
+Freecam Classic operates without a graphical user interface.
 
-There are no menus or on-screen hints. Users are expected to **memorize the controls**.
+There are no on-screen panels or visual guides.  
+Users are expected to understand the configured control scheme.
 
-While Freecam is active:
+---
 
-- Player gameplay actions are blocked to prevent conflicts.
-- Your input is dedicated to camera control.
+## Activation
+
+Freecam can be activated depending on your server configuration:
+
+- Chat command
+- Key binding
+- Hold-to-activate logic
+
+The exact behavior is defined inside:
+
+```lua
+Config.System.action
+````
 
 ---
 
 ## Camera Movement
 
-Freecam supports basic camera movement:
+While Freecam is active:
 
-- Forward / Backward
-- Left / Right
-- Up / Down (if enabled in your build)
+* Standard gameplay input is blocked.
+* Movement input is redirected to camera control.
+* The camera can move within configured limits.
 
-Movement speed depends on server configuration:
+Movement speed depends on:
 
-- Slow movement multiplier
-- Fast movement multiplier (commonly used with a modifier key)
+* Slow movement multiplier
+* Fast movement multiplier (typically used with a modifier key)
+
+Server owners control these values inside the configuration file.
 
 ---
 
 ## Camera Rotation
 
-Camera rotation is controlled by mouse movement.
+Camera rotation is controlled through mouse input.
 
-Rotation speed is also controlled through configuration multipliers.
+Rotation speed is determined by:
 
----
+* Slow rotation multiplier
+* Fast rotation multiplier
 
-## Zoom (FOV)
-
-Zoom is controlled by changing the camera field of view (FOV).
-
-Zoom behavior depends on:
-
-- minimum zoom limit
-- maximum zoom limit
-- zoom speed multipliers
+These values are configurable.
 
 ---
 
-## Closing Freecam
+## Zoom Control
 
-Freecam can be closed using the configured exit controls (commonly ESC / Back).
+Zoom is handled by adjusting the camera field of view (FOV).
+
+Zoom behavior respects:
+
+* Minimum zoom limit
+* Maximum zoom limit
+* Configured zoom speed multipliers
 
 ---
 
-## Notes for Server Owners
+## Deactivation
 
-Since this edition has no UI, users may need guidance.  
-You can provide a short control list in your server rules, Discord, or admin handbook.
+Freecam can be disabled using the configured exit controls.
+
+When disabled:
+
+* The camera returns control to normal gameplay.
+* All input restrictions are lifted.
+
+---
+
+## Important Notes
+
+* Freecam Classic does not provide visual feedback.
+* Control awareness is the responsibility of the user.
+* Server administrators may provide control documentation separately if needed.
+
+For advanced control features and UI-based interaction, refer to the Advanced edition.

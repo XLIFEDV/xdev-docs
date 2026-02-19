@@ -1,40 +1,90 @@
 ---
-title: Controls
+title: Kontroller
 sidebar_position: 2
 ---
 
 # Kontroller
-```
 
-Freecam Classic arayüz içermez.
+Freecam Classic grafiksel bir arayüz olmadan çalışır.
 
-Oyuncular kontrolleri ezbere bilmelidir.
+Ekran üzerinde panel veya görsel yönlendirme bulunmaz.  
+Kullanıcıların yapılandırılmış kontrol düzenini bilmesi beklenir.
+
+---
+
+## Aktivasyon
+
+Freecam, sunucu yapılandırmasına bağlı olarak şu yöntemlerle aktif edilebilir:
+
+- Sohbet komutu
+- Tuş ataması
+- Basılı tutma mantığı
+
+Bu davranış aşağıdaki ayar üzerinden belirlenir:
+
+```lua
+Config.System.action
+````
 
 ---
 
 ## Kamera Hareketi
 
-* İleri / Geri
-* Sağ / Sol
-* Yukarı / Aşağı (varsa)
+Freecam aktifken:
 
-Hız, config multipliers’a bağlıdır.
+* Normal oyun kontrolleri devre dışı bırakılır.
+* Hareket girdileri kamera kontrolüne yönlendirilir.
+* Kamera, yapılandırılmış limitler dahilinde hareket edebilir.
+
+Hareket hızı şu değerlere bağlıdır:
+
+* Yavaş hareket çarpanı
+* Hızlı hareket çarpanı (genellikle bir modifier tuş ile)
+
+Bu değerler `config.lua` dosyasında ayarlanabilir.
 
 ---
 
 ## Kamera Döndürme
 
-Mouse hareketi ile yapılır.
-Hız, rotation multiplier’a bağlıdır.
+Kamera döndürme işlemi mouse hareketi ile yapılır.
+
+Dönüş hızı şu çarpanlara bağlıdır:
+
+* Yavaş dönüş çarpanı
+* Hızlı dönüş çarpanı
+
+Bu değerler konfigürasyon üzerinden değiştirilebilir.
 
 ---
 
-## Zoom
+## Zoom Kontrolü
 
-FOV değişimi ile yapılır.
+Zoom işlemi kamera görüş açısının (FOV) değiştirilmesiyle gerçekleştirilir.
+
+Zoom davranışı şu limitlere bağlıdır:
+
+* Minimum zoom sınırı
+* Maksimum zoom sınırı
+* Zoom hız çarpanları
 
 ---
 
-## Freecam Kapatma
+## Devre Dışı Bırakma
 
-Genellikle ESC veya tanımlı çıkış tuşu ile kapatılır.
+Freecam, yapılandırılmış çıkış kontrolü kullanılarak kapatılabilir.
+
+Kapatıldığında:
+
+* Kamera kontrolü normal oyun akışına döner.
+* Girdi kısıtlamaları kaldırılır.
+
+---
+
+## Önemli Notlar
+
+* Freecam Classic görsel geri bildirim sunmaz.
+* Kontrollerin bilinmesi kullanıcı sorumluluğundadır.
+* Gerekirse sunucu yöneticileri ayrı bir kontrol rehberi paylaşabilir.
+
+Arayüz destekli gelişmiş kontrol özellikleri için Advanced sürümüne bakınız.

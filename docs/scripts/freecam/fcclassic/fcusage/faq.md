@@ -3,57 +3,133 @@ title: FAQ
 sidebar_position: 4
 ---
 
-# FAQ
+# Frequently Asked Questions
 
-## Freecam does not open
+This section covers common issues and operational questions related to Freecam Classic.
 
-Check these:
+---
 
-1. `Config.System.action` is set correctly (command/key/hold).
-2. Freecam is not already active (`system.freecam_active`).
-3. Checks are not blocking activation:
+## Freecam does not activate
+
+Check the following:
+
+1. Is the activation method configured correctly?
+   - `Config.System.action.command`
+   - `Config.System.action.key`
+   - `Config.System.action.hold`
+
+2. Is Freecam already active?
+   - Attempting to activate while active will be blocked.
+
+3. Are system checks enabled?
    - `Config.System.checks.dead`
    - `Config.System.checks.vehicle`
-4. Your override logic is not returning a blocking value.
+
+4. Is your custom override logic blocking activation?
 
 ---
 
-## I get `system.dead_check`
+## I receive a dead check error
 
-DeadCheck failed while `Config.System.checks.dead = true`.
+If `Config.System.checks.dead = true`, the player must pass the life-state validation.
 
-Disable the check or implement your own DeadCheck logic.
+Solutions:
 
----
-
-## I get `system.vehicle_check`
-
-VehicleCheck blocked activation while `Config.System.checks.vehicle = true`.
-
-Disable the check or adjust VehicleCheck override behavior.
+- Disable the dead check.
+- Adjust your DeadCheck override logic.
 
 ---
 
-## Camera does not move
+## I receive a vehicle restriction error
 
-The script updates camera movement based on input state stored in `buttonData`.
+If `Config.System.checks.vehicle = true`, the system will validate vehicle state before activation.
 
-If your NUI input layer is not sending `button:pressed` / `button:released` events, movement will not apply.
+Solutions:
+
+- Disable the vehicle check.
+- Modify your VehicleCheck override logic.
 
 ---
 
-## Zoom does not change
+## Freecam activates but camera does not move
 
-Zoom is controlled by FOV. Verify:
+Possible reasons:
+
+- Movement multipliers are set too low.
+- Distance limit is restricting movement.
+- Control mapping is not correctly configured.
+- Input system is blocked by another resource.
+
+Verify:
+
+- `Config.System.values.distance`
+- `Config.System.multipliers.move`
+
+---
+
+## Zoom is not working properly
+
+Check:
 
 - `Config.System.values.zoom.min`
 - `Config.System.values.zoom.max`
-- input events for zoom are being sent
+- `Config.System.multipliers.zoom`
+
+If minimum and maximum values are too close, zoom range will feel restricted.
 
 ---
 
-## Why is there no UI?
+## Camera resets every time
 
-Classic edition is designed to be minimal and configuration-driven.
+Check:
 
-For UI and cinematic tools, use Deluxe edition (coming soon).
+```lua
+Config.System.reset = true
+````
+
+If enabled, camera settings reset on every activation.
+
+Set to `false` to preserve previous session data.
+
+---
+
+## Exports are not working
+
+Ensure:
+
+```lua
+Config.Exports.openFreecam  = true
+Config.Exports.closeFreecam = true
+Config.Exports.getData      = true
+```
+
+Exports must be explicitly enabled.
+
+---
+
+## Events are not triggering
+
+Verify:
+
+```lua
+Config.Events.ClientSide.system = {
+    onStart = true,
+    onClose = true
+}
+```
+
+If values are `false`, no events will be triggered.
+
+---
+
+## Why does Classic not include a UI?
+
+Freecam Classic is intentionally lightweight.
+
+It is designed for:
+
+* Stability
+* Administrative usage
+* Minimal overhead
+
+For UI-driven control and cinematic features, refer to the Advanced edition.

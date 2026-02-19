@@ -5,11 +5,67 @@ sidebar_position: 1
 
 # FREECAM
 
-FREECAM is a modular camera system for FiveM.
+FREECAM is a modular camera system developed for FiveM servers.
 
-This documentation is split into editions:
+It is designed to provide structured camera control while maintaining performance, stability, and integration flexibility.
 
-- **Classic**: Lightweight Freecam, configuration-driven, no user-facing UI.
-- **Deluxe**: Advanced cinematic edition (coming soon).
+FREECAM is divided into multiple editions to suit different use cases and server requirements.
 
-Each edition has its own configuration and usage documentation.
+---
+
+## Editions
+
+### Classic
+
+Freecam Classic is a lightweight, configuration-driven edition.
+
+It focuses on:
+
+- Controlled activation (command / key / hold)
+- Player-follow camera behavior
+- Movement, rotation, and zoom control
+- Validation checks (dead / vehicle / custom)
+- Optional exports and event hooks
+
+Classic is intended for administrative use, moderation tasks, and structured server environments.
+
+---
+
+### Advanced (Coming Soon)
+
+Freecam Advanced will introduce:
+
+- UI-based camera controls
+- Cinematic camera tools
+- Visual effect presets
+- Advanced customization options
+
+Advanced is designed for cinematic production and visual-focused environments.
+
+---
+
+## Design Approach
+
+FREECAM follows a modular architecture:
+
+- Clean configuration structure
+- Optional override system
+- Export-based integration
+- Event-driven extensibility
+- Performance-conscious implementation
+
+Each edition is isolated and documented independently to ensure clarity and maintainability.
+
+---
+
+## Documentation Structure
+
+This documentation is organized by edition:
+
+- FREECAM
+  - Classic
+    - Configuration
+    - Usage
+  - Advanced
+
+Select the edition that matches your deployment needs.
