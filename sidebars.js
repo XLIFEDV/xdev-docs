@@ -83,6 +83,10 @@ const sidebars = {
                     },
                     {
                       "type": "doc",
+                      "id": "scripts/freecam/fcclassic/fcconfig/visibilityguard"
+                    },
+                    {
+                      "type": "doc",
                       "id": "scripts/freecam/fcclassic/fcconfig/override-system"
                     }
                   ]
