@@ -64,8 +64,10 @@ Bu dokümantasyon sürümlere göre düzenlenmiştir:
 
 - SERBEST KAMERA
   - [KLASİK](./fcclassic/overview)
-    - [Konfigürasyon](./fcclassic/fcconfig/overview)
-    - [Kullanım](./fcclassic/fcusage/overview)
-  - [Yapılandırma](./fcadvanced/overview)
+    - [Konfigürasyon](./fcclassic/fccconfig/overview)
+    - [Kullanım](./fcclassic/fccusage/overview)
+  - [GELİŞMİŞ](./fcadvanced/overview)
+    - [Klasik ile farkı](./fcadvanced/differences)
+    - [Kurulum](./fcadvanced/installation)
 
 Sunucu ihtiyaçlarınıza uygun sürümü seçerek ilerleyebilirsiniz.

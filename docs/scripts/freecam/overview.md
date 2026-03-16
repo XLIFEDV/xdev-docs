@@ -63,9 +63,11 @@ Each edition is isolated and documented independently to ensure clarity and main
 This documentation is organized by edition:
 
 - FREECAM
-  - [KLASİK](./fcclassic/overview)
-    - [Konfigürasyon](./fcclassic/fcconfig/overview)
-    - [Kullanım](./fcclassic/fcusage/overview)
-  - [Yapılandırma](./fcadvanced/overview)
+  - [CLASSIC](./fcclassic/overview)
+    - [Configuration](./fcclassic/fccconfig/overview)
+    - [Usage](./fcclassic/fccusage/overview)
+  - [ADVANCED](./fcadvanced/overview)
+    - [Differences](./fcadvanced/differences)
+    - [Installation](./fcadvanced/installation)
 
 Select the edition that matches your deployment needs.

@@ -47,10 +47,16 @@
   "sidebar.tutorialSidebar.category.pdusage": {
     "message": "USAGE"
   },
-  "sidebar.tutorialSidebar.category.fcconfig": {
+  "sidebar.tutorialSidebar.category.fcaconfig": {
     "message": "CONFIGURATION"
   },
-  "sidebar.tutorialSidebar.category.fcusage": {
+  "sidebar.tutorialSidebar.category.fcausage": {
+    "message": "USAGE"
+  },
+  "sidebar.tutorialSidebar.category.fccconfig": {
+    "message": "CONFIGURATION"
+  },
+  "sidebar.tutorialSidebar.category.fccusage": {
     "message": "USAGE"
   },
   "sidebar.tutorialSidebar.category.maroonshupack": {

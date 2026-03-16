@@ -1,58 +1,129 @@
 ---
-title: Gelişmiş Serbest Kamera Genel Bakış
-sidebar_position: 2
+title: Genel Bakış
+sidebar_position: 1
 ---
 
 # Gelişmiş Serbest Kamera
 
-Gelişmiş Serbest Kamera, Serbest Kamera sisteminin genişletilmiş sürümüdür.
+Gelişmiş Serbest Kamera, **Klasik Serbest Kamera** çekirdeği üzerine inşa edilmiş genişletilmiş bir sinematik kamera sistemidir.
 
-Classic sürüm hafif ve konfigürasyon odaklı bir yapı sunarken, Advanced sürüm daha kapsamlı bir kamera deneyimi ve genişletilebilir bir yapı sunmak üzere tasarlanmıştır.
+Entegre bir UI aracılığıyla geliştiricilerin ve içerik üreticilerinin kamera davranışını, sahne görsellerini ve sinematik efektleri doğrudan kontrol edebilmesini sağlayan tam bir **görsel kontrol katmanı** ekleyerek temel serbest kamera işlevselliğini genişletir.
 
-Advanced sürüm şu alanlarda sistemi genişletir:
-
-- Yapılandırılmış kamera kontrol mantığı
-- Gelişmiş aktivasyon esnekliği
-- Genişletilmiş konfigürasyon yönetimi
-- Diğer kaynaklarla daha esnek entegrasyon
-- Gelecekteki sinematik araçlara hazır mimari
+Klasik Serbest Kamera hafif ve geliştirici dostu bir serbest kamera sistemi sunmaya odaklanırken, **Gelişmiş Serbest Kamera bunu kayıt alma, ekran görüntüsü oluşturma ve sahne düzenleme için tasarlanmış tam bir sinematik araç setine dönüştürür**.
 
 ---
 
-## Amaç
+# Temel Konsept
 
-Gelişmiş Serbest Kamera şu ihtiyaçlara sahip sunucular için tasarlanmıştır:
+Gelişmiş Serbest Kamera, Klasik Serbest Kamera ile aynı **çekirdek kamera mimarisini** korur ancak görsel kontrol ve sahne yönetimi için tasarlanmış birçok yeni sistem ekler.
 
-- Daha yüksek yönetim kontrolü
-- Geliştirilmiş kamera kullanılabilirliği
-- Gelecekteki sinematik özellikler için genişletilebilir yapı
-- Diğer scriptlerle daha esnek entegrasyon
+Bu sistem geliştiricilerin şu alanları kontrol etmesine olanak tanır:
 
-Temel prensip Classic ile aynıdır:
-Temiz konfigürasyon ve kontrollü aktivasyon üzerine kurulmuş, oyuncuya bağlı ve güvenilir bir Serbest Kamera sistemi.
+- camera movement parameters
+- visual scene settings
+- cinematic effects
+- environmental conditions
+- camera behavior and UI interactions
 
----
-
-## Temel Mantık
-
-Gelişmiş sürüm, konumsal tutarlılık için kamerayı oyuncuya bağlı tutarken, temel Serbest Kamera mantığının üzerine daha gelişmiş bir kontrol katmanı ekler.
-
-Bu yapı şunları sağlar:
-
-- Stabil kamera davranışı
-- Öngörülebilir konumlandırma
-- Güvenli aktivasyon akışı
-- Genişletilebilir sistem mimarisi
+Bu sistemlerin tamamı yapılandırılabilir ve mevcut sunucu ortamlarına entegre edilebilir.
 
 ---
 
-## Güncel Durum
+# Klasik Serbest Kamera ile İlişkisi
 
-Advanced sürüm aktif geliştirme aşamasındadır.
+Gelişmiş Serbest Kamera tamamen ayrı bir kamera sistemi değildir.
 
-Gelecek güncellemelerde şunlar eklenecektir:
+Bunun yerine **Klasik Serbest Kamera çekirdeği üzerine inşa edilmiştir**, yani:
 
-- Arayüz üzerinden kamera kontrolü
-- Sinematik hazır ayarlar
-- Görsel iyileştirme araçları
-- Genişletilmiş konfigürasyon modülleri
+- temel kamera mantığı aynı kalır
+- configuration yapısı tanıdık kalır
+- mevcut entegrasyonlar çalışmaya devam eder
+- Klasik Serbest Kamera kullanan geliştiriciler Gelişmiş Serbest Kamera'ya kolayca geçiş yapabilir
+
+Gelişmiş Serbest Kamera yalnızca **temel sistemin yeteneklerini genişletir**.
+
+---
+
+# Temel Özellikler
+
+## Entegre UI Kontrol Paneli
+
+Gelişmiş Serbest Kamera, kullanıcıların kamera parametrelerini ve görsel ayarları gerçek zamanlı olarak değiştirebilmesini sağlayan tamamen entegre bir UI sistemi sunar.
+
+Bu sistem aşağıdaki kontrolleri içerir:
+
+- camera movement speed
+- rotation sensitivity
+- zoom behavior
+- cinematic visual options
+
+---
+
+## Görsel Sahne Kontrolü
+
+Sistem sahnenin **yerel görsel özelleştirmesini** yapabilmenizi sağlar. Buna şunlar dahildir:
+
+- time control
+- weather control
+- motion blur
+- camera shake
+- depth of field
+- cinematic mode
+
+Tüm görsel değişiklikler **yerel olarak uygulanır**, yani sunucudaki diğer oyuncuları etkilemez.
+
+---
+
+## Kamera Efektleri & PostFX
+
+Gelişmiş Serbest Kamera, doğrudan kameraya uygulanabilen birçok **görsel filtre ve sinematik efekt** destekler.
+
+Bu efektler şu amaçlarla kullanılabilir:
+
+- sahnenin ışıklandırmasını ve atmosferini geliştirmek
+- sinematik color grading oluşturmak
+- film tarzı görseller simüle etmek
+- ekran görüntüsü veya kayıt için sahne hazırlamak
+
+---
+
+## Kalıcı Ayarlar
+
+Kamera yapılandırmaları isteğe bağlı olarak **kaydedilebilir ve yeniden yüklenebilir**.
+
+Bu özellik içerik üreticilerin:
+
+- kamera kurulumlarını tekrar kullanmasını
+- tutarlı sinematik sahneler oluşturmasını
+- tekrar eden kayıtlar için hazırlık süresini azaltmasını
+
+sağlar.
+
+---
+
+## Geliştirici Dostu Mimari
+
+Gelişmiş Serbest Kamera, Klasik Serbest Kamera'da bulunan aynı **override mimarisini** kullanmaya devam eder.
+
+Geliştiriciler aşağıdaki sistemleri override edebilir:
+
+- camera logic
+- notifications
+- screenshot capture
+- visual effects behavior
+
+Bu yapı sistemin özel framework'lere veya mevcut sunucu altyapılarına kolayca entegre edilmesini sağlar.
+
+---
+
+# Kimler İçin?
+
+Gelişmiş Serbest Kamera aşağıdaki kullanım senaryoları için tasarlanmıştır:
+
+- **içerik üreticileri**
+- **sinematik kayıtlar**
+- **ekran görüntüsü oluşturma**
+- **sahne düzenleme**
+- **görsel kamera araçlarına ihtiyaç duyan geliştiriciler**
+
+Eğer basit bir serbest kameradan daha fazlasına ihtiyaç duyuyor ve **tam bir sinematik kontrol sistemi** arıyorsanız, Gelişmiş Serbest Kamera gerekli araçları sunar.

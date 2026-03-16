@@ -50,8 +50,66 @@ const sidebars = {
               "collapsed": true,
               "items": [
                 {
+                  "type": "category",
+                  "label": "fcaconfig",
+                  "collapsed": true,
+                  "items": [
+                    {
+                      "type": "doc",
+                      "id": "scripts/freecam/fcadvanced/fcaconfig/system"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "scripts/freecam/fcadvanced/fcaconfig/ui"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "scripts/freecam/fcadvanced/fcaconfig/visual"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "scripts/freecam/fcadvanced/fcaconfig/environment"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "scripts/freecam/fcadvanced/fcaconfig/effects"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "scripts/freecam/fcadvanced/fcaconfig/settings"
+                    }
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "fcausage",
+                  "collapsed": true,
+                  "items": [
+                    {
+                      "type": "doc",
+                      "id": "scripts/freecam/fcadvanced/fcausage/photo"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "scripts/freecam/fcadvanced/fcausage/overrides"
+                    },
+                    {
+                      "type": "doc",
+                      "id": "scripts/freecam/fcadvanced/fcausage/migration"
+                    }
+                  ]
+                },
+                {
                   "type": "doc",
                   "id": "scripts/freecam/fcadvanced/overview"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/freecam/fcadvanced/differences"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/freecam/fcadvanced/installation"
                 }
               ]
             },
@@ -62,55 +120,55 @@ const sidebars = {
               "items": [
                 {
                   "type": "category",
-                  "label": "fcconfig",
+                  "label": "fccconfig",
                   "collapsed": true,
                   "items": [
                     {
                       "type": "doc",
-                      "id": "scripts/freecam/fcclassic/fcconfig/configuration"
+                      "id": "scripts/freecam/fcclassic/fccconfig/configuration"
                     },
                     {
                       "type": "doc",
-                      "id": "scripts/freecam/fcclassic/fcconfig/overview"
+                      "id": "scripts/freecam/fcclassic/fccconfig/overview"
                     },
                     {
                       "type": "doc",
-                      "id": "scripts/freecam/fcclassic/fcconfig/installation"
+                      "id": "scripts/freecam/fcclassic/fccconfig/installation"
                     },
                     {
                       "type": "doc",
-                      "id": "scripts/freecam/fcclassic/fcconfig/follow-system"
+                      "id": "scripts/freecam/fcclassic/fccconfig/follow-system"
                     },
                     {
                       "type": "doc",
-                      "id": "scripts/freecam/fcclassic/fcconfig/visibilityguard"
+                      "id": "scripts/freecam/fcclassic/fccconfig/visibilityguard"
                     },
                     {
                       "type": "doc",
-                      "id": "scripts/freecam/fcclassic/fcconfig/override-system"
+                      "id": "scripts/freecam/fcclassic/fccconfig/override-system"
                     }
                   ]
                 },
                 {
                   "type": "category",
-                  "label": "fcusage",
+                  "label": "fccusage",
                   "collapsed": true,
                   "items": [
                     {
                       "type": "doc",
-                      "id": "scripts/freecam/fcclassic/fcusage/overview"
+                      "id": "scripts/freecam/fcclassic/fccusage/overview"
                     },
                     {
                       "type": "doc",
-                      "id": "scripts/freecam/fcclassic/fcusage/controls"
+                      "id": "scripts/freecam/fcclassic/fccusage/controls"
                     },
                     {
                       "type": "doc",
-                      "id": "scripts/freecam/fcclassic/fcusage/exports"
+                      "id": "scripts/freecam/fcclassic/fccusage/exports"
                     },
                     {
                       "type": "doc",
-                      "id": "scripts/freecam/fcclassic/fcusage/faq"
+                      "id": "scripts/freecam/fcclassic/fccusage/faq"
                     }
                   ]
                 },

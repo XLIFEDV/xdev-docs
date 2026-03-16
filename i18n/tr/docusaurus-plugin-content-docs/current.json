@@ -50,10 +50,16 @@
   "sidebar.tutorialSidebar.category.pdusage": {
     "message": "KULLANIM"
   },
-  "sidebar.tutorialSidebar.category.fcconfig": {
+  "sidebar.tutorialSidebar.category.fcaconfig": {
     "message": "YAPILANDIRMA"
   },
-  "sidebar.tutorialSidebar.category.fcusage": {
+  "sidebar.tutorialSidebar.category.fcausage": {
+    "message": "KULLANIM"
+  },
+  "sidebar.tutorialSidebar.category.fccconfig": {
+    "message": "YAPILANDIRMA"
+  },
+  "sidebar.tutorialSidebar.category.fccusage": {
     "message": "KULLANIM"
   },
   "sidebar.tutorialSidebar.category.maroonshupack": {
