@@ -3,7 +3,7 @@ title: Görünürlük Kontrolü
 sidebar_position: 5
 ---
 
-## Overview
+## Genel Bakış
 
 Görünürlük Kontrolü sistemi, kameranın oyuncunun artık render edilmeyeceği veya görünür olmayacağı konumlara hareket etmesini engeller.
 
@@ -13,28 +13,28 @@ Bu sayede kayıt alırken, ekran görüntüsü çekerken veya sinematik kamera k
 
 ---
 
-## Configuration
+## Yapılandırma
 
 ```lua
 Config.System.VisibilityGuard = true
 ````
 
-### Description
+### Açıklama
 
-| Option          | Type    | Default | Description                                                                                      |
-| --------------- | ------- | ------- | ------------------------------------------------------------------------------------------------ |
-| VisibilityGuard | boolean | true    | Kameranın oyuncunun render edilmediği veya görünür olmadığı konumlara hareket etmesini engeller. |
+| Seçenek         | Tip     | Varsayılan | Açıklama                                                                                         |
+| --------------- | ------- | ---------- | ------------------------------------------------------------------------------------------------ |
+| VisibilityGuard | boolean | true       | Kameranın oyuncunun render edilmediği veya görünür olmadığı konumlara hareket etmesini engeller. |
 
 ---
 
-## Behavior
+## Davranış
 
-When enabled:
+Etkin olduğunda:
 
 * Kamera hareketi yeni konum uygulanmadan önce doğrulanır
 * Yeni kamera konumu oyuncu varlığını gizleyecekse hareket reddedilir
 * Kameranın duvarların arkasına veya harita geometrisinin içine girmesi engellenir
 
-When disabled:
+Devre dışı olduğunda:
 
 * Kamera görünürlük kontrolü olmadan serbestçe hareket edebilir
