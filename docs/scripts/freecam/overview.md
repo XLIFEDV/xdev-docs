@@ -1,73 +1,114 @@
 ---
-title: FREECAM
+title: Overview
 sidebar_position: 1
 ---
 
-# FREECAM
+# Freecam
 
-FREECAM is a modular camera system developed for FiveM servers.
+Freecam is a **cinematic camera system for FiveM** designed to provide full control over camera movement, visual effects, and scene composition.
 
-It is designed to provide structured camera control while maintaining performance, stability, and integration flexibility.
+It combines a flexible camera system with an integrated UI, allowing users to control both **camera behavior** and **visual environment settings** in real time.
 
-FREECAM is divided into multiple editions to suit different use cases and server requirements.
-
----
-
-## Editions
-
-### Classic
-
-Freecam Classic is a lightweight, configuration-driven edition.
-
-It focuses on:
-
-- Controlled activation (command / key / hold)
-- Player-follow camera behavior
-- Movement, rotation, and zoom control
-- Validation checks (dead / vehicle / custom)
-- Optional exports and event hooks
-
-Classic is intended for administrative use, moderation tasks, and structured server environments.
+Freecam is built for developers and content creators who require more than a basic free camera, offering a complete toolset for recording, screenshots, and cinematic scene creation.
 
 ---
 
-### Advanced (Coming Soon)
+# Core Concept
 
-Freecam Advanced will introduce:
+Freecam is designed as a **modular and configurable camera system**.
 
-- UI-based camera controls
-- Cinematic camera tools
-- Visual effect presets
-- Advanced customization options
+It allows full control over:
 
-Advanced is designed for cinematic production and visual-focused environments.
+- camera movement and positioning
+- rotation and zoom behavior
+- visual effects and PostFX
+- environmental conditions (time & weather)
+- UI-driven camera controls
+- camera persistence and state management
 
----
-
-## Design Approach
-
-FREECAM follows a modular architecture:
-
-- Clean configuration structure
-- Optional override system
-- Export-based integration
-- Event-driven extensibility
-- Performance-conscious implementation
-
-Each edition is isolated and documented independently to ensure clarity and maintainability.
+All systems are configurable and can be adapted to different server environments.
 
 ---
 
-## Documentation Structure
+# Key Features
 
-This documentation is organized by edition:
+## Integrated UI Control
 
-- FREECAM
-  - [CLASSIC](./fcclassic/overview)
-    - [Configuration](./fcclassic/fccconfig/overview)
-    - [Usage](./fcclassic/fccusage/overview)
-  - [ADVANCED](./fcadvanced/overview)
-    - [Differences](./fcadvanced/differences)
-    - [Installation](./fcadvanced/installation)
+Freecam includes a fully integrated UI panel that allows users to adjust camera and visual settings in real time.
 
-Select the edition that matches your deployment needs.
+This includes:
+
+- movement speed control
+- rotation sensitivity
+- zoom control
+- visual effect management
+- environment adjustments
+
+---
+
+## Visual Scene Control
+
+Freecam provides full control over the visual environment:
+
+- time control
+- weather control
+- motion blur
+- camera shake
+- depth of field
+- cinematic mode
+
+All changes are applied **locally**, without affecting other players.
+
+---
+
+## Camera Effects & PostFX
+
+The system supports multiple cinematic filters and post-processing effects.
+
+These can be used to:
+
+- enhance lighting
+- apply cinematic color grading
+- simulate film-style visuals
+- prepare scenes for recording or screenshots
+
+---
+
+## Persistent Settings
+
+Freecam allows saving and restoring camera configurations.
+
+This enables:
+
+- reusable camera setups
+- consistent cinematic scenes
+- faster workflow for creators
+
+---
+
+## Override System
+
+Freecam includes a flexible override system that allows developers to replace internal logic.
+
+This enables integration with:
+
+- frameworks
+- notification systems
+- screenshot tools
+- custom camera logic
+
+All without modifying the core resource.
+
+---
+
+# Who is this for?
+
+Freecam is designed for:
+
+- content creators
+- cinematic recordings
+- screenshot capture
+- scene composition
+- developers needing advanced camera tools
+
+If you need full control over camera behavior and visual output, Freecam provides a complete cinematic solution.

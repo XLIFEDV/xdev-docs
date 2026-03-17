@@ -20,7 +20,7 @@
     },
     {
       "label": "freecam",
-      "to": "/scripts/freecam/fcadvanced/overview"
+      "to": "/scripts/freecam/overview"
     },
     {
       "label": "hackerjob",

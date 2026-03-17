@@ -1,73 +1,120 @@
 ---
-title: SERBEST KAMERA
+title: Genel Bakış
 sidebar_position: 1
 ---
 
-# SERBEST KAMERA
+# Freecam
 
-SERBEST KAMERA, FiveM sunucuları için geliştirilmiş modüler bir kamera sistemidir.
+Freecam, **FiveM için geliştirilmiş sinematik bir kamera sistemi** olup kamera hareketi, görsel efektler ve sahne kompozisyonu üzerinde tam kontrol sağlamak amacıyla tasarlanmıştır.
 
-Performans, stabilite ve sistem entegrasyonu korunarak yapılandırılmış kamera kontrolü sağlamak amacıyla tasarlanmıştır.
+Esnek bir kamera sistemi ile entegre bir UI yapısını birleştirerek kullanıcıların hem **kamera davranışını** hem de **görsel ortam ayarlarını** gerçek zamanlı olarak kontrol etmesine olanak tanır.
 
-SERBEST KAMERA, farklı kullanım senaryolarına ve sunucu ihtiyaçlarına uygun olarak birden fazla sürüme ayrılmıştır.
-
----
-
-## Sürümler
-
-### Classic
-
-Serbest Kamera Classic hafif ve konfigürasyon odaklı bir sürümdür.
-
-Şu özelliklere odaklanır:
-
-- Kontrollü aktivasyon (komut / tuş / basılı tutma)
-- Oyuncuya bağlı kamera davranışı
-- Hareket, dönüş ve zoom kontrolü
-- Doğrulama kontrolleri (ölü / araç / özel kontrol)
-- Opsiyonel export ve event desteği
-
-Classic sürüm; yönetim, moderasyon ve yapılandırılmış sunucu ortamları için tasarlanmıştır.
+Freecam, basit bir serbest kameradan daha fazlasına ihtiyaç duyan geliştiriciler ve içerik üreticiler için geliştirilmiştir ve kayıt alma, screenshot ve sinematik sahne oluşturma için tam kapsamlı bir araç seti sunar.
 
 ---
 
-### Gelişmiş Serbest Kamera (Yakında)
+# Temel Mantık
 
-Gelişmiş Serbest Kamera sürümü şu özellikleri sunacaktır:
+Freecam, **modüler ve yapılandırılabilir bir kamera sistemi** olarak tasarlanmıştır.
 
-- Arayüz tabanlı kamera kontrolleri
-- Sinematik kamera araçları
-- Görsel efekt ön ayarları
-- Gelişmiş özelleştirme seçenekleri
+Aşağıdaki sistemler üzerinde tam kontrol sağlar:
 
-Gelişmiş sürüm, sinematik prodüksiyon ve görsel odaklı kullanım için tasarlanmaktadır.
+- camera movement and positioning
+- rotation and zoom behavior
+- visual effects and PostFX
+- environmental conditions (time & weather)
+- UI-driven camera controls
+- camera persistence and state management
 
----
-
-## Tasarım Yaklaşımı
-
-SERBEST KAMERA modüler bir mimari takip eder:
-
-- Temiz konfigürasyon yapısı
-- Opsiyonel override sistemi
-- Export tabanlı entegrasyon
-- Event odaklı genişletilebilirlik
-- Performans odaklı uygulama
-
-Her sürüm ayrı ayrı dokümante edilerek netlik ve sürdürülebilirlik sağlanmıştır.
+Tüm sistemler yapılandırılabilir olup farklı sunucu ortamlarına kolayca uyarlanabilir.
 
 ---
 
-## Dokümantasyon Yapısı
+# Temel Özellikler
 
-Bu dokümantasyon sürümlere göre düzenlenmiştir:
+## Entegre UI Kontrol Paneli
 
-- SERBEST KAMERA
-  - [KLASİK](./fcclassic/overview)
-    - [Konfigürasyon](./fcclassic/fccconfig/overview)
-    - [Kullanım](./fcclassic/fccusage/overview)
-  - [GELİŞMİŞ](./fcadvanced/overview)
-    - [Klasik ile farkı](./fcadvanced/differences)
-    - [Kurulum](./fcadvanced/installation)
+Freecam, kullanıcıların kamera ve görsel ayarları gerçek zamanlı olarak değiştirebilmesini sağlayan tamamen entegre bir UI paneli içerir.
 
-Sunucu ihtiyaçlarınıza uygun sürümü seçerek ilerleyebilirsiniz.
+Bu panel üzerinden:
+
+- movement speed control
+- rotation sensitivity
+- zoom control
+- visual effect management
+- environment adjustments
+
+yapılabilir.
+
+---
+
+## Görsel Sahne Kontrolü
+
+Freecam, görsel ortam üzerinde tam kontrol sağlar:
+
+- time control
+- weather control
+- motion blur
+- camera shake
+- depth of field
+- cinematic mode
+
+Tüm değişiklikler **yerel olarak uygulanır** ve diğer oyuncuları etkilemez.
+
+---
+
+## Kamera Efektleri & PostFX
+
+Sistem birden fazla sinematik filtre ve post-processing efektini destekler.
+
+Bu efektler şu amaçlarla kullanılabilir:
+
+- lighting geliştirme
+- cinematic color grading uygulama
+- film tarzı görseller oluşturma
+- kayıt veya screenshot için sahne hazırlama
+
+---
+
+## Kalıcı Ayarlar
+
+Freecam, kamera yapılandırmalarının kaydedilmesine ve tekrar yüklenmesine olanak tanır.
+
+Bu sayede:
+
+- tekrar kullanılabilir kamera ayarları
+- tutarlı sinematik sahneler
+- daha hızlı çalışma süreci
+
+elde edilir.
+
+---
+
+## Override Sistemi
+
+Freecam, geliştiricilerin dahili sistemi değiştirebilmesini sağlayan esnek bir override sistemi içerir.
+
+Bu sistem sayesinde:
+
+- frameworks
+- notification systems
+- screenshot tools
+- custom camera logic
+
+ile entegrasyon sağlanabilir.
+
+Tüm bunlar core resource dosyasına dokunmadan yapılabilir.
+
+---
+
+# Kimler İçin?
+
+Freecam şu kullanım senaryoları için tasarlanmıştır:
+
+- content creators
+- cinematic recordings
+- screenshot capture
+- scene composition
+- gelişmiş kamera araçlarına ihtiyaç duyan geliştiriciler
+
+Eğer kamera davranışı ve görsel çıktı üzerinde tam kontrol istiyorsanız, Freecam size eksiksiz bir sinematik çözüm sunar.
