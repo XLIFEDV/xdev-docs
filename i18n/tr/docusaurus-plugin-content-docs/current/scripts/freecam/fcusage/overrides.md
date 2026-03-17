@@ -1,8 +1,3 @@
-Aynı standartta çevirdim kanka 👇
-
----
-
-````md id="h2k9wx"
 ---
 title: Override Sistemi
 sidebar_position: 2
@@ -160,6 +155,3 @@ Bu yaklaşım sistemin **update-safe ve sürdürülebilir** kalmasını sağlar.
 Override sistemi, Freecam davranışını tamamen özelleştirme imkanı sunar.
 
 Bu yapı sayesinde Freecam, kompleks sunucu ortamlarına kolayca entegre edilebilir ve uyumluluk bozulmadan genişletilebilir.
-
-```
-```
