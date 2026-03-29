@@ -15,36 +15,12 @@
   ],
   "scripts": [
     {
-      "label": "bank",
-      "to": "/scripts/bank/overview"
-    },
-    {
       "label": "freecam",
       "to": "/scripts/freecam/overview"
     },
     {
-      "label": "hackerjob",
-      "to": "/scripts/hackerjob/overview"
-    },
-    {
-      "label": "hackerphone",
-      "to": "/scripts/hackerphone/overview"
-    },
-    {
-      "label": "illegalphone",
-      "to": "/scripts/illegalphone/overview"
-    },
-    {
       "label": "posdevice",
       "to": "/scripts/posdevice/pdconfig/overview"
-    },
-    {
-      "label": "racing",
-      "to": "/scripts/racing/overview"
-    },
-    {
-      "label": "scenario",
-      "to": "/scripts/scenario/overview"
     }
   ]
 }

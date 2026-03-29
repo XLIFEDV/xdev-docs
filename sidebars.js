@@ -30,17 +30,6 @@ const sidebars = {
       "items": [
         {
           "type": "category",
-          "label": "bank",
-          "collapsed": true,
-          "items": [
-            {
-              "type": "doc",
-              "id": "scripts/bank/overview"
-            }
-          ]
-        },
-        {
-          "type": "category",
           "label": "freecam",
           "collapsed": true,
           "items": [
@@ -101,39 +90,6 @@ const sidebars = {
             {
               "type": "doc",
               "id": "scripts/freecam/installation"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "hackerjob",
-          "collapsed": true,
-          "items": [
-            {
-              "type": "doc",
-              "id": "scripts/hackerjob/overview"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "hackerphone",
-          "collapsed": true,
-          "items": [
-            {
-              "type": "doc",
-              "id": "scripts/hackerphone/overview"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "illegalphone",
-          "collapsed": true,
-          "items": [
-            {
-              "type": "doc",
-              "id": "scripts/illegalphone/overview"
             }
           ]
         },
@@ -210,28 +166,6 @@ const sidebars = {
             {
               "type": "doc",
               "id": "scripts/posdevice/installation"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "racing",
-          "collapsed": true,
-          "items": [
-            {
-              "type": "doc",
-              "id": "scripts/racing/overview"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "scenario",
-          "collapsed": true,
-          "items": [
-            {
-              "type": "doc",
-              "id": "scripts/scenario/overview"
             }
           ]
         }
