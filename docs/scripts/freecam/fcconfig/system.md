@@ -92,6 +92,30 @@ This determines where the camera is positioned when Freecam starts.
 
 ---
 
+# Initial Camera Focus
+
+Determines whether the camera should automatically focus on the player's ped when Freecam is activated.
+
+```lua
+Config.System.FocusOnPlayerStart = false
+````
+
+### Behavior
+
+* `true` → Camera starts focused on the player's ped
+* `false` → Camera starts in free mode without focusing on the player
+
+### Description
+
+This setting controls the initial camera behavior when Freecam is enabled.
+
+When set to `true`, the camera will automatically align and focus on the player's ped at startup.
+When set to `false`, the camera will start in a free state, allowing immediate manual control without any initial focus.
+
+This option is useful for defining whether the camera should begin in a controlled or fully free environment.
+
+---
+
 # Camera Animation
 
 Controls the transition duration when enabling or disabling Freecam.

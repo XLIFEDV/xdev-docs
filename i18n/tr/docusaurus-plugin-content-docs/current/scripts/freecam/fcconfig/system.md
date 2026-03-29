@@ -92,6 +92,30 @@ Bu değer Freecam başlatıldığında kameranın nerede konumlanacağını beli
 
 ---
 
+# Başlangıç Kamera Odağı
+
+Freecam aktif edildiğinde kameranın otomatik olarak oyuncunun ped'ine odaklanıp odaklanmayacağını belirler.
+
+```lua
+Config.System.FocusOnPlayerStart = false
+```
+
+### Davranış
+
+* `true` → Kamera başlangıçta oyuncunun ped'ine odaklanır
+* `false` → Kamera serbest modda başlar, oyuncuya odaklanmaz
+
+### Açıklama
+
+Bu ayar, Freecam açıldığında kameranın başlangıç davranışını kontrol eder.
+
+`true` olarak ayarlandığında, kamera açılışta otomatik olarak oyuncunun ped'ine hizalanır ve odaklanır.
+`false` olarak ayarlandığında ise kamera doğrudan serbest modda başlar ve kullanıcıya anında manuel kontrol sağlar.
+
+Bu ayar, kameranın kontrollü bir başlangıç mı yoksa tamamen serbest bir başlangıç mı yapacağını belirlemek için kullanılır.
+
+---
+
 # Kamera Animasyonu
 
 Freecam açılıp kapanırken kullanılan geçiş süresini kontrol eder.
