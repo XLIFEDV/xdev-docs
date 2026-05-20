@@ -37,5 +37,8 @@
   },
   "link.item.label.scenario": {
     "message": "SCENARIO"
+  },
+  "link.item.label.appearance": {
+    "message": "APPEARANCE"
   }
 }

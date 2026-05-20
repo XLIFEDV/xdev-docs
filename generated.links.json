@@ -15,6 +15,10 @@
   ],
   "scripts": [
     {
+      "label": "appearance",
+      "to": "/scripts/appearance/apconfig/overview"
+    },
+    {
       "label": "freecam",
       "to": "/scripts/freecam/overview"
     },

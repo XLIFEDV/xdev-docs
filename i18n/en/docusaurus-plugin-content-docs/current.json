@@ -32,6 +32,9 @@
   "sidebar.tutorialSidebar.category.scenario": {
     "message": "SCENARIO"
   },
+  "sidebar.tutorialSidebar.category.appearance": {
+    "message": "APPEARANCE"
+  },
   "sidebar.tutorialSidebar.category.pdui": {
     "message": "UI"
   },
@@ -39,6 +42,18 @@
     "message": "CONFIGURATION"
   },
   "sidebar.tutorialSidebar.category.pdusage": {
+    "message": "USAGE"
+  },
+  "sidebar.tutorialSidebar.category.apconfig": {
+    "message": "CONFIGURATION"
+  },
+  "sidebar.tutorialSidebar.category.apdev": {
+    "message": "DEVELOPERS"
+  },
+  "sidebar.tutorialSidebar.category.apintegrations": {
+    "message": "INTEGRATIONS"
+  },
+  "sidebar.tutorialSidebar.category.apusage": {
     "message": "USAGE"
   },
   "sidebar.tutorialSidebar.category.fcconfig": {

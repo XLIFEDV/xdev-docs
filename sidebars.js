@@ -30,6 +30,169 @@ const sidebars = {
       "items": [
         {
           "type": "category",
+          "label": "appearance",
+          "collapsed": true,
+          "items": [
+            {
+              "type": "category",
+              "label": "apconfig",
+              "collapsed": true,
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apconfig/overview"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apconfig/system"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apconfig/ui"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apconfig/pricing"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apconfig/commands"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apconfig/clothes-off"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apconfig/peds"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apconfig/stores"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apconfig/clothing-rooms"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apconfig/outfits"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apconfig/tattoos"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apconfig/opposites"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "apdev",
+              "collapsed": true,
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apdev/overrides"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apdev/events"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apdev/exports"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apdev/data-format"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "apintegrations",
+              "collapsed": true,
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apintegrations/overview"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apintegrations/compatibility"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apintegrations/qbcore"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apintegrations/illenium-format"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apintegrations/walkstyle"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "apusage",
+              "collapsed": true,
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apusage/overview"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apusage/clothing-menu"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apusage/barber-surgeon"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apusage/tattoo-menu"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apusage/outfit-system"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apusage/uniform-system"
+                },
+                {
+                  "type": "doc",
+                  "id": "scripts/appearance/apusage/face-cache"
+                }
+              ]
+            },
+            {
+              "type": "doc",
+              "id": "scripts/appearance/overview"
+            },
+            {
+              "type": "doc",
+              "id": "scripts/appearance/installation"
+            },
+            {
+              "type": "doc",
+              "id": "scripts/appearance/database"
+            },
+            {
+              "type": "doc",
+              "id": "scripts/appearance/troubleshooting"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "freecam",
           "collapsed": true,
           "items": [
